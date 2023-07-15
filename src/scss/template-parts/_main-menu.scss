@@ -1,0 +1,40 @@
+.main-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--clr-primary);
+    height: 100dvh;
+    width: 80%;
+    padding: .9375rem;
+    animation: menuIn .3s ease-in-out;
+    display: none;
+    z-index: 1;
+    &.menu-opened {
+        display: flex;
+    }
+    &__items {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        align-self: center;
+    }
+    &__link {
+        color: var(--clr-primary-dark);
+        text-decoration: none;
+        display: block;
+        margin-bottom: .9375rem;
+        font-size: 1.25rem;
+        &.selected {
+            font-weight: 700;
+        }
+    }
+}
+
+@keyframes menuIn {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}

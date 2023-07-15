@@ -1,0 +1,70 @@
+.top-options {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--clr-primary);
+    width: 100%;
+    padding: .9375rem;
+    text-align: right;
+}
+
+.site-title {
+    margin-top: 40px;
+    > a,
+    span {
+        display: block;
+        text-decoration: none;
+    }
+    span {
+        text-transform: uppercase;
+        font-size: .875rem;
+        font-weight: 300;
+        letter-spacing: .05rem;
+        color: var(--clr-primary-dark);
+        strong {
+            font-weight: 700;
+        }
+    }
+}
+
+.hamburger {
+    position: absolute;
+    top: .9375rem;
+    left: .9375rem;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    z-index: 2;
+    transition: left .3s ease-in-out;
+    &.is-active {
+        left: 65%;
+    }
+}
+
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before,
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger.is-active .hamburger-inner::before {
+    background-color: var(--clr-primary-dark);
+}
+
+.language {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.875rem;
+    &__btn {
+        border: none;
+        background: none;
+        font-size: 1rem;
+        color: var(--clr-primary-dark);
+        opacity: .5;
+        font-weight: 700;
+        transition: opacity .3s ease-in-out;
+        &.selected {
+            opacity: 1;
+        }
+    }
+}
