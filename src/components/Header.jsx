@@ -17,10 +17,10 @@ export default function Header() {
         btnMenu.classList.toggle('is-active')
     }
 
-    const spanishBtn = document.querySelector('.language__btn--es')
-    const englishBtn = document.querySelector('.language__btn--en')
-
     const spanishLang = (e) => {
+        let spanishBtn = document.querySelector('.language__btn--es')
+        let englishBtn = document.querySelector('.language__btn--en')
+        spanishBtn.classList.remove('selected')
         englishBtn.classList.remove('selected')
         e.target.classList.add('selected')
         document.documentElement.setAttribute('lang', 'es')
@@ -28,6 +28,9 @@ export default function Header() {
     }
 
     const englishLang = (e) => {
+        let englishBtn = document.querySelector('.language__btn--en')
+        let spanishBtn = document.querySelector('.language__btn--es')
+        englishBtn.classList.remove('selected')
         spanishBtn.classList.remove('selected')
         e.target.classList.add('selected')
         document.documentElement.setAttribute('lang', 'en')
