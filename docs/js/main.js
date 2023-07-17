@@ -19,3 +19,4 @@ docReady(function () {
     })
 });
 
+console.log('public/main.js loaded!')
