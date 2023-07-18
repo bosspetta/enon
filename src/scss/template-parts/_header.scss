@@ -1,5 +1,5 @@
 .top-options {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: var(--clr-primary);
@@ -28,7 +28,7 @@
 }
 
 .hamburger {
-    position: absolute;
+    position: fixed;
     top: .9375rem;
     left: .9375rem;
     padding: 0;

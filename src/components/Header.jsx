@@ -40,13 +40,13 @@ export default function Header() {
     return (
         <>
             <header>
+                <button className="hamburger hamburger--collapse" type="button" id="btn-menu" onClick={openMenu}>
+                    <span className="hamburger-box">
+                        <span className="hamburger-inner"></span>
+                        <span className="sr-only">{t( "header.open-menu" )}</span>
+                    </span>
+                </button>
                 <div className="top-options">
-                    <button className="hamburger hamburger--collapse" type="button" id="btn-menu" onClick={openMenu}>
-                        <span className="hamburger-box">
-                            <span className="hamburger-inner"></span>
-                            <span className="sr-only">{t( "header.open-menu" )}</span>
-                        </span>
-                    </button>
                     <div id="language" className="language">
                         <button className='language__btn language__btn--es selected' onClick={spanishLang} type="button">Español</button>
                         <button className='language__btn language__btn--en' onClick={englishLang} type="button">English</button>
