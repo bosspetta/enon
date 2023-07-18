@@ -1,12 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300;1,700&display=swap");
 :root {
-  --clr-primary: #a9ef9f;
-  --clr-primary-dark: #3f5b45;
-  --clr-secondary: #dcb8ff;
-  --clr-third: #ff5569;
-  --clr-fourth: #ffdeb6;
-  --clr-fifth: #b8fff1;
-  --clr-sixth: #f9ffca;
+  --clr-primary: #667764;
+  --clr-primary-light: #91b39a;
+  --clr-secondary: #c54329;
+  --clr-light: #f8e6c2;
   --clr-black: #333;
   --clr-white: #f9f9f9;
 }
@@ -994,7 +991,7 @@ i {
 }
 
 .page-title {
-  color: var(--clr-primary-dark);
+  color: var(--clr-primary);
   margin-block: 1rem;
 }
 
@@ -1029,7 +1026,7 @@ i {
   font-size: 0.875rem;
   font-weight: 300;
   letter-spacing: 0.05rem;
-  color: var(--clr-primary-dark);
+  color: var(--clr-primary);
 }
 .site-title span strong {
   font-weight: 700;
@@ -1045,9 +1042,14 @@ i {
   display: flex;
   z-index: 2;
   transition: left 0.3s ease-in-out;
+  opacity: 0.5;
 }
 .hamburger.is-active {
   left: 65%;
+  opacity: 1;
+}
+.hamburger:hover, .hamburger:focus {
+  opacity: 1;
 }
 
 .hamburger-inner,
@@ -1056,7 +1058,7 @@ i {
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::after,
 .hamburger.is-active .hamburger-inner::before {
-  background-color: var(--clr-primary-dark);
+  background-color: var(--clr-white);
 }
 
 .language {
@@ -1068,7 +1070,7 @@ i {
   border: none;
   background: none;
   font-size: 1rem;
-  color: var(--clr-primary-dark);
+  color: var(--clr-white);
   opacity: 0.5;
   font-weight: 700;
   transition: opacity 0.3s ease-in-out;
@@ -1081,7 +1083,8 @@ i {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--clr-primary);
+  background: var(--clr-primary-light) url("../img/enon-simbolo.svg") center center no-repeat;
+  background-size: 180%;
   height: 100dvh;
   width: 80%;
   padding: 0.9375rem;
@@ -1099,7 +1102,7 @@ i {
   align-self: center;
 }
 .main-menu__link {
-  color: var(--clr-primary-dark);
+  color: var(--clr-black);
   text-decoration: none;
   display: block;
   margin-bottom: 0.9375rem;

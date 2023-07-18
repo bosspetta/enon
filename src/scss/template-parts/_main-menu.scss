@@ -2,7 +2,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--clr-primary);
+    background: var(--clr-primary-light) url('../img/enon-simbolo.svg') center center no-repeat;
+    background-size: 180%;
     height: 100dvh;
     width: 80%;
     padding: .9375rem;
@@ -19,7 +20,7 @@
         align-self: center;
     }
     &__link {
-        color: var(--clr-primary-dark);
+        color: var(--clr-black);
         text-decoration: none;
         display: block;
         margin-bottom: .9375rem;
