@@ -24,6 +24,7 @@ export default function Header() {
         englishBtn.classList.remove('selected')
         e.target.classList.add('selected')
         document.documentElement.setAttribute('lang', 'es')
+        localStorage.setItem('language', 'es')
         return i18n.changeLanguage('es')
     }
 
@@ -34,6 +35,7 @@ export default function Header() {
         spanishBtn.classList.remove('selected')
         e.target.classList.add('selected')
         document.documentElement.setAttribute('lang', 'en')
+        localStorage.setItem('language', 'en')
         return i18n.changeLanguage('en')
     }
 
