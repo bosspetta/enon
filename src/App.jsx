@@ -1,31 +1,27 @@
 import { Routes, Route } from 'react-router-dom'
 
-import Header from './components/Header'
-import MainMenu from './components/MainMenu'
-import Footer from './components/Footer'
+import Layout from './layout'
 import Home from './pages/Home'
 import QueEsEnon from './pages/QueEsEnon'
 import Yoga from './pages/Yoga'
 import Quiromasaje from './pages/Quiromasaje'
 import Contacto from './pages/Contacto'
+import NoMatch from './pages/NoMatch'
 
 export default function App() {
     return (
         <>
-            <div className="global-container">
-                <div className="main-content">
-                    <Header />
-                    <MainMenu />
-                    <Routes>
-                        <Route path='/' element={<Home />} />
-                        <Route path='/que-es-enon' element={<QueEsEnon />} />
-                        <Route path='/yoga' element={<Yoga />} />
-                        <Route path='/quiromasaje' element={<Quiromasaje />} />
-                        <Route path='/contacto' element={<Contacto />} />
-                    </Routes>
-                </div>
-                <Footer />
-            </div>
+            <Routes>
+                <Route path='/' element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path='que-es-enon' element={<QueEsEnon />} />
+                    <Route path='yoga' element={<Yoga />} />
+                    <Route path='quiromasaje' element={<Quiromasaje />} />
+                    <Route path='contacto' element={<Contacto />} />
+
+                    <Route path='*' element={<NoMatch />} />
+                </Route>
+            </Routes>
         </>
     )
 }
