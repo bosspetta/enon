@@ -39,6 +39,8 @@ export default function Header() {
         return i18n.changeLanguage('en')
     }
 
+    const selectedLanguage = (lng) => localStorage.getItem('language') === lng ? 'selected' : ''
+
     return (
         <>
             <header>
@@ -50,8 +52,8 @@ export default function Header() {
                 </button>
                 <div className="top-options">
                     <div id="language" className="language">
-                        <button className='language__btn language__btn--es selected' onClick={spanishLang} type="button">Español</button>
-                        <button className='language__btn language__btn--en' onClick={englishLang} type="button">English</button>
+                        <button className={`language__btn language__btn--es ${selectedLanguage('es')}`} onClick={spanishLang} type="button">Español</button>
+                        <button className={`language__btn language__btn--en ${selectedLanguage('en')}`} onClick={englishLang} type="button">English</button>
                     </div>
                 </div>
                 <h1 className="site-title">
