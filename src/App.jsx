@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 import Header from './components/Header'
 import MainMenu from './components/MainMenu'
@@ -14,17 +14,15 @@ export default function App() {
         <>
             <div className="global-container">
                 <div className="main-content">
-                    <BrowserRouter>
-                        <Header />
-                        <MainMenu />
-                        <Routes>
-                            <Route path='/' element={<Home />} />
-                            <Route path='/que-es-enon' element={<QueEsEnon />} />
-                            <Route path='/yoga' element={<Yoga />} />
-                            <Route path='/quiromasaje' element={<Quiromasaje />} />
-                            <Route path='/contacto' element={<Contacto />} />
-                        </Routes>
-                    </BrowserRouter>
+                    <Header />
+                    <MainMenu />
+                    <Routes>
+                        <Route path='/' element={<Home />} />
+                        <Route path='/que-es-enon' element={<QueEsEnon />} />
+                        <Route path='/yoga' element={<Yoga />} />
+                        <Route path='/quiromasaje' element={<Quiromasaje />} />
+                        <Route path='/contacto' element={<Contacto />} />
+                    </Routes>
                 </div>
                 <Footer />
             </div>
