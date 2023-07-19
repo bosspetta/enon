@@ -14,7 +14,6 @@ if (localStorage.getItem('language')) {
 } else {
     currentLanguage = 'es'
 }
-// console.log(currentLanguage)
 
 i18next.init({
     interpolation: { escapeValue: false },
@@ -28,8 +27,6 @@ i18next.init({
         }
     }
 })
-
-console.log(i18next.language)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
