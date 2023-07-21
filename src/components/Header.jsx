@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 
 import { useTranslation } from 'react-i18next'
+import i18next from 'i18next'
 
 import logo from '../assest/img/logo-enon.svg'
 
@@ -39,7 +40,7 @@ export default function Header() {
         return i18n.changeLanguage('en')
     }
 
-    const selectedLanguage = (lng) => localStorage.getItem('language') === lng ? 'selected' : ''
+    let selectedLanguage = i18next.language
 
     return (
         <>
@@ -52,8 +53,8 @@ export default function Header() {
                 </button>
                 <div className="top-options">
                     <div id="language" className="language">
-                        <button className={`language__btn language__btn--es ${selectedLanguage('es')}`} onClick={spanishLang} type="button">Español</button>
-                        <button className={`language__btn language__btn--en ${selectedLanguage('en')}`} onClick={englishLang} type="button">English</button>
+                        <button className={`language__btn language__btn--es ${ selectedLanguage === 'es' ? 'selected' : null }`} onClick={spanishLang} type="button">Español</button>
+                        <button className={`language__btn language__btn--en ${ selectedLanguage === 'en' ? 'selected' : null }`} onClick={englishLang} type="button">English</button>
                     </div>
                 </div>
                 <h1 className="site-title">
