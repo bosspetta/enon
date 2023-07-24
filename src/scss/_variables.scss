@@ -15,10 +15,13 @@
 .dark-mode {
     --clr-light: #fffdf9;
     --clr-dark: #282e28;
-    --clr-primary: #2e3d2c;
+    --clr-primary: #e1f4df;
     --clr-secondary: #131915;
     --clr-accent: #c54329;
 
     --foreground: var(--clr-light);
     --background: var(--clr-dark);
+
+    --clr-black: #f9f9f9;
+    --clr-white: #333;
 }

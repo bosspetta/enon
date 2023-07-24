@@ -3,12 +3,17 @@ import { useTranslation } from 'react-i18next'
 import isa from '../assest/img/enon-ceo.jpg'
 
 export default function QueEsEnon() {
-    document.body.className = ''
+    document.body.classList.remove('contact-page')
+    document.body.classList.remove('home-page')
+    document.body.classList.remove('no-found-page')
+    document.body.classList.remove('chiromassage-page')
+    document.body.classList.remove('yoga-page')
     document.body.classList.add('enon-page')
+
     const { t } = useTranslation('global')
 
     return (
-        <main>
+        <main className="page-content">
             <h2 className="page-title">{t( "enon.title" )}</h2>
             <p>{t( "enon.desc-a" )}</p>
             <p>{t( "enon.desc-b" )}</p>

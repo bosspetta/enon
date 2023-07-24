@@ -9,6 +9,9 @@
     width: 100%;
     padding: .9375rem;
     text-align: right;
+    body.dark-mode & {
+        background-color: var(--clr-white);
+    }
     > button {
         background-color: transparent;
         width: 25px;
@@ -19,6 +22,9 @@
         color: var(--clr-white);
         opacity: .5;
         transition: opacity .3s ease-in-out;
+        body.dark-mode & {
+            color: var(--clr-primary);
+        }
         &:hover,
         &:focus {
             opacity: 1;
@@ -73,6 +79,9 @@
 .hamburger.is-active .hamburger-inner::after,
 .hamburger.is-active .hamburger-inner::before {
     background-color: var(--clr-white);
+    body.dark-mode & {
+        background-color: var(--clr-primary);
+    }
 }
 
 .language {
@@ -87,6 +96,9 @@
         opacity: .5;
         font-weight: 700;
         transition: opacity .3s ease-in-out;
+        body.dark-mode & {
+            color: var(--clr-primary);
+        }
         &.selected {
             opacity: 1;
         }

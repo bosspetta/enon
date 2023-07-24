@@ -14,11 +14,13 @@
 .dark-mode {
   --clr-light: #fffdf9;
   --clr-dark: #282e28;
-  --clr-primary: #2e3d2c;
+  --clr-primary: #e1f4df;
   --clr-secondary: #131915;
   --clr-accent: #c54329;
   --foreground: var(--clr-light);
   --background: var(--clr-dark);
+  --clr-black: #f9f9f9;
+  --clr-white: #333;
 }
 
 *,
@@ -945,6 +947,10 @@ body.menu-opened::after {
   top: 0;
   animation: menuIn 0.5s ease-in-out;
 }
+body.dark-mode.menu-opened::after {
+  background-color: var(--clr-primary);
+  opacity: 0.9;
+}
 body::before {
   content: "";
   position: fixed;
@@ -1025,9 +1031,15 @@ img {
   margin-bottom: 1.875rem;
 }
 
+.page-content {
+  background-color: var(--clr-white);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
 .page-title {
   color: var(--clr-primary);
-  margin-block: 1rem;
+  margin-block-end: 1rem;
   font-size: 2rem;
 }
 .page-title--subtitle {
@@ -1056,6 +1068,9 @@ img {
   padding: 0.9375rem;
   text-align: right;
 }
+body.dark-mode .top-options {
+  background-color: var(--clr-white);
+}
 .top-options > button {
   background-color: transparent;
   width: 25px;
@@ -1066,6 +1081,9 @@ img {
   color: var(--clr-white);
   opacity: 0.5;
   transition: opacity 0.3s ease-in-out;
+}
+body.dark-mode .top-options > button {
+  color: var(--clr-primary);
 }
 .top-options > button:hover, .top-options > button:focus {
   opacity: 1;
@@ -1118,6 +1136,14 @@ img {
 .hamburger.is-active .hamburger-inner::before {
   background-color: var(--clr-white);
 }
+body.dark-mode .hamburger-inner,
+body.dark-mode .hamburger-inner::after,
+body.dark-mode .hamburger-inner::before,
+body.dark-mode .hamburger.is-active .hamburger-inner,
+body.dark-mode .hamburger.is-active .hamburger-inner::after,
+body.dark-mode .hamburger.is-active .hamburger-inner::before {
+  background-color: var(--clr-primary);
+}
 
 .language {
   display: flex;
@@ -1132,6 +1158,9 @@ img {
   opacity: 0.5;
   font-weight: 700;
   transition: opacity 0.3s ease-in-out;
+}
+body.dark-mode .language__btn {
+  color: var(--clr-primary);
 }
 .language__btn.selected {
   opacity: 1;
