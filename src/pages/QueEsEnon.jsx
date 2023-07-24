@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next'
 
+import isa from '../assest/img/enon-ceo.jpg'
+
 export default function QueEsEnon() {
     document.body.className = ''
     document.body.classList.add('enon-page')
@@ -10,6 +12,21 @@ export default function QueEsEnon() {
             <h2 className="page-title">{t( "enon.title" )}</h2>
             <p>{t( "enon.desc-a" )}</p>
             <p>{t( "enon.desc-b" )}</p>
+            <h3 className="page-title--subtitle">{t( "enon.subtitle" )}</h3>
+            <h4>{t( "isa" )}</h4>
+            <p><img src={isa} alt="Isabel Martínez San Esteban, CEO enON" /></p>
+            <p>{t( "enon.paragraph" )}</p>
+            <ul>
+                <li>{t( "enon.item-1" )}</li>
+                <li>{t( "enon.item-2" )}</li>
+                <li>{t( "enon.item-3" )}</li>
+                <li>{t( "enon.item-4" )}</li>
+                <li>{t( "enon.item-5" )}</li>
+                <li>{t( "enon.item-6" )}</li>
+                <li>{t( "enon.item-7" )}</li>
+                <li>{t( "enon.item-8" )}</li>
+                <li>{t( "enon.item-9" )}</li>
+            </ul>
         </main>
     )
 }

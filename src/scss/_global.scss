@@ -1,9 +1,11 @@
 ::selection {
-    background-color: var(--clr-secondary);
+    background-color: var(--clr-accent);
 }
 
 body {
     font: 300 1rem/1.5 'Montserrat', Helvetica, Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
     &.menu-opened {
         overflow: hidden;
         &::after {
@@ -16,20 +18,27 @@ body {
             animation: menuIn .5s ease-in-out;
         }
     }
-    &.home-page {
-        background: transparent url('../img/background-home.jpg') bottom center no-repeat;
-        background-size: cover;
-    }
     &::before {
         content: '';
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: var(--clr-white);
-        opacity: .5;
+        opacity: .15;
         z-index: -1;
+    }
+    &.home-page {
+        &::before {
+            background: transparent url('../img/background-home.jpg') bottom center no-repeat;
+            background-size: cover;
+        }
+    }
+    &.yoga-page {
+        &::before {
+            background: transparent url('../img/background-yoga.jpg') bottom center no-repeat;
+            background-size: cover;
+        }
     }
 }
 
@@ -64,9 +73,26 @@ b {
     font-weight: 700;
 }
 
+h4 {
+    margin-block-end: 1rem;
+}
+
 em,
 i {
     font-style: italic;
+}
+
+ul {
+    padding-left: 1rem;
+    margin-block-end: 1rem;
+}
+
+li {
+    margin-bottom: .5rem
+}
+
+img {
+    max-width: 100%;
 }
 
 .main-content {
@@ -82,6 +108,12 @@ i {
 .page-title {
     color: var(--clr-primary);
     margin-block: 1rem;
+    font-size: 2rem;
+    &--subtitle {
+        color: var(--clr-primary);
+        margin-block-end: 1rem;
+        font-size: 1.15rem;
+    }
 }
 
 @keyframes menuIn {

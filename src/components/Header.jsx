@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 
+import ColoSchemeSwitcher from './ColoSchemeSwitcher'
+
 import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 
@@ -43,31 +45,30 @@ export default function Header() {
     let selectedLanguage = i18next.language
 
     return (
-        <>
-            <header>
-                <button className="hamburger hamburger--collapse" type="button" id="btn-menu" onClick={openMenu}>
-                    <span className="hamburger-box">
-                        <span className="hamburger-inner"></span>
-                        <span className="sr-only">{t( "header.open-menu" )}</span>
-                    </span>
-                </button>
-                <div className="top-options">
-                    <div id="language" className="language">
-                        <button className={`language__btn language__btn--es ${ selectedLanguage === 'es' ? 'selected' : null }`} onClick={spanishLang} type="button">Español</button>
-                        <button className={`language__btn language__btn--en ${ selectedLanguage === 'en' ? 'selected' : null }`} onClick={englishLang} type="button">English</button>
-                    </div>
+        <header>
+            <button className="hamburger hamburger--collapse" type="button" id="btn-menu" onClick={openMenu}>
+                <span className="hamburger-box">
+                    <span className="hamburger-inner"></span>
+                    <span className="sr-only">{t( "header.open-menu" )}</span>
+                </span>
+            </button>
+            <div className="top-options">
+                <button id="contrast-btn" type="button"><ColoSchemeSwitcher /></button>
+                <div id="language" className="language">
+                    <button className={`language__btn language__btn--es ${ selectedLanguage === 'es' ? 'selected' : null }`} onClick={spanishLang} type="button">Español</button>
+                    <button className={`language__btn language__btn--en ${ selectedLanguage === 'en' ? 'selected' : null }`} onClick={englishLang} type="button">English</button>
                 </div>
-                <h1 className="site-title">
-                    <Link to="/" title="Ir al inicio">
-                        <span className="site-title__logo">
-                            <img src={logo} alt="Logotipo enON" />
-                        </span>
-                        <span className="site-title__title"><span className="sr-only">enON</span></span>
-                        <span className="site-title__subtitle">{t( "header.subtitle" )}</span>
-                        <span className="site-title__yoga-teacher"><strong>Isabel</strong> Martínez San Esteban</span>
-                    </Link>
-                </h1>
-            </header>
-        </>
+            </div>
+            <h1 className="site-title">
+                <Link to="/" title="Ir al inicio">
+                    <span className="site-title__logo">
+                        <img src={logo} alt="Logotipo enON" />
+                    </span>
+                    <span className="site-title__title"><span className="sr-only">enON</span></span>
+                    <span className="site-title__subtitle">{t( "header.subtitle" )}</span>
+                    <span className="site-title__yoga-teacher"><strong>Isabel</strong> Martínez San Esteban</span>
+                </Link>
+            </h1>
+        </header>
     )
 }

@@ -1,9 +1,24 @@
 :root {
+    --clr-light: #fffdf9;
+    --clr-dark: #282e28;
     --clr-primary: #667764;
-    --clr-primary-light: #91b39a;
-    --clr-secondary: #c54329;
-    --clr-light: #f8e6c2;
+    --clr-secondary: #bbddc4;
+    --clr-accent: #c54329;
+
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
 
     --clr-black: #333;
     --clr-white: #f9f9f9;
+}
+
+.dark-mode {
+    --clr-light: #fffdf9;
+    --clr-dark: #282e28;
+    --clr-primary: #2e3d2c;
+    --clr-secondary: #131915;
+    --clr-accent: #c54329;
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
 }

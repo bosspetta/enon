@@ -1,4 +1,5 @@
 {
+    "isa": "Isabel Martínez San Esteban",
     "header": {
         "open-menu": "Abrir menú de navegación",
         "subtitle": "Estudio de Yoga y Quiromasaje"
@@ -8,14 +9,27 @@
     },
     "enon": {
         "title": "¿Qué es enON?",
+        "subtitle": "¿Quién es enON?",
         "desc-a": "Es un lugar de encuentro para el autoconocimiento, cuidado y crecimiento personal. Un lugar en el que realizar diferentes prácticas de Yoga, relajación y meditación. Un lugar para dejarte cuidar, te ayudamos a liberar el estrés y a equilibrar el organismo. Un lugar para conservar una práctica de Yoga regular, donde te ofreceremos diferentes herramientas para que las uses en tu propio camino, te ayuden a crear un vínculo más cercano contigo mismo y te sirvan para equilibrar tu salud y tu estado emocional.",
-        "desc-b": "Mi objetivo es ofrecerte todos mis conocimientos, más los que están por venir y proporcionarte una práctica cuidadosa, físicamente asequible y de provecho, más diferentes espacios para dejarte cuidar, te escucho…"
+        "desc-b": "Mi objetivo es ofrecerte todos mis conocimientos, más los que están por venir y proporcionarte una práctica cuidadosa, físicamente asequible y de provecho, más diferentes espacios para dejarte cuidar, te escucho…",
+        "paragraph": "Como practicante de Yoga desde muy temprana edad, no he parado de estudiar y desarrollarme en mi camino personal. Todos mis conocimientos se apoyan unos en otros, siempre han sido estudiados y filtrados por mí, vividos, experimentados y dirigidos para poder trasmitirlos a los demás, siempre realizados desde el gusto, la curiosidad o el deseo propio de conocerme más y mejor, y aprender a gestionar mi vida en todos los aspectos, incluyendo finalmente el cuestionamiento de toda enseñanza, hasta poder ir encontrando mi propia verdad.",
+        "item-1": "Profesional con más de 30 años de experiencia en el sector de la belleza",
+        "item-2": "Practicante de Yoga desde la adolescencia",
+        "item-3": "Profesora de Hatha Yoga",
+        "item-4": "Especializada en Yoga Restaurativo",
+        "item-5": "Diplomada en la especialidad de FisionYoga (Lesiones y Patologías)",
+        "item-6": "Instructora de Mindfulness",
+        "item-7": "Coaching integral",
+        "item-8": "Quiromasajista con diversos y amplios conocimientos del masaje de relajación",
+        "item-9": "Entusiasta del autoconocimiento y desarrollo personal. Me apoyo y llevo a cabo todos mis trabajos desde un profundo estudio de la psicología en terapia Gestalt"
     },
     "yoga": {
         "hatha": {
             "paragraph-1": "El Yoga es como un farol, una luz que nos guía para caminar desde el exterior, con sus marejadas y tempestades, hacia nuestro interior, donde se encuentra la tierra firme y serena. Su objetivo es la calma mental, la serenidad, se trata de crear unas condiciones de escucha y espacio interior, esto supone despertar la sensibilidad y abrir nuestro corazón en cada momento de la práctica para llegar a un estado meditativo a través del silencio. El proceso para llegar a este objetivo es estabilizar el cuerpo, la respiración y la mente de una manera progresiva, estable y confortable.",
             "paragraph-2": "El Hatha Yoga es una ciencia precisa que nos ayuda a reconocernos en nuestra humanidad a través de la acción, generando un estado de calma y al mismo tiempo de alerta que nos permite conocer la naturaleza de nuestra mente. Los medios de los que se sirve son precisos. El primero es Āsana, entendiéndola como el desarrollo de la conciencia a nivel corporal, comprendiendo sus tensiones y sus estados, los efectos de Āsana se acentúan con Prāṇāyāma, la conciencia del alargamiento de la respiración. Ambos nos conducirán progresivamente a desarrollar el estado de Meditación. Se trata de una toma de conciencia amplia que abarca una gran parte de nuestra realidad.",
             "paragraph-3": "La vía del Hatha Yoga es la vía del cuerpo ya que todo pasa a través de él es necesario atravesar la conciencia del cuerpo para acceder a la experiencia del SER."
-        }
+        },
+        "title": "Yoga enON",
+        "subtitle": "Hablemos de Yoga"
     }
 }

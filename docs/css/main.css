@@ -1,11 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300;1,700&display=swap");
 :root {
+  --clr-light: #fffdf9;
+  --clr-dark: #282e28;
   --clr-primary: #667764;
-  --clr-primary-light: #91b39a;
-  --clr-secondary: #c54329;
-  --clr-light: #f8e6c2;
+  --clr-secondary: #bbddc4;
+  --clr-accent: #c54329;
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
   --clr-black: #333;
   --clr-white: #f9f9f9;
+}
+
+.dark-mode {
+  --clr-light: #fffdf9;
+  --clr-dark: #282e28;
+  --clr-primary: #2e3d2c;
+  --clr-secondary: #131915;
+  --clr-accent: #c54329;
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark);
 }
 
 *,
@@ -912,11 +925,13 @@
 }
 
 ::selection {
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-accent);
 }
 
 body {
   font: 300 1rem/1.5 "Montserrat", Helvetica, Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
 }
 body.menu-opened {
   overflow: hidden;
@@ -930,20 +945,23 @@ body.menu-opened::after {
   top: 0;
   animation: menuIn 0.5s ease-in-out;
 }
-body.home-page {
-  background: transparent url("../img/background-home.jpg") bottom center no-repeat;
-  background-size: cover;
-}
 body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--clr-white);
-  opacity: 0.5;
+  opacity: 0.15;
   z-index: -1;
+}
+body.home-page::before {
+  background: transparent url("../img/background-home.jpg") bottom center no-repeat;
+  background-size: cover;
+}
+body.yoga-page::before {
+  background: transparent url("../img/background-yoga.jpg") bottom center no-repeat;
+  background-size: cover;
 }
 
 button {
@@ -977,9 +995,26 @@ b {
   font-weight: 700;
 }
 
+h4 {
+  margin-block-end: 1rem;
+}
+
 em,
 i {
   font-style: italic;
+}
+
+ul {
+  padding-left: 1rem;
+  margin-block-end: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
 }
 
 .main-content p {
@@ -993,6 +1028,12 @@ i {
 .page-title {
   color: var(--clr-primary);
   margin-block: 1rem;
+  font-size: 2rem;
+}
+.page-title--subtitle {
+  color: var(--clr-primary);
+  margin-block-end: 1rem;
+  font-size: 1.15rem;
 }
 
 @keyframes menuIn {
@@ -1007,10 +1048,27 @@ i {
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0 2rem;
   background-color: var(--clr-primary);
   width: 100%;
   padding: 0.9375rem;
   text-align: right;
+}
+.top-options > button {
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+  color: var(--clr-white);
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+.top-options > button:hover, .top-options > button:focus {
+  opacity: 1;
 }
 
 .site-title {
@@ -1023,7 +1081,7 @@ i {
 }
 .site-title span {
   text-transform: uppercase;
-  font-size: 0.875rem;
+  font-size: 0.805rem;
   font-weight: 300;
   letter-spacing: 0.05rem;
   color: var(--clr-primary);
@@ -1083,7 +1141,7 @@ i {
   position: fixed;
   top: 0;
   left: 0;
-  background: var(--clr-primary-light) url("../img/enon-simbolo.svg") center center no-repeat;
+  background: var(--clr-secondary) url("../img/enon-simbolo.svg") center center no-repeat;
   background-size: 180%;
   height: 100dvh;
   width: 80%;

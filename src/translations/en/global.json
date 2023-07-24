@@ -1,4 +1,5 @@
 {
+    "isa": "Isabel Martínez San Esteban",
     "header": {
         "open-menu": "Open main menu",
         "subtitle": "Yoga and Chiromassage studio"
@@ -8,14 +9,27 @@
     },
     "enon": {
         "title": "What is enON?",
+        "subtitle": "Who is enON?",
         "desc-a": "It is a meeting place for self-knowledge, care and personal growth. A place where you can practice different Yoga, relaxation and meditation practices. A place to let yourself be cared for, we help you to release stress and balance your body. A place to keep a regular Yoga practice, where we will offer you different tools to use on your own path, help you to create a closer bond with yourself and help you to balance your health and your emotional state.",
-        "desc-b": "My aim is to offer you all my knowledge, plus those to come, and to provide you with a careful practice, physically accessible and profitable, plus different spaces to let you take care of yourself, I listen to you…"
+        "desc-b": "My aim is to offer you all my knowledge, plus those to come, and to provide you with a careful practice, physically accessible and profitable, plus different spaces to let you take care of yourself, I listen to you…",
+        "paragraph": "As a practitioner of Yoga from a very early age, I have not stopped studying and developing on my personal path. All my knowledge builds on each other, has always been studied and filtered by me, lived, experienced and directed to be able to transmit it to others, always made from the pleasure, curiosity or desire to know myself more and better, and learn to manage my life in all aspects, including finally the questioning of all teachings, until I can find my own truth.",
+        "item-1": "Professional with more than 30 years of experience in the beauty sector",
+        "item-2": "Yoga practitioner since adolescence",
+        "item-3": "Hatha Yoga teacher",
+        "item-4": "Specialised in Restorative Yoga",
+        "item-5": "Diploma in the speciality of FisionYoga (Injuries and Pathologies)",
+        "item-6": "Mindfulness Instructor",
+        "item-7": "Integral Coaching",
+        "item-8": "Chiromassage therapist with diverse and extensive knowledge of relaxation massage",
+        "item-9": "Enthusiastic about self-knowledge and personal development. I support and carry out all my work from a deep study of psychology in Gestalt therapy"
     },
     "yoga": {
         "hatha": {
             "paragraph-1": "Yoga is like a lantern, a light that guides us to walk from the outside, with its swells and storms, towards our inner self, where we find the firm and serene land. Its objective is mental calm, serenity, it is about creating conditions of listening and inner space, this means awakening sensitivity and opening our heart in every moment of the practice to reach a meditative state through silence. The process to reach this goal is to stabilise the body, the breath and the mind in a progressive, stable and comfortable way.",
             "paragraph-2": "Hatha Yoga is a precise science that helps us to recognise ourselves in our humanity through action, generating a state of calm and at the same time of alertness that allows us to know the nature of our mind. The means it uses are precise. The first is Āsana, understood as the development of awareness on the bodily level, understanding its tensions and its states, the effects of Āsana are accentuated by Prāṇāyāma, the awareness of the lengthening of the breath. Both will progressively lead us to develop the state of Meditation. This is a broad awareness that encompasses a large part of our reality.",
             "paragraph-3": "The way of Hatha Yoga is the way of the body, since everything passes through the body, it is necessary to pass through the consciousness of the body to access the experience of the SELF."
-        }
+        },
+        "title": "enON Yoga",
+        "subtitle": "Let's talk about Yoga"
     }
 }
