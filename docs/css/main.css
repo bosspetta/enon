@@ -940,6 +940,11 @@ body {
 body.menu-opened {
   overflow: hidden;
 }
+@media screen and (min-width: 75em) {
+  body.menu-opened {
+    overflow: inherit;
+  }
+}
 body.menu-opened::after {
   content: "";
   width: 100%;
@@ -948,6 +953,11 @@ body.menu-opened::after {
   position: fixed;
   top: 0;
   animation: menuIn 0.5s ease-in-out;
+}
+@media screen and (min-width: 75em) {
+  body.menu-opened::after {
+    content: none;
+  }
 }
 body.dark-mode.menu-opened::after {
   background-color: var(--clr-primary);
@@ -962,6 +972,11 @@ body::before {
   height: 100dvh;
   opacity: 0.15;
   z-index: -1;
+}
+@media screen and (min-width: 48em) {
+  body::before {
+    opacity: 1;
+  }
 }
 body.home-page::before {
   background: transparent url("../img/background-home.jpg") bottom center no-repeat;
@@ -995,8 +1010,18 @@ button {
 .global-container {
   display: flex;
   flex-direction: column;
-  height: 100dvh;
   padding: 1.875rem;
+}
+@media screen and (min-width: 48em) {
+  .global-container {
+    max-width: 768px;
+    background-color: var(--clr-white);
+  }
+}
+@media screen and (min-width: 75em) {
+  .global-container {
+    padding-left: 275px;
+  }
 }
 
 .sr-only {
@@ -1102,6 +1127,11 @@ a {
   padding: 0.9375rem;
   text-align: right;
 }
+@media screen and (min-width: 75em) {
+  .top-options {
+    z-index: 2;
+  }
+}
 body.dark-mode .top-options {
   background-color: var(--clr-white);
 }
@@ -1141,6 +1171,30 @@ body.dark-mode .top-options > button {
 .site-title span strong {
   font-weight: 700;
 }
+.site-title__home-link {
+  max-width: 260px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 36em) {
+  .site-title__home-link {
+    align-items: center;
+    gap: 0 1rem;
+    max-width: none;
+  }
+  .main-content .site-title__home-link {
+    display: flex;
+  }
+}
+@media screen and (min-width: 36em) {
+  .site-title__logo {
+    flex-basis: 260px;
+  }
+}
+@media screen and (min-width: 36em) {
+  .site-title__subtitle {
+    white-space: nowrap;
+  }
+}
 
 .hamburger {
   position: fixed;
@@ -1154,9 +1208,24 @@ body.dark-mode .top-options > button {
   transition: left 0.3s ease-in-out;
   opacity: 0.5;
 }
+@media screen and (min-width: 75em) {
+  .hamburger {
+    display: none;
+  }
+}
 .hamburger.is-active {
   left: 65%;
   opacity: 1;
+}
+@media screen and (min-width: 36em) {
+  .hamburger.is-active {
+    left: 70%;
+  }
+}
+@media screen and (min-width: 48em) {
+  .hamburger.is-active {
+    left: 73%;
+  }
 }
 .hamburger:hover, .hamburger:focus {
   opacity: 1;
@@ -1212,6 +1281,12 @@ body.dark-mode .language__btn {
   animation: menuIn 0.3s ease-in-out;
   display: none;
   z-index: 1;
+}
+@media screen and (min-width: 75em) {
+  .main-menu {
+    display: flex;
+    width: 250px;
+  }
 }
 .main-menu.menu-opened {
   display: flex;

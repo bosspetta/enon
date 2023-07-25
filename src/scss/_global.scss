@@ -8,6 +8,9 @@ body {
     color: var(--foreground);
     &.menu-opened {
         overflow: hidden;
+        @media screen and (min-width: 75em) {
+            overflow: inherit;
+        }
         &::after {
             content: '';
             width: 100%;
@@ -16,6 +19,9 @@ body {
             position: fixed;
             top: 0;
             animation: menuIn .5s ease-in-out;
+            @media screen and (min-width: 75em) {
+                content: none;
+            }
         }
     }
     &.dark-mode.menu-opened {
@@ -33,6 +39,9 @@ body {
         height: 100dvh;
         opacity: .15;
         z-index: -1;
+        @media screen and (min-width: 48em) {
+            opacity: 1;
+        }
     }
     &.home-page {
         &::before {
@@ -79,8 +88,14 @@ button {
 .global-container {
     display: flex;
     flex-direction: column;
-    height: 100dvh;
     padding: 1.875rem;
+    @media screen and (min-width: 48em) {
+        max-width: 768px;
+        background-color: var(--clr-white);
+    }
+    @media screen and (min-width: 75em) {
+        padding-left: 275px;
+    }
 }
 
 .sr-only {

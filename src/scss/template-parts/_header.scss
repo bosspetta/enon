@@ -9,6 +9,9 @@
     width: 100%;
     padding: .9375rem;
     text-align: right;
+    @media screen and (min-width: 75em) {
+        z-index: 2;
+    }
     body.dark-mode & {
         background-color: var(--clr-white);
     }
@@ -49,6 +52,28 @@
             font-weight: 700;
         }
     }
+    &__home-link {
+        max-width: 260px;
+        margin: 0 auto;
+        @media screen and (min-width: 36em) {
+            .main-content & {
+                display: flex;
+            }
+            align-items: center;
+            gap: 0 1rem;
+            max-width: none;
+        }
+    }
+    &__logo {
+        @media screen and (min-width: 36em) {
+            flex-basis: 260px;
+        }
+    }
+    &__subtitle {
+        @media screen and (min-width: 36em) {
+            white-space: nowrap;
+        }
+    }
 }
 
 .hamburger {
@@ -62,9 +87,18 @@
     z-index: 2;
     transition: left .3s ease-in-out;
     opacity: 0.5;
+    @media screen and (min-width: 75em) {
+        display: none;
+    }
     &.is-active {
         left: 65%;
         opacity: 1;
+        @media screen and (min-width: 36em) {
+            left: 70%;
+        }
+        @media screen and (min-width: 48em) {
+            left: 73%;
+        }
     }
     &:hover,
     &:focus {

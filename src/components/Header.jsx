@@ -92,7 +92,7 @@ export default function Header() {
                 </div>
             </div>
             <h1 className="site-title">
-                <Link to="/" title="Ir al inicio">
+                <Link to="/" className="site-title__home-link" title="Ir al inicio">
                     <span className="site-title__logo">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 628.7 196.4" width="100%">
                             <g id="Capa_1-2">
@@ -177,9 +177,11 @@ export default function Header() {
                             </g>
                         </svg>
                     </span>
-                    <span className="site-title__title"><span className="sr-only">enON</span></span>
-                    <span className="site-title__subtitle">{t( "header.subtitle" )}</span>
-                    <span className="site-title__yoga-teacher"><strong>Isabel</strong> Martínez San Esteban</span>
+                    <span className="site-title__title sr-only">enON</span>
+                    <span className="site-title__naming">
+                        <span className="site-title__subtitle">{t( "header.subtitle" )}</span>
+                        <span className="site-title__yoga-teacher"><strong>Isabel</strong> Martínez San Esteban</span>
+                    </span>
                 </Link>
             </h1>
         </header>
