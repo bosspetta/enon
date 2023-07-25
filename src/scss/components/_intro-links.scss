@@ -1,0 +1,28 @@
+.intro-links {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    &__item {
+        display: flex;
+        padding: .5rem;
+    }
+    &__link {
+        width: 100%;
+        padding: 1rem;
+        background-color: var(--clr-secondary);
+        border-radius: 10px;
+        color: var(--clr-dark);
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1.25;
+        font-weight: 700;
+        font-size: .875rem;
+        body.dark-mode & {
+            background-color: var(--clr-primary);
+            color: var(--clr-dark);
+        }
+    }
+}

@@ -4,8 +4,18 @@
         "open-menu": "Abrir menú de navegación",
         "subtitle": "Estudio de Yoga y Quiromasaje"
     },
+    "main-menu": {
+        "inicio": "Inicio",
+        "que-es": "¿Qué es enON?",
+        "restaurativo": "Yoga restaurativo",
+        "quiromasaje": "Quiromasaje",
+        "contacto": "Visítanos / Contacto"
+    },
     "home": {
-        "welcome-title": "Bienvenidos…"
+        "welcome-title": "Bienvenido…",
+        "intro": "¿Recuerdas ese lugar en el que solías encontrarte en calma, en equilibrio, en Paz? Seguro que sí, todos tenemos uno (o varios). Mi intención en enON no es otra que facilitarte la comunicación entre tu interior y tú, para lograr cada vez que lo necesites, o estés donde estés, abrir una pequeña ventana que mire hacia aquel lugar en el que puedes estar en equilibrio, en Paz.",
+        "intro-2": "¿Que cómo voy a ser capaz de tal logro?",
+        "intro-3": "Te invito a descubrirlo personalmente visitándonos, estamos en Calle San Luis 78 (Sevilla). Mientras puedes darte una vuelta por las secciones de nuestra web."
     },
     "enon": {
         "title": "¿Qué es enON?",
@@ -36,6 +46,31 @@
             "p1": "El Yoga que desarrollo se basa en mis diferentes estudios y especialidades dentro de la diversidad (e inmensidad) del Yoga. Dichas especialidades me aportan una gran visión del cuerpo humano, de su fisiología y anatomía. También son «ingredientes» importantes del Yoga en enON, otros estudios sobre la psicología humanista, en los que apoyo mi desarrollo personal, creyendo en la recuperación de la capacidad que todos tenemos para vivir el presente, la espontaneidad y la responsabilidad. Concibo a la persona como una entidad completa formada por cuerpo, mente y alma, que puede alcanzar el bienestar trabajando por la integridad y el equilibrio de esas tres indisolubles partes.",
             "p2": "Confecciono mis clases adaptándolas a las necesidades de los alumnos que en cada momento conforman los grupos. Sin perder la práctica original que el Hatha Yoga me enseñó, pero sí adaptándome a unas necesidades más occidentales, al mismo tiempo que intento practicar desde un enfoque de suavidad, viveza y ternura hacia nosotros mismos, evitando propuestas ostentosas o lesivas, que nos alejen de la verdadera práctica.",
             "p3": "No practicamos por niveles, ni por años de antigüedad, ni por conocimientos adquiridos. El Yoga en enON entiende que la «práctica correcta», si está bien enseñada, serviría para todos los niveles. Del mismo modo, los conocimientos bien explicados, pueden ser captados desde diferentes niveles de comprensión. Pero no son más ciertos unos que otros, únicamente son más profundos. Muchas veces, el creer que ya entendemos algo nos lleva precisamente a no experimentarlo. Sinceramente creo que no importa tanto el nivel que creamos tener, creo que es más interesante la posibilidad de abrirnos a la comprensión y procesamiento de la experiencia, ahí no hay niveles, solo posibilidad de entrega y compromiso."
+        },
+        "restaurativo": {
+            "title": "Yoga restaurativo",
+            "p1": "El principal objetivo del Yoga restaurativo, es proporcionarnos un contacto profundo con las sensaciones que nos devuelven la capacidad de comprender y reintegrar espacios perdidos, y el desbloqueo de las resistencias para poder contemplar, para dejarnos sentir en el cuerpo y especialmente recuperar el sentido de la relajación, darnos el tiempo de restaurar la respiración natural, reconquistar la serenidad, el equilibrio físico, energético, emocional, mental e interior.",
+            "p2": "El Yoga restaurativo es precisamente una oportunidad para recuperar el sentido de aquello que nos beneficia, encontrar el equilibrio entre la acción y la relajación, devolvernos la capacidad, a veces  perdida, de recuperar nuestros mecanismos orgánicos y espontáneos de recuperación, viviendo la serenidad que nos proporciona la capacidad de responder a la vida con ecuanimidad.",
+            "p3": "En la práctica de Yoga Restaurativo, se realizan posturas pasivas que inducen al descanso y la relajación. Las posturas se conforman con la colocación de soportes, para lo que pueden utilizarse: mantas, booster, almohadones… y así representar el sostén del cuerpo que ellos representan. A la postura se va entrando a través de la respiración lenta y consciente.",
+            "p4": "Viviendo el momento presente a través de la entrega, experimentamos la respiración natural y accedemos a una percepción más refinada de las sensaciones, con mucho respeto y bondad hacia uno mismo. De manera consciente permanecemos un tiempo en cada postura permitiendo así que emerja la información, y se desarrollen los procesos regenerativos."
         }
+    },
+    "quiro": {
+        "title": "Quiromasaje",
+        "p1": "El quiromasaje es un conjunto de técnicas terapéuticas manuales, empleadas sobre los tejidos musculares, adiposos y la piel, con el objetivo de aliviar dolencias y conseguir un estado de relajación, liberarnos del estrés y equilibrar nuestro organismo. Una técnica que, aplicada con sensibilidad permite lograr un efecto de equilibrio sobre el sistema nervioso.",
+        "p2": "Indicaciones y Beneficios entre otros:",
+        "p3": "Para facilitar el desplazamiento manual de las maniobras, en el masaje se precisa el uso de determinados aceites o cremas, integrando así otra forma de favorecer un estado de relajación conocido en medicina alternativa como aroma terapia. Resulta muy agradable y útil utilizar las propiedades aromáticas de los aceites esenciales diluidos previamente en otros aceites vehiculares, para ello me apoyo en la cosmética vegetal, trabajando con la marca y filosofía de (Gandiva). Gandiva es la esencia de la cosmética vegetal, el alma de las plantas y los arboles formulada con principios de la aroma terapia y fitoterapia.",
+        "l1": "Moviliza zonas que permanecen inactivas y relaja otras que están tensas",
+        "l2": "Mejora la circulación venosa y disminuye la tensión arterial",
+        "l3": "Hace desaparecer la fatiga muscular y los dolores por contractura",
+        "l4": "Ayuda en los procesos digestivos, drena la circulación linfática",
+        "l5": "Mejora la calidad del sueño y la función celular"
+    },
+    "contacto": {
+        "title": "Contáctanos o ven a visitarnos",
+        "subtitle-1": "Vías de contacto",
+        "subtitle-2": "Ven a visitarnos",
+        "tlfLabel": "Teléfono / WhatsApp:",
+        "p": "Estamos en el centro de Sevilla, muy cerca de la Plaza del Pumarejo, en la Calle San Luis 78."
     }
 }

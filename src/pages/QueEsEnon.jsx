@@ -8,8 +8,8 @@ export default function QueEsEnon() {
     document.body.classList.remove('no-found-page')
     document.body.classList.remove('chiromassage-page')
     document.body.classList.remove('yoga-page')
+    document.body.classList.remove('yoga-restaurativo-page')
     document.body.classList.add('enon-page')
-
     const { t } = useTranslation('global')
 
     return (

@@ -4,8 +4,18 @@
         "open-menu": "Open main menu",
         "subtitle": "Yoga and Chiromassage studio"
     },
+    "main-menu": {
+        "inicio": "Home",
+        "que-es": "What is enON?",
+        "restaurativo": "Restorative Yoga",
+        "quiromasaje": "Chiromassage",
+        "contacto": "Visit us / Contact us"
+    },
     "home": {
-        "welcome-title": "Welcome…"
+        "welcome-title": "Welcome…",
+        "intro": "Do you remember that place where you used to find yourself in calm, in balance, in Peace? I'm sure you do, we all have one (or several). My intention in enON is none other than to facilitate the communication between you and your inner self, so that whenever you need it, or wherever you are, you can open a small window that looks towards that place where you can be in balance, in Peace.",
+        "intro-2": "How will I be capable of such an achievement?",
+        "intro-3": "I invite you to discover it personally by visiting us, we are in Calle San Luis 78 (Seville). In the meantime, you can take a look at the sections of our website."
     },
     "enon": {
         "title": "What is enON?",
@@ -36,6 +46,31 @@
             "p1": "The Yoga I develop is based on my different studies and specialties within the diversity (and immensity) of Yoga. These specialities give me a great insight into the human body, its physiology and anatomy. Other studies on humanistic psychology are also important «ingredients» of Yoga enON, on which I support my personal development, believing in the recovery of the capacity we all have to live in the present, spontaneity and responsibility. I conceive of the person as a whole entity made up of body, mind and soul, who can achieve well-being by working for the integrity and balance of these three indissoluble parts.",
             "p2": "I tailor my classes to suit the needs of the students who make up the groups at any given time. Without losing the original practice that Hatha Yoga taught me, but adapting to more western needs, at the same time I try to practice from an approach of softness, liveliness and tenderness towards ourselves, avoiding ostentatious or harmful proposals, which take us away from the true practice.",
             "p3": "We do not practice by levels, or by years of seniority, or by acquired knowledge. Yoga inON understands that the «correct practice», if well taught, will work for all levels. In the same way, well explained knowledge can be grasped at different levels of understanding. But one is not truer than the other, only deeper. Many times, believing that we already understand something leads us precisely to not experiencing it. I sincerely believe that it doesn't matter so much what level we think we have, I think it is more interesting the possibility of opening ourselves to the understanding and processing of the experience, there are no levels, only the possibility of surrender and commitment."
+        },
+        "restaurativo": {
+            "title": "Restorative Yoga",
+            "p1": "The main objective of restorative Yoga is to provide us with a deep contact with the sensations that give us back the ability to understand and reintegrate lost spaces, and the unblocking of the resistances to be able to contemplate, to let us feel in the body and especially to recover the sense of relaxation, to give us the time to restore the natural breathing, to reconquer serenity, physical, energetic, emotional, mental and inner balance.",
+            "p2": "Restorative Yoga is precisely an opportunity to recover the sense of what benefits us, to find the balance between action and relaxation, to give us back the capacity, sometimes lost, to recover our organic and spontaneous recovery mechanisms, living the serenity that gives us the capacity to respond to life with equanimity.",
+            "p3": "In the practice of Restorative Yoga, passive postures are performed to induce rest and relaxation. The postures are shaped with the placement of supports, for which blankets, boosters, cushions… can be used to represent the support of the body that they represent. The posture is entered through slow and conscious breathing.",
+            "p4": "By living in the present moment through surrender, we experience natural breathing and access a more refined perception of sensations, with a lot of respect and kindness towards oneself. We consciously stay in each posture for a while, allowing information to emerge and regenerative processes to unfold."
         }
+    },
+    "quiro": {
+        "title": "Chiromassage",
+        "p1": "Chiromassage is a set of manual therapeutic techniques, used on the muscular and adipose tissues and the skin, with the aim of relieving ailments and achieving a state of relaxation, freeing us from stress and balancing our organism. A technique which, when applied with sensitivity, achieves a balancing effect on the nervous system.",
+        "p2": "Indications and Benefits among others:",
+        "p3": "To facilitate the manual displacement of the manoeuvres, the massage requires the use of certain oils or creams, thus integrating another way of favouring a state of relaxation known in alternative medicine as aroma therapy. It is very pleasant and useful to use the aromatic properties of essential oils previously diluted in other carrier oils, for this I rely on vegetable cosmetics, working with the brand and philosophy of (Gandiva). Gandiva is the essence of plant-based cosmetics, the soul of plants and trees formulated with the principles of aroma therapy and phytotherapy.",
+        "l1": "Mobilises areas that remain inactive and relaxes others that are tense",
+        "l2": "Improves venous circulation and lowers blood pressure",
+        "l3": "Eliminates muscle fatigue and contracture pains",
+        "l4": "Helps digestive processes, drains lymphatic circulation",
+        "l5": "Improves sleep quality and cell function"
+    },
+    "contacto": {
+        "title": "Contact us or come and visit us",
+        "subtitle-1": "Contact options",
+        "subtitle-2": "Come and visit us",
+        "tlfLabel": "Phone / WhatsApp:",
+        "p": "We are in the centre of Seville, very close to Plaza del Pumarejo, in Calle San Luis 78."
     }
 }

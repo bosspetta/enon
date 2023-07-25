@@ -4,6 +4,7 @@ export default function NoMatch() {
     document.body.classList.remove('enon-page')
     document.body.classList.remove('chiromassage-page')
     document.body.classList.remove('yoga-page')
+    document.body.classList.remove('yoga-restaurativo-page')
     document.body.classList.add('no-found-page')
 
     return (
