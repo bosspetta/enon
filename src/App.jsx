@@ -1,5 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 
+import ScrollToTop from './components/ScrollToTop'
+
 import Layout from './layout'
 import Home from './pages/Home'
 import QueEsEnon from './pages/QueEsEnon'
@@ -11,7 +13,7 @@ import NoMatch from './pages/NoMatch'
 
 export default function App() {
     return (
-        <>
+        <ScrollToTop>
             <Routes>
                 <Route path='/' element={<Layout />}>
                     <Route index element={<Home />} />
@@ -24,6 +26,6 @@ export default function App() {
                     <Route path='*' element={<NoMatch />} />
                 </Route>
             </Routes>
-        </>
+        </ScrollToTop>
     )
 }
