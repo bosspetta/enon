@@ -90,11 +90,15 @@ button {
     flex-direction: column;
     padding: 1.875rem;
     @media screen and (min-width: 48em) {
-        max-width: 768px;
+        max-width: 80%;
         background-color: var(--clr-white);
-    }
+
+    @media screen and (min-width: 62em) {
+        max-width: 70%;
+    }}
     @media screen and (min-width: 75em) {
-        padding-left: 275px;
+        margin-left: 250px;
+        max-width: 55%;
     }
 }
 

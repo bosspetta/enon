@@ -1014,13 +1014,19 @@ button {
 }
 @media screen and (min-width: 48em) {
   .global-container {
-    max-width: 768px;
+    max-width: 80%;
     background-color: var(--clr-white);
+  }
+}
+@media screen and (min-width: 48em) and (min-width: 62em) {
+  .global-container {
+    max-width: 70%;
   }
 }
 @media screen and (min-width: 75em) {
   .global-container {
-    padding-left: 275px;
+    margin-left: 250px;
+    max-width: 55%;
   }
 }
 
@@ -1129,11 +1135,11 @@ a {
 }
 @media screen and (min-width: 75em) {
   .top-options {
-    z-index: 2;
+    z-index: 0;
   }
 }
 body.dark-mode .top-options {
-  background-color: var(--clr-white);
+  background-color: var(--clr-dark);
 }
 .top-options > button {
   background-color: transparent;

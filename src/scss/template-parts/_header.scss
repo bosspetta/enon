@@ -10,10 +10,10 @@
     padding: .9375rem;
     text-align: right;
     @media screen and (min-width: 75em) {
-        z-index: 2;
+        z-index: 0;
     }
     body.dark-mode & {
-        background-color: var(--clr-white);
+        background-color: var(--clr-dark);
     }
     > button {
         background-color: transparent;
