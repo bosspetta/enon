@@ -47,6 +47,10 @@ body {
         &::before {
             background: transparent url('../img/background-home.jpg') bottom center no-repeat;
             background-size: cover;
+            @media screen and (min-width: 48em) {
+                background: transparent url('../img/background-home-desktop.jpg') right bottom no-repeat;
+                background-size: cover;
+            }
         }
     }
     &.yoga-page {
@@ -91,6 +95,7 @@ button {
     padding: 1.875rem;
     @media screen and (min-width: 48em) {
         max-width: 80%;
+        min-height: 100svh;
         background-color: var(--clr-white);
 
     @media screen and (min-width: 62em) {

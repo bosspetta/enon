@@ -982,6 +982,12 @@ body.home-page::before {
   background: transparent url("../img/background-home.jpg") bottom center no-repeat;
   background-size: cover;
 }
+@media screen and (min-width: 48em) {
+  body.home-page::before {
+    background: transparent url("../img/background-home-desktop.jpg") right bottom no-repeat;
+    background-size: cover;
+  }
+}
 body.yoga-page::before {
   background: transparent url("../img/background-yoga.jpg") bottom center no-repeat;
   background-size: cover;
@@ -1015,6 +1021,7 @@ button {
 @media screen and (min-width: 48em) {
   .global-container {
     max-width: 80%;
+    min-height: 100svh;
     background-color: var(--clr-white);
   }
 }
