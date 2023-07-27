@@ -933,7 +933,7 @@
 }
 
 body {
-  font: 400 1rem/1.5 "Montserrat", Helvetica, Arial, sans-serif;
+  font: 400 1.05rem/1.5 "Montserrat", Helvetica, Arial, sans-serif;
   background-color: var(--background);
   color: var(--foreground);
 }
@@ -1185,7 +1185,7 @@ body.dark-mode .top-options > button {
   font-weight: 700;
 }
 .site-title__home-link {
-  max-width: 260px;
+  max-width: 315px;
   margin: 0 auto;
 }
 @media screen and (min-width: 36em) {
