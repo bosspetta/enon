@@ -74,6 +74,12 @@
             white-space: nowrap;
         }
     }
+    &__naming {
+        @media screen and (min-width: 36em) {
+            position: relative;
+            top: 8px;
+        }
+    }
 }
 
 .hamburger {

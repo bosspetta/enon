@@ -1208,6 +1208,12 @@ body.dark-mode .top-options > button {
     white-space: nowrap;
   }
 }
+@media screen and (min-width: 36em) {
+  .site-title__naming {
+    position: relative;
+    top: 8px;
+  }
+}
 
 .hamburger {
   position: fixed;
