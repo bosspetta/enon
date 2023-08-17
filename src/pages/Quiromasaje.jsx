@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 export default function Quiromasaje() {
@@ -24,6 +25,7 @@ export default function Quiromasaje() {
                 <li>{t( "quiro.l5" )}</li>
             </ul>
             <p>{t( "quiro.p3" )}</p>
+            <p>{t( "quiro.p4" )} <a href="https://www.gandiva.es/" target="_blank" title="Gandiva Website" rel="noreferrer"><strong>Gandiva</strong>, cosmética vegetal</a>.</p>
         </main>
     )
 }

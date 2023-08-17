@@ -1033,7 +1033,7 @@ button {
 @media screen and (min-width: 75em) {
   .global-container {
     margin-left: 250px;
-    max-width: 55%;
+    max-width: 45%;
   }
 }
 
@@ -1118,6 +1118,29 @@ a {
 
 .contact-page ul strong {
   display: block;
+}
+
+@media screen and (min-width: 36em) {
+  .img-wrapper--fll {
+    float: left;
+  }
+  .img-wrapper--fll img {
+    margin-right: 1.5rem;
+  }
+  .img-wrapper--flr {
+    float: right;
+  }
+  .img-wrapper--flr img {
+    margin-left: 1.5rem;
+  }
+  .main-content .img-wrapper {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 36em) {
+  .img-wrapper img {
+    max-width: 220px;
+  }
 }
 
 @keyframes menuIn {
@@ -1372,9 +1395,21 @@ footer p a {
   padding: 0;
   margin: 0;
 }
+@media screen and (min-width: 48em) {
+  .intro-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .intro-links__item {
   display: flex;
   padding: 0.5rem;
+}
+@media screen and (min-width: 48em) {
+  .intro-links__item {
+    flex-basis: 50%;
+    margin: 0;
+  }
 }
 .intro-links__link {
   width: 100%;

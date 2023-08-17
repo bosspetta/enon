@@ -103,7 +103,7 @@ button {
     }}
     @media screen and (min-width: 75em) {
         margin-left: 250px;
-        max-width: 55%;
+        max-width: 45%;
     }
 }
 
@@ -190,6 +190,31 @@ a {
 
 .contact-page ul strong {
     display: block;
+}
+
+.img-wrapper {
+    @media screen and (min-width: 36em) {
+        &--fll {
+            float: left;
+            img {
+                margin-right: 1.5rem;
+            }
+        }
+        &--flr {
+            float: right;
+            img {
+                margin-left: 1.5rem;
+            }
+        }
+        .main-content & {
+            margin-bottom: 0;
+        }
+    }
+    img {
+        @media screen and (min-width: 36em) {
+            max-width: 220px;
+        }
+    }
 }
 
 @keyframes menuIn {

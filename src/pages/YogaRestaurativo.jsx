@@ -15,7 +15,6 @@ export default function YogaRestaurativo() {
             <p>{t( "yoga.restaurativo.p1" )}</p>
             <p>{t( "yoga.restaurativo.p2" )}</p>
             <p>{t( "yoga.restaurativo.p3" )}</p>
-            <p>{t( "yoga.restaurativo.p4" )}</p>
         </main>
     )
 }

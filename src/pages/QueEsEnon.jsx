@@ -19,7 +19,7 @@ export default function QueEsEnon() {
             <p>{t( "enon.desc-b" )}</p>
             <h3 className="page-title--subtitle">{t( "enon.subtitle" )}</h3>
             <h4>{t( "isa" )}</h4>
-            <p><img src={isa} alt="Isabel Martínez San Esteban, CEO enON" /></p>
+            <p className="img-wrapper img-wrapper--flr"><img src={isa} alt="Isabel Martínez San Esteban, CEO enON" /></p>
             <p>{t( "enon.paragraph" )}</p>
             <ul>
                 <li>{t( "enon.item-1" )}</li>
