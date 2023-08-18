@@ -8,6 +8,7 @@ import global_es from './translations/es/global.json'
 import global_en from './translations/en/global.json'
 
 import App from './App'
+// import Opening from './pages/Opening'
 
 let currentLanguage = ''
 if (localStorage.getItem('language')) {
@@ -34,6 +35,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <I18nextProvider i18n={i18next}>
             <BrowserRouter>
                 <App />
+                {/* <Opening /> */}
             </BrowserRouter>
         </I18nextProvider>
     </React.StrictMode>,

@@ -1429,4 +1429,50 @@ body.dark-mode .intro-links__link {
   color: var(--clr-dark);
 }
 
+.opening {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+}
+@media screen and (max-width: 650px) {
+  .opening {
+    padding-inline: 1.5rem;
+  }
+}
+.opening--subtitle {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 650px) {
+  .opening--subtitle {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+.opening .site-title {
+  margin: 0;
+}
+.opening .site-title__home-link {
+  display: flex;
+  border-bottom: 1px solid var(--clr-primary);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 650px) {
+  .opening .site-title__home-link {
+    display: block;
+  }
+}
+.opening p {
+  max-width: 385px;
+}
+
 /*# sourceMappingURL=main.css.map */

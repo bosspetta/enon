@@ -1,0 +1,39 @@
+.opening {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+    @media screen and (max-width: 650px) {
+        padding-inline: 1.5rem;
+    }
+    &--subtitle {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 2rem;
+        letter-spacing: .5rem;
+        color: var(--clr-white);
+        background-color: var(--clr-primary);
+        padding: .5rem 1rem;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 650px) {
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+    .site-title {
+        margin: 0;
+        &__home-link {
+            display: flex;
+            border-bottom: 1px solid var(--clr-primary);
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            @media screen and (max-width: 650px) {
+                display: block;
+            }
+        }
+    }
+    p {
+        max-width: 385px;
+    }
+}
