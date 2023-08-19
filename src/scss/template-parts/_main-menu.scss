@@ -24,19 +24,40 @@
         align-self: center;
         &--inner {
             padding-left: 1rem;
-            .main-menu__link {
-                font-size: 1rem;
-            }
         }
     }
     &__link {
-        color: var(--clr-black);
-        text-decoration: none;
         display: block;
         margin-bottom: .9375rem;
-        font-size: 1.25rem;
+        font-size: .875rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: .05rem;
+        color: var(--clr-black);
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
         &.selected {
             font-weight: 700;
+            font-size: 1rem;
+            position: relative;
+            padding-left: 20px;
+            &::before {
+                content: '';
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 5px 0 5px 10px;
+                border-color: transparent transparent transparent var(--clr-primary);
+                position: absolute;
+                left: 0;
+                top: calc(50% - 5px)
+            }
+            &:hover,
+            &:focus {
+                text-decoration: none;
+            }
         }
     }
 }
