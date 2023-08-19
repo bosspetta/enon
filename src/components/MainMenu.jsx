@@ -59,9 +59,25 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
+                        to='/horarios'
+                        onClick={hideMenu}>
+                        {t( "main-menu.horarios" )}
+                    </NavLink>
+                </li>
+                <li className="main-menu__item">
+                    <NavLink
+                        className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
                         to='/contacto'
                         onClick={hideMenu}>
                         {t( "main-menu.contacto" )}
+                    </NavLink>
+                </li>
+                <li className="main-menu__item">
+                    <NavLink
+                        className={({ isActive }) => isActive ? 'main-menu__link selected' : 'main-menu__link'}
+                        to='/normas'
+                        onClick={hideMenu}>
+                        {t("main-menu.politicas")}
                     </NavLink>
                 </li>
             </ul>

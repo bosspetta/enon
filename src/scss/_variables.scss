@@ -1,5 +1,6 @@
 :root {
     --clr-light: #fffdf9;
+    --clr-light-grey: #eee;
     --clr-dark: #282e28;
     --clr-primary: #667764;
     --clr-secondary: #bbddc4;
@@ -11,10 +12,12 @@
 
     --clr-black: #333;
     --clr-white: #f9f9f9;
+    --clr-real-white: white;
 }
 
 .dark-mode {
     --clr-light: #fffdf9;
+    --clr-light-grey: #888;
     --clr-dark: #282e28;
     --clr-primary: #e1f4df;
     --clr-secondary: #131915;
@@ -26,4 +29,5 @@
 
     --clr-black: #f9f9f9;
     --clr-white: #333;
+    --clr-real-white: #464646;
 }

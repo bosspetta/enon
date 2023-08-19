@@ -77,9 +77,16 @@ body {
             background-size: cover;
         }
     }
+    &.schedules-page {
+        &::before {
+            background: transparent url('../img/background-schedules.jpg') bottom center no-repeat;
+            background-size: cover;
+        }
+    }
+    &.rules-page,
     &.contact-page {
         &::before {
-            background: transparent url('../img/background-contacto.jpg') bottom center no-repeat;
+            background: transparent url('../img/background-contacto-left.jpg') bottom right no-repeat;
             background-size: cover;
         }
     }
@@ -87,6 +94,49 @@ body {
 
 button {
     cursor: pointer;
+}
+
+table {
+    width: 100%;
+    font-size: .875rem;
+    text-transform: uppercase;
+    text-align: left;
+    border-spacing: inherit;
+    margin-block: 2rem;
+}
+
+td, th {
+    padding: .5rem;
+}
+
+th {
+    border-bottom: 1px solid var(--clr-light-grey);
+}
+
+td {
+    border-right: 1px solid var(--clr-light-grey);
+    &:last-child {
+        border: none;
+    }
+}
+
+thead tr {
+    background-color: var(--clr-light-grey);
+}
+
+tbody {
+    th {
+        text-align: right;
+        border: none;
+        border-right: 1px solid var(--clr-light-grey);
+    }
+    tr:nth-child(odd) {
+        background-color: var(--clr-real-white);
+    }
+}
+
+.align-center {
+    text-align: center;
 }
 
 .global-container {
@@ -102,7 +152,7 @@ button {
         max-width: 70%;
     }}
     @media screen and (min-width: 75em) {
-        margin-left: 250px;
+        margin-left: 255px;
         max-width: 45%;
     }
 }

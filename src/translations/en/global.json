@@ -9,13 +9,13 @@
         "que-es": "What is enON?",
         "restaurativo": "Restorative Yoga",
         "quiromasaje": "Chiromassage",
-        "contacto": "Visit us / Contact us"
+        "contacto": "Visit us / Contact us",
+        "horarios": "Schedules and prices",
+        "politicas": "Rules"
     },
     "home": {
         "welcome-title": "Welcome…",
-        "intro": "Do you remember that place where you used to find yourself in calm, in balance, in Peace? I'm sure you do, we all have one (or several). My intention in enON is none other than to facilitate the communication between you and your inner self, so that whenever you need it, or wherever you are, you can open a small window that looks towards that place where you can be in balance, in Peace.",
-        "intro-2": "How will I be capable of such an achievement?",
-        "intro-3": "I invite you to discover it personally by visiting us, we are in Calle San Luis 78 (Seville). In the meantime, you can take a look at the sections of our website."
+        "intro": "Thank you for your interest about enON. On this website you will find a lot of information about how and from where I teach my Yoga classes. Take a look at the sections and pages to discover enON in depth, and if you are even more curious, come and visit me, I am at Calle San Luis 78, very close to Plaza del Pumarejo."
     },
     "enon": {
         "title": "What is enON?",
@@ -72,5 +72,24 @@
         "subtitle-2": "Come and visit us",
         "tlfLabel": "Phone / WhatsApp:",
         "p": "We are in the centre of Seville, very close to Plaza del Pumarejo, in Calle San Luis 78."
-    }
+    },
+    "schedules": {
+        "title": "Schedules and prices",
+        "subtitle": "Prices",
+        "schedules": "Schedules",
+        "weeknames": "Weekdays",
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "1class": "1 class per week:",
+        "2class": "2 classes per week:",
+        "3class": "3 classes per week:",
+        "1class-price": "40€ / Month",
+        "2class-price": "55€ / Month",
+        "3class-price": "65€ / Month",
+        "clases": "Classes last 1 hour and 15 minutes."
+    },
+    "yoga-restaurativo": "Restorative Yoga"
 }

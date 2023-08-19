@@ -10,6 +10,8 @@ export default function Quiromasaje() {
     document.body.classList.remove('enon-page')
     document.body.classList.remove('yoga-page')
     document.body.classList.remove('yoga-restaurativo-page')
+    document.body.classList.remove('schedules-page')
+    document.body.classList.remove('rules-page')
     document.body.classList.add('chiromassage-page')
 
     return (

@@ -9,13 +9,13 @@
         "que-es": "¿Qué es enON?",
         "restaurativo": "Yoga restaurativo",
         "quiromasaje": "Quiromasaje",
-        "contacto": "Visítanos / Contacto"
+        "contacto": "Visítanos / Contacto",
+        "horarios": "Horarios y precios",
+        "politicas": "Normas"
     },
     "home": {
         "welcome-title": "Bienvenido…",
-        "intro": "¿Recuerdas ese lugar en el que solías encontrarte en calma, en equilibrio, en Paz? Seguro que sí, todos tenemos uno (o varios). Mi intención en enON no es otra que facilitarte la comunicación entre tu interior y tú, para lograr cada vez que lo necesites, o estés donde estés, abrir una pequeña ventana que mire hacia aquel lugar en el que puedes estar en equilibrio, en Paz.",
-        "intro-2": "¿Que cómo voy a ser capaz de tal logro?",
-        "intro-3": "Te invito a descubrirlo personalmente visitándonos, estamos en Calle San Luis 78 (Sevilla). Mientras puedes darte una vuelta por las secciones de nuestra web."
+        "intro": "Gracias por interesarte en enON. En esta página web encontrarás mucha información sobre cómo y desde dónde se imparte mis clases de Yoga. Date una vuelta por las secciones y páginas para descubrir enON a fondo, y si aún tienes más curiosidad, ven a visitarme, estoy en la Calle San Luis 78, muy cerquita de la Plaza del Pumarejo."
     },
     "enon": {
         "title": "¿Qué es enON?",
@@ -72,5 +72,24 @@
         "subtitle-2": "Ven a visitarnos",
         "tlfLabel": "Teléfono / WhatsApp:",
         "p": "Estamos en el centro de Sevilla, muy cerca de la Plaza del Pumarejo, en la Calle San Luis 78."
-    }
+    },
+    "schedules": {
+        "title": "Horarios y precios",
+        "subtitle": "Precios",
+        "schedules": "Horarios",
+        "weeknames": "Días de la semana",
+        "monday": "Lunes",
+        "tuesday": "Martes",
+        "wednesday": "Miércoles",
+        "thursday": "Jueves",
+        "friday": "Viernes",
+        "1class": "1 clase semanal",
+        "2class": "2 clases semanal",
+        "3class": "3 clases semanal",
+        "1class-price": "40€ / Mes",
+        "2class-price": "55€ / Mes",
+        "3class-price": "65€ / Mes",
+        "clases": "Las clases duran de 1 hora y 15 minutos."
+    },
+    "yoga-restaurativo": "Yoga Restaurativo"
 }
