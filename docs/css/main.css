@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 :root {
   --clr-light: #fffdf9;
+  --clr-light-grey: #eee;
   --clr-dark: #282e28;
   --clr-primary: #667764;
   --clr-secondary: #bbddc4;
@@ -10,10 +11,12 @@
   --background: var(--clr-light);
   --clr-black: #333;
   --clr-white: #f9f9f9;
+  --clr-real-white: white;
 }
 
 .dark-mode {
   --clr-light: #fffdf9;
+  --clr-light-grey: #888;
   --clr-dark: #282e28;
   --clr-primary: #e1f4df;
   --clr-secondary: #131915;
@@ -23,6 +26,7 @@
   --background: var(--clr-dark);
   --clr-black: #f9f9f9;
   --clr-white: #333;
+  --clr-real-white: #464646;
 }
 
 *,
@@ -1004,13 +1008,58 @@ body.chiromassage-page::before {
   background: transparent url("../img/background-quiro.jpg") bottom center no-repeat;
   background-size: cover;
 }
-body.contact-page::before {
-  background: transparent url("../img/background-contacto.jpg") bottom center no-repeat;
+body.schedules-page::before {
+  background: transparent url("../img/background-schedules.jpg") bottom center no-repeat;
+  background-size: cover;
+}
+body.rules-page::before, body.contact-page::before {
+  background: transparent url("../img/background-contacto-left.jpg") bottom right no-repeat;
   background-size: cover;
 }
 
 button {
   cursor: pointer;
+}
+
+table {
+  width: 100%;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  text-align: left;
+  border-spacing: inherit;
+  margin-block: 2rem;
+}
+
+td, th {
+  padding: 0.5rem;
+}
+
+th {
+  border-bottom: 1px solid var(--clr-light-grey);
+}
+
+td {
+  border-right: 1px solid var(--clr-light-grey);
+}
+td:last-child {
+  border: none;
+}
+
+thead tr {
+  background-color: var(--clr-light-grey);
+}
+
+tbody th {
+  text-align: right;
+  border: none;
+  border-right: 1px solid var(--clr-light-grey);
+}
+tbody tr:nth-child(odd) {
+  background-color: var(--clr-real-white);
+}
+
+.align-center {
+  text-align: center;
 }
 
 .global-container {
@@ -1032,7 +1081,7 @@ button {
 }
 @media screen and (min-width: 75em) {
   .global-container {
-    margin-left: 250px;
+    margin-left: 255px;
     max-width: 45%;
   }
 }
@@ -1327,7 +1376,7 @@ body.dark-mode .language__btn {
 @media screen and (min-width: 75em) {
   .main-menu {
     display: flex;
-    width: 250px;
+    width: 255px;
   }
 }
 .main-menu.menu-opened {
@@ -1342,18 +1391,36 @@ body.dark-mode .language__btn {
 .main-menu__items--inner {
   padding-left: 1rem;
 }
-.main-menu__items--inner .main-menu__link {
-  font-size: 1rem;
-}
 .main-menu__link {
-  color: var(--clr-black);
-  text-decoration: none;
   display: block;
   margin-bottom: 0.9375rem;
-  font-size: 1.25rem;
+  font-size: 0.875rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: var(--clr-black);
+}
+.main-menu__link:hover, .main-menu__link:focus {
+  text-decoration: underline;
 }
 .main-menu__link.selected {
   font-weight: 700;
+  position: relative;
+  padding-left: 20px;
+}
+.main-menu__link.selected::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 10px;
+  border-color: transparent transparent transparent var(--clr-primary);
+  position: absolute;
+  left: 0;
+  top: calc(50% - 5px);
+}
+.main-menu__link.selected:hover, .main-menu__link.selected:focus {
+  text-decoration: none;
 }
 
 @keyframes menuIn {
@@ -1427,6 +1494,54 @@ footer p a {
 body.dark-mode .intro-links__link {
   background-color: var(--clr-primary);
   color: var(--clr-dark);
+}
+
+.prices {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.prices::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: var(--clr-primary);
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.prices li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.prices span {
+  flex-basis: 50%;
+}
+.prices__label {
+  text-align: right;
+  padding-left: 5px;
+  line-height: 1.25;
+}
+
+.schedules-table {
+  display: none;
+}
+@media screen and (min-width: 107.1875em) {
+  .schedules-table {
+    display: table;
+  }
+}
+
+.schedules-mobile {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+@media screen and (min-width: 107.1875em) {
+  .schedules-mobile {
+    display: none;
+  }
 }
 
 .opening {
