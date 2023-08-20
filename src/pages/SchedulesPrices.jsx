@@ -44,6 +44,13 @@ export default function SchedulesPrices() {
             </ul>
             <hr />
             <p>No se requiere matricula, pero sí el compromiso con las <Link to="/normas">normas del establecimiento</Link>.</p>
+            <hr />
+            <h3 className="page-title--subtitle">{t("schedules.masajes")}</h3>
+            <ul>
+                <li>{t( "schedules.p-quiro" )}, <strong>38€</strong></li>
+                <li>{t( "schedules.p-relax" )}, <strong>40€</strong></li>
+                <li>{t( "schedules.p-facial" )}, <strong>40€</strong></li>
+            </ul>
         </main>
     )
 }
