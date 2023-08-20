@@ -10,7 +10,7 @@ import YogaRestaurativo from './pages/YogaRestaurativo'
 import Quiromasaje from './pages/Quiromasaje'
 import Contacto from './pages/Contacto'
 import NoMatch from './pages/NoMatch'
-import SchedulesPrices from './pages/schedulesPrices'
+import SchedulesPrices from './pages/SchedulesPrices'
 import Normas from './pages/Normas'
 
 export default function App() {
