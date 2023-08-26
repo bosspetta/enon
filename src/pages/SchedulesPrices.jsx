@@ -19,7 +19,7 @@ export default function SchedulesPrices() {
             <h2 className="page-title">{t( "schedules.title" )}</h2>
             <h3 className="page-title--subtitle align-center">{t("schedules.schedules")}</h3>
             <SchedulesTable />
-            <p className="align-center">* <strong><small>Las clases son de 1 hora y 15 minutos.</small></strong></p>
+            <p className="align-center">* <strong><small>{t( "schedules.duration" )}</small></strong></p>
             <div className="schedules-mobile">
                 <p><strong>{t('schedules.monday')}: </strong><br />
                     17:30 / 18:45 - Hatha Yoga<br />

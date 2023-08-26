@@ -70,7 +70,8 @@
         "title": "Contact us or come and visit us",
         "subtitle-1": "Contact options",
         "subtitle-2": "Come and visit us",
-        "tlfLabel": "Phone / WhatsApp:",
+        "tlfLabel": "Phone:",
+        "whatsappLabel": "WhatsApp:",
         "p": "We are in the centre of Seville, very close to Plaza del Pumarejo, in Calle San Luis 78."
     },
     "schedules": {
@@ -97,7 +98,9 @@
         "clase-suelta": "Single class",
         "clase-prueba": "Test class",
         "normas": "Enrolment is not required, but commitment to the rules of the ",
-        "normas-link": "establishment is required"
+        "normas-link": "establishment is required",
+        "duration": "Classes last 1 hour and 15 minutes."
     },
-    "yoga-restaurativo": "Restorative Yoga"
+    "yoga-restaurativo": "Restorative Yoga",
+    "whatsapp-link": "Talk on WhatsApp?"
 }

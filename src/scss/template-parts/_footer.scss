@@ -15,9 +15,17 @@ footer {
             font-weight: 400;
         }
     }
+    .whatsapp {
+        text-transform: none;
+    }
 }
 
 .logo {
     font-size: 5rem;
     text-transform: none;
+}
+
+.whatsapp {
+    background: transparent url('../img/ico/ico-whatsapp.svg') left center no-repeat;
+    padding-left: 25px;
 }

@@ -70,7 +70,8 @@
         "title": "Contáctanos o ven a visitarnos",
         "subtitle-1": "Vías de contacto",
         "subtitle-2": "Ven a visitarnos",
-        "tlfLabel": "Teléfono / WhatsApp:",
+        "tlfLabel": "Teléfono:",
+        "whatsappLabel": "WhatsApp:",
         "p": "Estamos en el centro de Sevilla, muy cerca de la Plaza del Pumarejo, en la Calle San Luis 78."
     },
     "schedules": {
@@ -97,7 +98,9 @@
         "clase-suelta": "Clase suelta",
         "clase-prueba": "Clase de prueba",
         "normas": "No se requiere matricula, pero sí el compromiso con las ",
-        "normas-link": "normas del establecimiento"
+        "normas-link": "normas del establecimiento",
+        "duration": "Las clases son de 1 hora y 15 minutos."
     },
-    "yoga-restaurativo": "Yoga Restaurativo"
+    "yoga-restaurativo": "Yoga Restaurativo",
+    "whatsapp-link": "¿Hablamos por WhatsApp?"
 }
