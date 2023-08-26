@@ -21,8 +21,11 @@ export default function Home() {
             <ul className="intro-links">
                 <li className="intro-links__item"><Link className="intro-links__link" to='/que-es-enon'>{t( "main-menu.que-es" )}</Link></li>
                 <li className="intro-links__item"><Link className="intro-links__link" to='/yoga'>Yoga</Link></li>
+                <li className="intro-links__item"><Link className="intro-links__link" to='/yoga/restaurativo'>{t( "yoga-restaurativo" )}</Link></li>
                 <li className="intro-links__item"><Link className="intro-links__link" to='/quiromasaje'>{t( "main-menu.quiromasaje" )}</Link></li>
+                <li className="intro-links__item"><Link className="intro-links__link" to='/horarios'>{t( "main-menu.horarios" )}</Link></li>
                 <li className="intro-links__item"><Link className="intro-links__link" to='/contacto'>{t( "main-menu.contacto" )}</Link></li>
+                <li className="intro-links__item"><Link className="intro-links__link" to='/normas'>{t( "main-menu.politicas" )}</Link></li>
             </ul>
         </main>
     )

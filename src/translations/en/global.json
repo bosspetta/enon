@@ -93,7 +93,11 @@
         "1class-price": "40€ / Month",
         "2class-price": "55€ / Month",
         "3class-price": "65€ / Month",
-        "clases": "Classes last 1 hour and 15 minutes."
+        "clases": "Classes last 1 hour and 15 minutes.",
+        "clase-suelta": "Single class",
+        "clase-prueba": "Test class",
+        "normas": "Enrolment is not required, but commitment to the rules of the ",
+        "normas-link": "establishment is required"
     },
     "yoga-restaurativo": "Restorative Yoga"
 }

@@ -93,7 +93,11 @@
         "1class-price": "40€ / Mes",
         "2class-price": "55€ / Mes",
         "3class-price": "65€ / Mes",
-        "clases": "Las clases duran de 1 hora y 15 minutos."
+        "clases": "Las clases duran de 1 hora y 15 minutos.",
+        "clase-suelta": "Clase suelta",
+        "clase-prueba": "Clase de prueba",
+        "normas": "No se requiere matricula, pero sí el compromiso con las ",
+        "normas-link": "normas del establecimiento"
     },
     "yoga-restaurativo": "Yoga Restaurativo"
 }

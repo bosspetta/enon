@@ -41,9 +41,11 @@ export default function SchedulesPrices() {
                 <li><span className="prices__label">{t("schedules.1class")}</span> <span className="prices__price">{t("schedules.1class-price")}</span></li>
                 <li><span className="prices__label">{t("schedules.2class")}</span> <span className="prices__price">{t("schedules.2class-price")}</span></li>
                 <li><span className="prices__label">{t("schedules.3class")}</span> <span className="prices__price">{t("schedules.3class-price")}</span></li>
+                <li><span className="prices__label">{t('schedules.clase-suelta')}</span> <span className="prices__price">15€</span></li>
+                <li><span className="prices__label">{t('schedules.clase-prueba')}</span> <span className="prices__price">15€</span></li>
             </ul>
             <hr />
-            <p>No se requiere matricula, pero sí el compromiso con las <Link to="/normas">normas del establecimiento</Link>.</p>
+            <p>{t('schedules.normas')} <Link to="/normas">{t('schedules.normas-link')}</Link>.</p>
             <hr />
             <h3 className="page-title--subtitle">{t("schedules.masajes")}</h3>
             <ul>
