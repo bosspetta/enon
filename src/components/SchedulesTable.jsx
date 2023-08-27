@@ -11,7 +11,7 @@ export default function SchedulesTable() {
                     <th id="schedules-tableColHdr3">{t("schedules.tuesday")}</th>
                     <th id="schedules-tableColHdr4">{t("schedules.wednesday")}</th>
                     <th id="schedules-tableColHdr5">{t("schedules.thursday")}</th>
-                    <th id="schedules-tableColHdr6">{t("schedules.friday")}</th>
+                    {/* <th id="schedules-tableColHdr6">{t("schedules.friday")}</th> */}
                 </tr>
             </thead>
             <tbody>
@@ -21,39 +21,31 @@ export default function SchedulesTable() {
                     <td headers="schedules-tableColHdr3 schedules-tableRowHdr2">Hatha Yoga</td>
                     <td headers="schedules-tableColHdr4 schedules-tableRowHdr2"></td>
                     <td headers="schedules-tableColHdr5 schedules-tableRowHdr2">Hatha Yoga</td>
-                    <td headers="schedules-tableColHdr6 schedules-tableRowHdr2"></td>
+                    {/* <td headers="schedules-tableColHdr6 schedules-tableRowHdr2"></td> */}
                 </tr>
                 <tr>
-                    <th id="schedules-tableRowHdr3">17:30</th>
+                    <th id="schedules-tableRowHdr3">18:00</th>
                     <td headers="schedules-tableColHdr2 schedules-tableRowHdr3">Hatha Yoga</td>
-                    <td headers="schedules-tableColHdr3 schedules-tableRowHdr3"></td>
+                    <td headers="schedules-tableColHdr3 schedules-tableRowHdr3">Hatha Yoga</td>
                     <td headers="schedules-tableColHdr4 schedules-tableRowHdr3">Hatha Yoga</td>
-                    <td headers="schedules-tableColHdr5 schedules-tableRowHdr3"></td>
-                    <td headers="schedules-tableColHdr6 schedules-tableRowHdr3"></td>
+                    <td headers="schedules-tableColHdr5 schedules-tableRowHdr3">Hatha Yoga</td>
+                    {/* <td headers="schedules-tableColHdr6 schedules-tableRowHdr3"></td> */}
                 </tr>
                 <tr>
-                    <th id="schedules-tableRowHdr4">18:00</th>
-                    <td headers="schedules-tableColHdr2 schedules-tableRowHdr4"></td>
-                    <td headers="schedules-tableColHdr3 schedules-tableRowHdr4">{t("yoga-restaurativo")}</td>
-                    <td headers="schedules-tableColHdr4 schedules-tableRowHdr4"></td>
-                    <td headers="schedules-tableColHdr5 schedules-tableRowHdr4">{t("yoga-restaurativo")}</td>
-                    <td headers="schedules-tableColHdr6 schedules-tableRowHdr4"></td>
-                </tr>
-                <tr>
-                    <th id="schedules-tableRowHdr5">19:00</th>
-                    <td headers="schedules-tableColHdr2 schedules-tableRowHdr5">Hatha Yoga</td>
-                    <td headers="schedules-tableColHdr3 schedules-tableRowHdr5"></td>
-                    <td headers="schedules-tableColHdr4 schedules-tableRowHdr5">Hatha Yoga</td>
-                    <td headers="schedules-tableColHdr5 schedules-tableRowHdr5"></td>
-                    <td headers="schedules-tableColHdr6 schedules-tableRowHdr5"></td>
+                    <th id="schedules-tableRowHdr4">19:30</th>
+                    <td headers="schedules-tableColHdr2 schedules-tableRowHdr4">Hatha Yoga</td>
+                    <td headers="schedules-tableColHdr3 schedules-tableRowHdr4"></td>
+                    <td headers="schedules-tableColHdr4 schedules-tableRowHdr4">Hatha Yoga</td>
+                    <td headers="schedules-tableColHdr5 schedules-tableRowHdr4"></td>
+                    {/* <td headers="schedules-tableColHdr6 schedules-tableRowHdr4"></td> */}
                 </tr>
                 <tr>
                     <th id="schedules-tableRowHdr6">20:00</th>
-                    <td headers="schedules-tableColHdr2 schedules-tableRowHdr6"></td>
-                    <td headers="schedules-tableColHdr3 schedules-tableRowHdr6">Hatha Yoga</td>
-                    <td headers="schedules-tableColHdr4 schedules-tableRowHdr6"></td>
-                    <td headers="schedules-tableColHdr5 schedules-tableRowHdr6">Hatha Yoga</td>
-                    <td headers="schedules-tableColHdr6 schedules-tableRowHdr6"></td>
+                    <td headers="schedules-tableColHdr2 schedules-tableRowHdr5"></td>
+                    <td headers="schedules-tableColHdr3 schedules-tableRowHdr5"></td>
+                    <td headers="schedules-tableColHdr4 schedules-tableRowHdr5"></td>
+                    <td headers="schedules-tableColHdr5 schedules-tableRowHdr5">{t("yoga-restaurativo")}</td>
+                    {/* <td headers="schedules-tableColHdr6 schedules-tableRowHdr5"></td> */}
                 </tr>
             </tbody>
         </table>

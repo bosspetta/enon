@@ -22,19 +22,18 @@ export default function SchedulesPrices() {
             <p className="align-center">* <strong><small>{t( "schedules.duration" )}</small></strong></p>
             <div className="schedules-mobile">
                 <p><strong>{t('schedules.monday')}: </strong><br />
-                    17:30 / 18:45 - Hatha Yoga<br />
-                    19:00 / 20:15 - Hatha Yoga</p>
+                    18:00 - Hatha Yoga<br />
+                    19:30 - Hatha Yoga</p>
                 <p><strong>{t('schedules.tuesday')}: </strong><br />
-                    10:00 / 11:15 - Hatha Yoga<br />
-                    18:00 / 19:15 - {t("yoga-restaurativo")}<br />
-                    20:00 / 21:15 - Hatha Yoga</p>
+                    10:00 - Hatha Yoga<br />
+                    18:00 - Hatha Yoga</p>
                 <p><strong>{t('schedules.wednesday')}: </strong><br />
-                    17:30 / 18:45 - Hatha Yoga<br />
-                    19:00 / 20:15 - Hatha Yoga</p>
+                    18:00 - Hatha Yoga<br />
+                    19:30 - Hatha Yoga</p>
                 <p><strong>{t('schedules.thursday')}: </strong><br />
-                    10:00 / 11:15 - Hatha Yoga<br />
-                    18:00 / 19:15 - {t("yoga-restaurativo")}<br />
-                    20:00 / 21:15 - Hatha Yoga</p>
+                    10:00 - Hatha Yoga<br />
+                    18:00 - Hatha Yoga<br />
+                    20:00 - {t("yoga-restaurativo")}</p>
             </div>
             <h3 className="page-title--subtitle align-center">{t("schedules.subtitle")}</h3>
             <ul className="prices">
