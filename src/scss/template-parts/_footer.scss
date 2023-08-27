@@ -16,7 +16,18 @@ footer {
         }
     }
     .whatsapp {
-        text-transform: none;
+        display: inline-block;
+        background-color: var(--clr-primary);
+        background-size: 20px auto;
+        background-position: 15px center;
+        font-weight: 700;
+        font-size: 0.875rem;
+        color: var(--clr-white);
+        line-height: 1.25;
+        text-transform: uppercase;
+        border-radius: 10px;
+        padding: 1rem 1rem 1rem 45px;
+        margin-block: .875rem;
     }
 }
 
