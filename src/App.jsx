@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 import ScrollToTop from './components/ScrollToTop'
 
@@ -15,21 +15,23 @@ import Normas from './pages/Normas'
 
 export default function App() {
     return (
-        <ScrollToTop>
-            <Routes>
-                <Route path='/' element={<Layout />}>
-                    <Route index element={<Home />} />
-                    <Route path='/que-es-enon' element={<QueEsEnon />} />
-                    <Route path='/yoga' element={<Yoga />} />
-                    <Route path='/yoga/restaurativo' element={<YogaRestaurativo />} />
-                    <Route path='/quiromasaje' element={<Quiromasaje />} />
-                    <Route path='/contacto' element={<Contacto />} />
-                    <Route path='/horarios' element={<SchedulesPrices />} />
-                    <Route path='/normas' element={<Normas />} />
+        <HashRouter basename="/">
+            <ScrollToTop>
+                <Routes>
+                    <Route path='/' element={<Layout />}>
+                        <Route index element={<Home />} />
+                        <Route path='/que-es-enon' element={<QueEsEnon />} />
+                        <Route path='/yoga' element={<Yoga />} />
+                        <Route path='/yoga/restaurativo' element={<YogaRestaurativo />} />
+                        <Route path='/quiromasaje' element={<Quiromasaje />} />
+                        <Route path='/contacto' element={<Contacto />} />
+                        <Route path='/horarios' element={<SchedulesPrices />} />
+                        <Route path='/normas' element={<Normas />} />
 
-                    <Route path='/*' element={<NoMatch />} />
-                </Route>
-            </Routes>
-        </ScrollToTop>
+                        <Route path='/*' element={<NoMatch />} />
+                    </Route>
+                </Routes>
+            </ScrollToTop>
+        </HashRouter>
     )
 }
