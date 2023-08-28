@@ -28,7 +28,7 @@ export default function App() {
                         <Route path='/horarios' element={<SchedulesPrices />} />
                         <Route path='/normas' element={<Normas />} />
 
-                        <Route path='/*' element={<NoMatch />} />
+                        <Route path='*' element={<NoMatch status={404} />} />
                     </Route>
                 </Routes>
             </ScrollToTop>
