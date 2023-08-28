@@ -19,15 +19,15 @@ export default function App() {
             <Routes>
                 <Route path='/' element={<Layout />}>
                     <Route index element={<Home />} />
-                    <Route path='que-es-enon' element={<QueEsEnon />} />
-                    <Route path='yoga' element={<Yoga />} />
-                    <Route path='yoga/restaurativo' element={<YogaRestaurativo />} />
-                    <Route path='quiromasaje' element={<Quiromasaje />} />
-                    <Route path='contacto' element={<Contacto />} />
-                    <Route path='horarios' element={<SchedulesPrices />} />
-                    <Route path='normas' element={<Normas />} />
+                    <Route path='/que-es-enon' element={<QueEsEnon />} />
+                    <Route path='/yoga' element={<Yoga />} />
+                    <Route path='/yoga/restaurativo' element={<YogaRestaurativo />} />
+                    <Route path='/quiromasaje' element={<Quiromasaje />} />
+                    <Route path='/contacto' element={<Contacto />} />
+                    <Route path='/horarios' element={<SchedulesPrices />} />
+                    <Route path='/normas' element={<Normas />} />
 
-                    <Route path='*' element={<NoMatch />} />
+                    <Route path='/*' element={<NoMatch />} />
                 </Route>
             </Routes>
         </ScrollToTop>
