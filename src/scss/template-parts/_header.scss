@@ -118,9 +118,9 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::after,
 .hamburger.is-active .hamburger-inner::before {
-    background-color: var(--clr-white);
+    background-color: var(--background);
     body.dark-mode & {
-        background-color: var(--clr-primary);
+        background-color: var(--foreground);
     }
 }
 

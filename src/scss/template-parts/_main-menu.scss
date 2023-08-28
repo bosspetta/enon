@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: var(--clr-secondary) url('../img/enon-simbolo.svg') center center no-repeat;
+    background: var(--clr-accent) url('../img/enon-simbolo.svg') center center no-repeat;
     background-size: 180%;
     height: 100dvh;
     width: 80%;
@@ -33,7 +33,7 @@
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: .05rem;
-        color: var(--clr-black);
+        color: var(--clr-light);
         &:hover,
         &:focus {
             text-decoration: underline;
@@ -48,7 +48,7 @@
                 height: 0;
                 border-style: solid;
                 border-width: 5px 0 5px 10px;
-                border-color: transparent transparent transparent var(--clr-primary);
+                border-color: transparent transparent transparent var(--clr-light);
                 position: absolute;
                 left: 0;
                 top: calc(50% - 5px)

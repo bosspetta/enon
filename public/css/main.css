@@ -1328,7 +1328,7 @@ body.dark-mode .top-options > button {
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::after,
 .hamburger.is-active .hamburger-inner::before {
-  background-color: var(--clr-white);
+  background-color: var(--background);
 }
 body.dark-mode .hamburger-inner,
 body.dark-mode .hamburger-inner::after,
@@ -1336,7 +1336,7 @@ body.dark-mode .hamburger-inner::before,
 body.dark-mode .hamburger.is-active .hamburger-inner,
 body.dark-mode .hamburger.is-active .hamburger-inner::after,
 body.dark-mode .hamburger.is-active .hamburger-inner::before {
-  background-color: var(--clr-primary);
+  background-color: var(--foreground);
 }
 
 .language {
@@ -1364,7 +1364,7 @@ body.dark-mode .language__btn {
   position: fixed;
   top: 0;
   left: 0;
-  background: var(--clr-secondary) url("../img/enon-simbolo.svg") center center no-repeat;
+  background: var(--clr-accent) url("../img/enon-simbolo.svg") center center no-repeat;
   background-size: 180%;
   height: 100dvh;
   width: 80%;
@@ -1398,7 +1398,7 @@ body.dark-mode .language__btn {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
-  color: var(--clr-black);
+  color: var(--clr-light);
 }
 .main-menu__link:hover, .main-menu__link:focus {
   text-decoration: underline;
@@ -1414,7 +1414,7 @@ body.dark-mode .language__btn {
   height: 0;
   border-style: solid;
   border-width: 5px 0 5px 10px;
-  border-color: transparent transparent transparent var(--clr-primary);
+  border-color: transparent transparent transparent var(--clr-light);
   position: absolute;
   left: 0;
   top: calc(50% - 5px);
