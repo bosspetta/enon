@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 import ScrollToTop from './components/ScrollToTop'
 
@@ -15,7 +15,7 @@ import Normas from './pages/Normas'
 
 export default function App() {
     return (
-        <BrowserRouter>
+        <HashRouter basename="/">
             <ScrollToTop>
                 <Routes>
                     <Route path='/' element={<Layout />}>
@@ -32,6 +32,6 @@ export default function App() {
                     </Route>
                 </Routes>
             </ScrollToTop>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
