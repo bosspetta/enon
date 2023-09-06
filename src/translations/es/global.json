@@ -102,5 +102,98 @@
         "duration": "Las clases son de 1 hora y 15 minutos."
     },
     "yoga-restaurativo": "Yoga Restaurativo",
-    "whatsapp-link": "¿Hablamos por WhatsApp?"
+    "whatsapp-link": "¿Hablamos por WhatsApp?",
+    "rules": {
+        "main-title": "Políticas y Reglamento alumnos inscritos y eventuales",
+        "p-1": "Serán considerados alumnos inscritos aquellos que abonen la mensualidad regularmente. Serán considerados alumnos eventuales, todos aquellos quienes tomen clases sueltas. Todos los alumnos (inscritos y eventuales) deberán leer el siguiente reglamento de inicio y políticas de enON Estudio de Yoga. Adicionalmente, deberán firmar el consentimiento que se les entregará al momento de efectuar la inscripción. Las personas que no cumplan con las siguientes normas y obligaciones, no tendrán derecho a quejas o reclamaciones si se les negara o se les prohibiera el uso del estudio de yoga.",
+        "title-2": "Reglamento de inicio",
+        "title-3": "PRESENTACIÓN PERSONAL",
+        "list-1": {
+            "li-1": "Se debe respetar el código de vestimenta para la participación en las clases (ropa deportiva).",
+            "li-2": "En la sala está prohibido el uso de zapatos.",
+            "li-3": "El uso de zapatos está permitido únicamente en el área de recepción y deben quedar en el vestuario.",
+            "li-4": "Asegúrese de apagar su teléfono antes de ingresar a las clases."
+        },
+        "title-4": "PREPARACIÓN PARA LA CLASE, PUNTUALIDAD",
+        "list-2": {
+            "li-1": "Es importante llegar 10 minutos antes de la hora establecida para el inicio de la clase, de esa forma la clase comienza puntualmente a su hora.",
+            "li-2": "Una vez se empieza la clase, hay 5 minutos de tolerancia para el inicio. Después, la puerta se cierra restringiendo el ingreso al salón.",
+            "li-3": "No se permite la llegada tarde a clase, con el objetivo de promover la disciplina y respeto del tiempo, tanto de los asistentes como de los profesores.",
+            "li-4": "La puerta se cerrará una vez iniciada la clase."
+        },
+        "title-5": "HIDRATACIÓN",
+        "list-3": {
+            "li-1": "No ingerir ningún alimento 2 horas antes de cada clase.",
+            "li-2": "El consumo de agua durante la práctica puede interferir en la realización de los ejercicios, u ocasionar molestias, es más aconsejable beber al finalizar la práctica."
+        },
+        "title-6": "INGRESO",
+        "list-4": {
+            "li-1": "Ingrese al salón haciendo el menor ruido posible para respetar a los compañeros que se encuentran meditando o en proceso de relajación.",
+            "li-2": "Acomode su esterilla y siéntese o acuéstese en silencio hasta que inicie la práctica.",
+            "li-3": "Si llega temprano, utilice el tiempo para relajarse o meditar en su esterilla. Esto prepara el cuerpo y la mente para la práctica. Recuerde que con la práctica buscamos la conexión con nosotros mismos y esto abre la posibilidad de que se manifiesten emociones durante la misma.",
+            "li-4": "No es permitido el ingreso de móviles, reloj u otro dispositivo electrónico.",
+            "li-5": "Recuerde no utilizar anillos, cadenas, relojes ni demás elementos que puedan entorpecer la práctica y dañar los mismos."
+        },
+        "title-7": "DURANTE LA PRÁCTICA",
+        "list-5": {
+            "li-1": "Debe ser respetada la rutina del profesor el cual está capacitado para desarrollar metodológicamente la clase.",
+            "li-2": "El profesor dará indicaciones, hará correcciones de las posturas de yoga, de modo que la clase sea segura y armónica para todos los alumnos.",
+            "li-3": "Durante las clases, se debe mantener el silencio.",
+            "li-4": "Dudas y preguntas se responderán antes y después de la clase.",
+            "li-5": "Tómese un descanso cuando lo crea necesario.",
+            "li-6": "Importante, durante la clase no excederse e ir por delante del dolor. Menos es más.",
+            "li-7": "Es imperativo que se avise al instructor en caso de presentarse una molestia o dolor durante la práctica."
+        },
+        "title-8": "USO DE LA INFRAESTRUCTURA",
+        "list-6": {
+            "li-1": "Todo elemento utilizado durante la práctica debe ser guardado de manera correspondiente nuevamente en su lugar.",
+            "li-2": "Las horas de atención al público, son media hora antes del inicio de cada clase.",
+            "li-3": "Si necesita conversar con algún compañero, sea preciso y hágalo en voz baja, de preferencia en el área de vestuarios.",
+            "li-4": "El salón es un espacio que permite adentrarse y soltar. Debe ser seguro, por lo tanto, no caben comentarios respecto a lo que sucede en él."
+        },
+        "title-9": "USO DEL VESTUARIO",
+        "list-7": {
+            "li-1": "Cada persona puede traer una toalla de uso personal.",
+            "li-2": "Pero debe llevársela, no se permite guardar nada ningún objeto personal en el estudio.",
+            "li-3": "Asegúrese de apagar su teléfono antes de ingresar a la clase."
+        },
+        "title-10": "POLÍTICAS enON ESTUDIO DE YOGA",
+        "p-2": "Las personas que practican dentro de las instalaciones de enON Estudio de Yoga están de acuerdo con las siguientes condiciones.",
+        "title-11": "PAGOS",
+        "list-8": {
+            "li-1": "Las clases se abonarán durante la primera semana del mes (siete primeros días del mes). Todos los meses se abonará el mes completo, independientemente de si se viene a clase o no (por el motivo que sea), o del número de clases que tenga el mes. El Pago de la mensualidad puede hacerse en efectivo. Al realizar el pago en efectivo, el alumno/a habrá de firmar en la Hoja de Control de Pagos como método de verificación del abono de la mensualidad correspondiente.",
+            "li-2": "Cada mes cuenta con 8 clases de yoga, 2 por semana.",
+            "li-3": "Para medio mes cuenta con 4 clases 1 por semana.",
+            "li-4": "La persona debe elegir día fijo para su práctica donde le será reservada su plaza.",
+            "li-5": "En caso de que el centro de yoga suspenda alguna clase, los alumnos presentes podrán recuperarla.",
+            "li-6": "Si el alumno no puede asistir a su clase, esta no se recupera."
+        },
+        "title-12": "CLASES SUELTAS",
+        "list-9": {
+            "li-1": "Los alumnos que no deseen pagar una mensualidad, podrán pagar clases sueltas al costo vigente al momento que se tome la clase.",
+            "li-2": "El pago de la clase suelta deberá realizarse el mismo día en que se toma la clase.",
+            "li-3": "Solo podrá asistir si queda plazas libres."
+        },
+        "title-13": "REEMBOLSOS",
+        "list-10": {
+            "li-1": "No se hacen reembolsos de dinero una vez se haya efectuado el pago.",
+            "li-2": "Se recomienda a los alumnos ser parte de la lista de correos de enON Estudio de Yoga. Para poder recibir los boletines, el alumno deberá agregar como contacto el correo hola@enon.yoga",
+            "li-3": "Los avisos importantes y boletines del centro de yoga, serán enviados a los alumnos a través de correo electrónico, o por vía WhatsApp, por lo que será responsabilidad de cada alumno estar pendiente de algún aviso importante."
+        },
+        "p-3": "Es responsabilidad de los alumnos mantener la información actualizada (cambio de número de teléfono, correo electrónico, etc.) en su formato de inscripción.",
+        "title-14": "BAJA DE CLASES DE YOGA",
+        "p-4": "El alumno/a deberá comunicar claramente por palabra, vía WhatsApp o correo electrónico, su intención de darse de baja de las clases de Yoga. La baja deberá comunicarse antes del día 1 de cada mes. Si la baja se produce después del día 1, a mitad o finales de mes, por el motivo que sea, el alumno/a se compromete a pagar la mensualidad completa de ese mes. Aunque el alumno/a no haya asistido a ninguna clase ese mes, puesto que ha ocupado una plaza en la escuela, deberá abonar igualmente esa mensualidad.",
+        "title-15": "Política de privacidad",
+        "p-5": "Todos los datos personales proporcionados serán tratados únicamente con fines comerciales y se almacenarán siguiendo la normativa de protección de datos. Tratamos toda la información personal como confidencial. En ninguna circunstancia proporcionaremos información personal a terceros no autorizados y en todo momento protegeremos sus datos contra cualquier acceso no autorizado. El alumno debe aceptar recibir el boletín de noticias y ofertas especiales de enON Estudio de Yoga.",
+        "title-16": "Descargo de responsabilidad y posibles riesgos",
+        "p-6": "enON ESTUDIO DE YOGA no se hará responsable de aquellos alumnos que no sigan las directrices del instructor. Cualquier condición médica o física, lesiones recientes o presientes, así como cualquier tipo de información relevante para la práctica del alumno, debe ser comunicado al instructor antes de comenzar la clase. Es responsabilidad del alumno comunicarle al instructor se siente cualquier dolor o molestia física durante la clase. El uso de las instalaciones implica que el alumno acepta el riesgo asociado con todas las formas de ejercicio físico, tanto antes como después de la clase. Si tiene dudas acerca de su capacidad para poder participar en nuestras clases debido a su condición médica, por favor consultarlo con su médico. enON ESTUDIO DE YOGA y los miembros de su equipo, no se harán responsable en los siguientes casos:",
+        "list-11": {
+            "li-1": "Cualquier lesión o daño que resulte de la participación o uso de nuestras instalaciones.",
+            "li-2": "Cualquier daño o pérdida de objetos personales."
+        },
+        "title-17": "Objetos personales",
+        "p-7": "enON ESTUDIO DE YOGA no se hará responsable de aquellos objetos personales olvidados o que queden en nuestro local.",
+        "title-18": "Derechos afines",
+        "p-8": "enON ESTUDIO DE YOGA se reserva el derecho de modificar los términos y condiciones en cualquier momento. Los cambios importantes serán comunicados a través de nuestra página web. Si tienes dudas o preguntas acerca de nuestros términos y condiciones, por favor contáctanos vía email a hola@enon.yoga"
+    }
 }

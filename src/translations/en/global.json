@@ -102,5 +102,98 @@
         "duration": "Classes last 1 hour and 15 minutes."
     },
     "yoga-restaurativo": "Restorative Yoga",
-    "whatsapp-link": "Talk on WhatsApp?"
+    "whatsapp-link": "Talk on WhatsApp?",
+    "rules": {
+        "main-title": "Policies and Regulations for Enrolled and Occasional Students",
+        "p-1": "Students who regularly pay their monthly fees will be considered enrolled students. Occasional students are those who take individual classes. All students, whether enrolled or occasional, must read the following regulations and policies of enON Yoga Studio. Additionally, they must sign the consent form provided at the time of enrollment. Individuals who do not comply with the following rules and obligations will not have the right to complaints or claims if they are denied access to or use of the yoga studio.",
+        "title-2": "Starting Regulations",
+        "title-3": "PERSONAL PRESENTATION",
+        "list-1": {
+            "li-1": "The dress code for class participation (sportswear) must be respected.",
+            "li-2": "Shoes are not allowed in the studio.",
+            "li-3": "Shoes are only permitted in the reception area and must be left in the locker room.",
+            "li-4": "Ensure your phone is turned off before entering the class."
+        },
+        "title-4": "PREPARATION FOR CLASS, PUNCTUALITY",
+        "list-2": {
+            "li-1": "It is important to arrive 10 minutes before the scheduled class time so that the class starts promptly.",
+            "li-2": "Once the class begins, there is a 5-minute grace period. Afterward, the door will be closed, restricting entry to the studio.",
+            "li-3": "Late arrival to class is not allowed in order to promote discipline and respect for both attendees and instructors.",
+            "li-4": "The door will be closed once the class has started."
+        },
+        "title-5": "HYDRATION",
+        "list-3": {
+            "li-1": "Do not consume any food 2 hours before each class.",
+            "li-2": "Drinking water during practice can interfere with exercise performance or cause discomfort. It is more advisable to drink after the practice."
+        },
+        "title-6": "ENTRY",
+        "list-4": {
+            "li-1": "Enter the studio as quietly as possible to respect those who are meditating or in the relaxation process.",
+            "li-2": "Arrange your mat and sit or lie down silently until the practice begins.",
+            "li-3": "If you arrive early, use the time to relax or meditate on your mat. This prepares the body and mind for practice. Remember that practice aims to connect with oneself, and this may bring out emotions during the session.",
+            "li-4": "The use of mobile phones, watches, or other electronic devices is not permitted.",
+            "li-5": "Remember not to wear rings, chains, watches, or any items that may interfere with the practice and cause damage."
+        },
+        "title-7": "DURING THE PRACTICE",
+        "list-5": {
+            "li-1": "The teacher's routine, who is trained to conduct the class methodically, must be respected.",
+            "li-2": "The teacher will give instructions and make corrections to yoga postures to ensure the class is safe and harmonious for all students.",
+            "li-3": "Silence must be maintained during the classes.",
+            "li-4": "Questions and doubts will be addressed before and after the class.",
+            "li-5": "Take a break when you feel it is necessary.",
+            "li-6": "Importantly, during the class, do not push yourself beyond the point of pain. Less is more.",
+            "li-7": "It is imperative to inform the instructor if any discomfort or pain arises during the practice."
+        },
+        "title-8": "USE OF FACILITIES",
+        "list-6": {
+            "li-1": "Any equipment used during practice must be properly stored back in its place.",
+            "li-2": "Public service hours begin half an hour before the start of each class.",
+            "li-3": "If you need to converse with a fellow student, be concise and speak in a low voice, preferably in the locker room area.",
+            "li-4": "The studio is a space for introspection and release. Therefore, comments about what happens inside it are not appropriate."
+        },
+        "title-9": "USE OF LOCKER ROOM",
+        "list-7": {
+            "li-1": "Each person can bring a personal towel.",
+            "li-2": "However, it must be taken with you, and no personal items are allowed to be stored in the studio.",
+            "li-3": "Ensure your phone is turned off before entering the class."
+        },
+        "title-10": "enON YOGA STUDIO POLICIES",
+        "p-2": "People who practice within the premises of enON Yoga Studio agree to the following conditions.",
+        "title-11": "PAYMENTS",
+        "list-8": {
+            "li-1": "Classes must be paid for during the first week of the month (first seven days of the month). The full month's fee will be paid every month, regardless of whether you attend class or not, or the number of classes in the month. Payment can be made in cash. When paying in cash, the student must sign the Payment Control Sheet as a verification method for the corresponding monthly payment.",
+            "li-2": "Each month includes 8 yoga classes, 2 per week.",
+            "li-3": "For a half-month, there are 4 classes, 1 per week.",
+            "li-4": "Each person must choose a fixed day for their practice, and their spot will be reserved.",
+            "li-5": "If the yoga center cancels a class, present students will have the opportunity to make it up.",
+            "li-6": "Missed classes cannot be made up."
+        },
+        "title-12": "INDIVIDUAL CLASSES",
+        "list-9": {
+            "li-1": "Students who do not wish to pay a monthly fee can pay for individual classes at the current rate at the time of the class.",
+            "li-2": "Payment for the individual class must be made on the same day as the class.",
+            "li-3": "Attendance is allowed only if there are available spots."
+        },
+        "title-13": "REFUNDS",
+        "list-10": {
+            "li-1": "No refunds will be given once payment has been made.",
+            "li-2": "It is recommended that students join the enON Yoga Studio email list. To receive newsletters, students must add the email hola@enon.yoga as a contact.",
+            "li-3": "Important announcements and newsletters from the yoga center will be sent to students via email or WhatsApp, so it is the responsibility of each student to stay informed of important notices."
+        },
+        "p-3": "It is the responsibility of students to keep their information up-to-date (phone number, email, etc.) in their enrollment records.",
+        "title-14": "WITHDRAWAL FROM YOGA CLASSES",
+        "p-4": "The student must clearly communicate their intention to withdraw from yoga classes verbally, via WhatsApp, or by email. Withdrawal must be communicated before the 1st of each month. If withdrawal occurs after the 1st, in the middle or end of the month, for any reason, the student commits to paying the full monthly fee for that month. Even if the student has not attended any classes that month, since they have occupied a spot in the school, they must still pay that month's fee.",
+        "title-15": "Privacy Policy",
+        "p-5": "All personal data provided will be treated exclusively for commercial purposes and will be stored following data protection regulations. We treat all personal information as confidential. Under no circumstances will we provide personal information to unauthorized third parties, and we will always protect your data against any unauthorized access. The student must accept receiving newsletters and special offers from enON Yoga Studio.",
+        "title-16": "Disclaimer and Potential Risks",
+        "p-6": "enON YOGA STUDIO will not be held responsible for students who do not follow the instructor's guidelines. Any medical or physical conditions, recent or current injuries, or any relevant information for the student's practice must be communicated to the instructor before starting the class. It is the student's responsibility to inform the instructor if they experience any physical pain or discomfort during the class. The use of the facilities implies that the student accepts the risks associated with all forms of physical exercise, both before and after the class. If you have doubts about your ability to participate in our classes due to a medical condition, please consult with your doctor. enON YOGA STUDIO and its team members will not be held responsible in the following cases:",
+        "list-11": {
+            "li-1": "Any injury or damage resulting from participation or use of our facilities.",
+            "li-2": "Any damage or loss of personal belongings."
+        },
+        "title-17": "Personal Belongings",
+        "p-7": "enON YOGA STUDIO will not be held responsible for personal items that are forgotten or left in our premises.",
+        "title-18": "Related Rights",
+        "p-8": "enON YOGA STUDIO reserves the right to modify the terms and conditions at any time. Major changes will be communicated through our website. If you have questions or concerns about our terms and conditions, please contact us via email at hola@enon.yoga."
+    }
 }
