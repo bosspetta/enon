@@ -26,15 +26,15 @@ export default function SchedulesTable() {
                 <tr>
                     <th id="schedules-tableRowHdr3">18:00</th>
                     <td headers="schedules-tableColHdr2 schedules-tableRowHdr3">Hatha Yoga</td>
-                    <td headers="schedules-tableColHdr3 schedules-tableRowHdr3">Hatha Yoga</td>
+                    <td headers="schedules-tableColHdr3 schedules-tableRowHdr3"></td>
                     <td headers="schedules-tableColHdr4 schedules-tableRowHdr3">Hatha Yoga</td>
-                    <td headers="schedules-tableColHdr5 schedules-tableRowHdr3">Hatha Yoga</td>
+                    <td headers="schedules-tableColHdr5 schedules-tableRowHdr3"></td>
                     {/* <td headers="schedules-tableColHdr6 schedules-tableRowHdr3"></td> */}
                 </tr>
                 <tr>
                     <th id="schedules-tableRowHdr4">19:30</th>
                     <td headers="schedules-tableColHdr2 schedules-tableRowHdr4">Hatha Yoga</td>
-                    <td headers="schedules-tableColHdr3 schedules-tableRowHdr4"></td>
+                    <td headers="schedules-tableColHdr3 schedules-tableRowHdr4">Hatha Yoga</td>
                     <td headers="schedules-tableColHdr4 schedules-tableRowHdr4">Hatha Yoga</td>
                     <td headers="schedules-tableColHdr5 schedules-tableRowHdr4"></td>
                     {/* <td headers="schedules-tableColHdr6 schedules-tableRowHdr4"></td> */}
