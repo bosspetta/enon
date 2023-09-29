@@ -25,6 +25,7 @@ export default function SchedulesPrices() {
                     18:00 - Hatha Yoga<br />
                     19:30 - Hatha Yoga</p>
                 <p><strong>{t('schedules.tuesday')}: </strong><br />
+                    08:30 - {t('schedules.meditacion')}<br />
                     10:00 - Hatha Yoga<br />
                     19:30 - Hatha Yoga</p>
                 <p><strong>{t('schedules.wednesday')}: </strong><br />
@@ -32,7 +33,7 @@ export default function SchedulesPrices() {
                     19:30 - Hatha Yoga</p>
                 <p><strong>{t('schedules.thursday')}: </strong><br />
                     10:00 - Hatha Yoga<br />
-                    20:00 - {t("yoga-restaurativo")}</p>
+                    18:30 - Tai Chi</p>
             </div>
             <h3 className="page-title--subtitle align-center">{t("schedules.subtitle")}</h3>
             <ul className="prices">
