@@ -1016,6 +1016,10 @@ body.rules-page::before, body.contact-page::before {
   background: transparent url("../img/background-contacto-left.jpg") bottom right no-repeat;
   background-size: cover;
 }
+body.external-page::before {
+  background: transparent url("../img/background-external.jpeg") bottom center no-repeat;
+  background-size: cover;
+}
 
 button {
   cursor: pointer;
@@ -1560,6 +1564,24 @@ body.dark-mode .intro-links__link {
 @media screen and (min-width: 107.1875em) {
   .schedules-mobile {
     display: none;
+  }
+}
+
+.activities__image {
+  display: block;
+  margin: 1rem auto;
+  max-width: 250px;
+}
+@media screen and (min-width: 35.9375em) {
+  .activities__image {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 35.9375em) {
+  .activities__data {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
   }
 }
 

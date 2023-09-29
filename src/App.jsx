@@ -12,6 +12,7 @@ import Contacto from './pages/Contacto'
 import NoMatch from './pages/NoMatch'
 import SchedulesPrices from './pages/SchedulesPrices'
 import Normas from './pages/Normas'
+import External from './pages/External'
 
 export default function App() {
     return (
@@ -24,6 +25,7 @@ export default function App() {
                         <Route path='/yoga' element={<Yoga />} />
                         <Route path='/yoga/restaurativo' element={<YogaRestaurativo />} />
                         <Route path='/quiromasaje' element={<Quiromasaje />} />
+                        <Route path='/mas-actividades' element={<External />} />
                         <Route path='/contacto' element={<Contacto />} />
                         <Route path='/horarios' element={<SchedulesPrices />} />
                         <Route path='/normas' element={<Normas />} />

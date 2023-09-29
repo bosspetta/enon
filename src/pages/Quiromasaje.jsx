@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 export default function Quiromasaje() {
@@ -12,6 +11,7 @@ export default function Quiromasaje() {
     document.body.classList.remove('yoga-restaurativo-page')
     document.body.classList.remove('schedules-page')
     document.body.classList.remove('rules-page')
+    document.body.classList.remove('external-page')
     document.body.classList.add('chiromassage-page')
 
     return (

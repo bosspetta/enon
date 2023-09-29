@@ -12,6 +12,7 @@ export default function Home() {
     document.body.classList.remove('yoga-restaurativo-page')
     document.body.classList.remove('schedules-page')
     document.body.classList.remove('rules-page')
+    document.body.classList.remove('external-page')
     document.body.classList.add('home-page')
 
     return (

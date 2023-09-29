@@ -9,6 +9,7 @@ export default function Yoga() {
     document.body.classList.remove('yoga-restaurativo-page')
     document.body.classList.remove('schedules-page')
     document.body.classList.remove('rules-page')
+    document.body.classList.remove('external-page')
     document.body.classList.add('yoga-page')
 
     const { t } = useTranslation('global')

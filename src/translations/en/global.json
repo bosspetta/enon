@@ -9,6 +9,7 @@
         "que-es": "What is enON?",
         "restaurativo": "Restorative Yoga",
         "quiromasaje": "Chiromassage",
+        "actividades": "More activities",
         "contacto": "Visit us / Contact us",
         "horarios": "Schedules and prices",
         "politicas": "Rules"
@@ -196,5 +197,10 @@
         "p-7": "enON YOGA STUDIO will not be held responsible for personal items that are forgotten or left in our premises.",
         "title-18": "Related Rights",
         "p-8": "enON YOGA STUDIO reserves the right to modify the terms and conditions at any time. Major changes will be communicated through our website. If you have questions or concerns about our terms and conditions, please contact us via email at hola@enon.yoga."
+    },
+    "external": {
+        "title": "More activities",
+        "p-taichi": "Practice Tai Chi at enON with Jesús de la Osa. Visit our website to keep up to date with all the schedules and classes.",
+        "p-meditation": "Incorporating meditation into your daily life can bring you great benefits, both mentally and physically. Meditation is incorporated into enON to make it easier for you to do it. What are you waiting for? Visit our website to keep up to date with all the schedules and classes."
     }
 }

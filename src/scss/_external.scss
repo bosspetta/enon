@@ -1,0 +1,17 @@
+.activities {
+    &__image {
+        display: block;
+        margin: 1rem auto;
+        max-width: 250px;
+        @media screen and (min-width: 35.9375em) {
+            margin-top: 0;
+        }
+    }
+    &__data {
+        @media screen and (min-width: 35.9375em) {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+    }
+}

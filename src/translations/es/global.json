@@ -9,6 +9,7 @@
         "que-es": "¿Qué es enON?",
         "restaurativo": "Yoga restaurativo",
         "quiromasaje": "Quiromasaje",
+        "actividades": "Más actividades",
         "contacto": "Visítanos / Contacto",
         "horarios": "Horarios y precios",
         "politicas": "Normas"
@@ -196,5 +197,10 @@
         "p-7": "enON ESTUDIO DE YOGA no se hará responsable de aquellos objetos personales olvidados o que queden en nuestro local.",
         "title-18": "Derechos afines",
         "p-8": "enON ESTUDIO DE YOGA se reserva el derecho de modificar los términos y condiciones en cualquier momento. Los cambios importantes serán comunicados a través de nuestra página web. Si tienes dudas o preguntas acerca de nuestros términos y condiciones, por favor contáctanos vía email a hola@enon.yoga"
+    },
+    "external": {
+        "title": "Más actividades",
+        "p-taichi": "Practica Tai Chi en enON con Jesús de la Osa. Pásate por la página de horarios para estar al tanto de todos los horarios y clases.",
+        "p-meditation": "Incorporar la meditación a tu día a día, puede traerte grandes beneficiones, tanto mentales como físicos. Se incorpora la meditación a enON para facilitarte que puedes hacerlo ¿A qué esperas? Pásate por la página de horarios para estar al tanto de todos los horarios y clases."
     }
 }

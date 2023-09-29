@@ -90,6 +90,12 @@ body {
             background-size: cover;
         }
     }
+    &.external-page {
+        &::before {
+            background: transparent url('../img/background-external.jpeg') bottom center no-repeat;
+            background-size: cover;
+        }
+    }
 }
 
 button {
