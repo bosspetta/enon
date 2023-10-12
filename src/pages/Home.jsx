@@ -24,6 +24,7 @@ export default function Home() {
                 <li className="intro-links__item"><Link className="intro-links__link" to='/yoga'>Yoga</Link></li>
                 <li className="intro-links__item"><Link className="intro-links__link" to='/yoga/restaurativo'>{t( "yoga-restaurativo" )}</Link></li>
                 <li className="intro-links__item"><Link className="intro-links__link" to='/quiromasaje'>{t( "main-menu.quiromasaje" )}</Link></li>
+                <li className="intro-links__item"><Link className="intro-links__link intro-links__link--destacado" to='/mas-actividades'>{t("main-menu.actividades")}</Link></li>
                 <li className="intro-links__item"><Link className="intro-links__link" to='/horarios'>{t( "main-menu.horarios" )}</Link></li>
                 <li className="intro-links__item"><Link className="intro-links__link" to='/contacto'>{t( "main-menu.contacto" )}</Link></li>
                 <li className="intro-links__item"><Link className="intro-links__link" to='/normas'>{t( "main-menu.politicas" )}</Link></li>

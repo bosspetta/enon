@@ -32,5 +32,13 @@
             background-color: var(--clr-primary);
             color: var(--clr-dark);
         }
+        &--destacado {
+            background-color: var(--clr-primary);
+            color: var(--clr-white);
+            body.dark-mode & {
+                background-color: var(--clr-primary-dark);
+                color: var(--clr-black);
+            }
+        }
     }
 }

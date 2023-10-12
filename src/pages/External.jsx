@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 
 import ctTaichi from '../assest/img/cartel-taichi.png'
 import ctMeditation from '../assest/img/cartel-meditacion.jpg'
+import ctRestaurativo from '../assest/img/cartel-restaurativo.jpg'
 
 export default function External() {
     const { t } = useTranslation('global')
@@ -20,6 +21,11 @@ export default function External() {
     return (
         <main className="page-content">
             <h2 className="page-title">{t( "external.title" )}</h2>
+            <section id="activities-restaurativo">
+                <h3>{t('main-menu.restaurativo')}</h3>
+                <p className="activities__data"><img src={ctRestaurativo} alt="" className="activities__image" />
+                {t('external.p-restaurativo')}</p>
+            </section>
             <section id="activities-taichi">
                 <h3>Tai Chi</h3>
                 <p className="activities__data"><img src={ctTaichi} alt="" className="activities__image" />
