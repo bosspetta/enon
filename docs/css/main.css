@@ -1586,6 +1586,33 @@ body.dark-mode .intro-links__link--destacado {
     margin-top: 0;
   }
 }
+.activities__data--more-info a {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--clr-secondary);
+  border-radius: 10px;
+  color: var(--clr-dark);
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.25;
+  font-weight: 700;
+  font-size: 0.875rem;
+  display: block;
+  transition: all 0.3s ease;
+}
+.activities__data--more-info a:hover, .activities__data--more-info a:focus {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+}
+body.dark-mode .activities__data--more-info a {
+  background-color: var(--clr-primary);
+  color: var(--clr-dark);
+}
+body.dark-mode .activities__data--more-info a:hover, body.dark-mode .activities__data--more-info a:focus {
+  background-color: var(--clr-primary-dark);
+  color: var(--clr-light);
+}
 @media screen and (min-width: 35.9375em) {
   .activities__data {
     display: flex;
