@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import Gallery from '../components/Gallery'
 
 import isa from '../assest/img/enon-ceo.jpg'
 
@@ -36,6 +37,7 @@ export default function QueEsEnon() {
                 <li>{t( "enon.item-8" )}</li>
                 <li>{t( "enon.item-9" )}</li>
             </ul>
+            <Gallery />
         </main>
     )
 }
