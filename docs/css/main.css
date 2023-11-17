@@ -1549,16 +1549,6 @@ body.dark-mode .intro-links__link--destacado {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  position: relative;
-}
-.prices::after {
-  content: "";
-  width: 1px;
-  height: 100%;
-  background-color: var(--clr-primary);
-  position: absolute;
-  top: 0;
-  left: 50%;
 }
 .prices li {
   display: flex;
@@ -1570,8 +1560,11 @@ body.dark-mode .intro-links__link--destacado {
 }
 .prices__label {
   text-align: right;
-  padding-left: 5px;
   line-height: 1.25;
+  padding-left: 5px;
+  padding-right: 7.5px;
+  margin-right: -10.5px;
+  border-right: 2px solid #66776445;
 }
 
 .schedules-table {
