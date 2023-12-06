@@ -1208,9 +1208,12 @@ a {
     margin-bottom: 0;
   }
 }
+.img-wrapper img {
+  margin-bottom: 1rem;
+}
 @media screen and (min-width: 36em) {
   .img-wrapper img {
-    max-width: 220px;
+    max-width: 350px;
   }
 }
 

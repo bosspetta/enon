@@ -267,8 +267,9 @@ a {
         }
     }
     img {
+        margin-bottom: 1rem;
         @media screen and (min-width: 36em) {
-            max-width: 220px;
+            max-width: 350px;
         }
     }
 }
