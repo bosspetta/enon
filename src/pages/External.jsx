@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import ctTaichi from '../assest/img/cartel-taichi.png'
-import ctMeditation from '../assest/img/cartel-meditacion.jpg'
+// import ctMeditation from '../assest/img/cartel-meditacion.jpg'
+import ctMeditationBudismo from '../assest/img/cartel-meditacion-budismo.jpeg'
 import ctRestaurativo from '../assest/img/cartel-restaurativo.jpg'
 
 export default function External() {
@@ -34,8 +35,17 @@ export default function External() {
             </section>
             <section id="activities-meditation">
                 <h3>{t('schedules.meditacion')}</h3>
-                <p className="activities__data"><img src={ctMeditation} alt="" className="activities__image" />
+                <p className="activities__data"><img src={ctMeditationBudismo} alt="" className="activities__image" />
                 {t('external.p-meditation')}</p>
+                <p className="activities__data__info">
+                    <strong>{t('external.p-meditation-3a')}</strong><br />
+                    <strong>19:00h</strong> - <em>{t('external.p-meditation-3b')}</em>
+                </p>
+                <p className="activities__data__info">
+                    <strong>{t('external.p-meditation-4a')}</strong><br />
+                    <strong>19-20:30h</strong> - <em>{t('external.p-meditation-4b')}</em>
+                </p>
+
                 <p className="activities__data activities__data--more-info">
                     <Link to="https://centrobudista.online/?page_id=499" target="_blank" title="Ampliar información">{t('external.p-meditation-2')}</Link>
                 </p>

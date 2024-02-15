@@ -201,8 +201,12 @@
     "external": {
         "title": "Más actividades",
         "p-taichi": "Practica Tai Chi en enON con Jesús de la Osa. Pásate por la página de horarios para estar al tanto de todos los horarios y clases.",
-        "p-meditation": "Incorporar la meditación a tu día a día, puede traerte grandes beneficiones, tanto mentales como físicos. Se incorpora la meditación a enON para facilitarte que puedes hacerlo ¿A qué esperas? Pásate por la página de horarios para estar al tanto de todos los horarios y clases.",
+        "p-meditation": "Incorporar la meditación a tu día a día, puede traerte grandes beneficios, tanto mentales como físicos. Se incorpora la meditación a enON para facilitarte que puedes hacerlo ¿A qué esperas? Pásate por la página de horarios para estar al tanto de todos los horarios y clases.",
         "p-meditation-2": "Más información sobre el Grupo Triratna Sevilla",
+        "p-meditation-3a": "Viernes:",
+        "p-meditation-3b": "Meditación abierta",
+        "p-meditation-4a": "Último viernes de cada mes:",
+        "p-meditation-4b": "Tardes de meditación y Budismo (meditación, charlas, compartir…)",
         "p-restaurativo": "Un sábado de cada mes (consúltanos la próxima fecha), encontrarás un espacio confortable para recargarte, recuperarte, descansar… y estar contigo."
     }
 }
