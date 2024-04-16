@@ -13,6 +13,7 @@ import NoMatch from './pages/NoMatch'
 import SchedulesPrices from './pages/SchedulesPrices'
 import Normas from './pages/Normas'
 import External from './pages/External'
+import NormasForm from './pages/NormasForm'
 
 export default function App() {
     return (
@@ -29,6 +30,7 @@ export default function App() {
                         <Route path='/contacto' element={<Contacto />} />
                         <Route path='/horarios' element={<SchedulesPrices />} />
                         <Route path='/normas' element={<Normas />} />
+                        <Route path='/form' element={<NormasForm />} />
 
                         <Route path='*' element={<NoMatch status={404} />} />
                     </Route>
