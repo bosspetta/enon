@@ -1,0 +1,53 @@
+.page-content {
+    button {
+        background-color: var(--clr-primary);
+        color: var(--clr-white);
+        border-radius: 10px;
+        padding: 12px 20px;
+        border: none;
+        width: 100%;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    }
+    label {
+        display: block;
+        font-weight: 700;
+        color: var(--clr-primary);
+        text-transform: uppercase;
+        font-size: .75rem;
+        letter-spacing: .025rem;
+        margin-bottom: .25rem;
+    }
+    input {
+        &[type="text"],
+        &[type="password"],
+        &[type="email"] {
+            padding: 10px 15px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid var(--clr-medium-grey);
+        }
+        &[type="checkbox"] {
+            accent-color: var(--clr-secondary);
+        }
+    }
+}
+
+.login-form {
+    button {
+        margin-top: 1rem;
+    }
+    &__row {
+        margin-bottom: 1rem;
+        &--selection {
+            display: flex;
+            align-items: flex-start;
+            gap: .5rem;
+            label {
+                margin-top: -4px;
+            }
+        }
+    }
+}

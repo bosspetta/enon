@@ -90,67 +90,73 @@ export const Form = ({ correoUsuario }) => {
     return (
         <>
             <h2 className="page-title">Aceptación de las normas</h2>
-            <p><small>{correoUsuario}</small></p>
+            <p className="current-user"><small>{correoUsuario}</small></p>
             <button onClick={
                 () => signOut(auth)
             }>Cerrar sesión</button>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Nombre</label>
-                <input
-                    id="name"
-                    type="text"
-                    placeholder="Nombre"
-                    onChange={handleChange}
-                    name="name"
-                    value={formData.name}
-                />
-                <br />
-                <label htmlFor="surnames">Apellidos</label>
-                <input
-                    id="surnames"
-                    type="text"
-                    placeholder="Apellidos"
-                    onChange={handleChange}
-                    name="surnames"
-                    value={formData.surnames}
-                />
-                <br />
-                <label htmlFor="email">Email</label>
-                <input
-                    id="email"
-                    type="email"
-                    placeholder="Email"
-                    onChange={handleChange}
-                    name="email"
-                    value={formData.email}
-                />
-                <br />
-                <input
-                    type="checkbox"
-                    id="newsletter-check"
-                    onChange={handleChange}
-                    name="newsletter"
-                    checked={formData.newsletter}
-                />
-                <label htmlFor="newsletter-check">¿Quieres suscribirte al boletín enON?</label>
-                <br />
+            <form className="login-form" onSubmit={handleSubmit}>
+                <div className="login-form__row">
+                    <label htmlFor="name">Nombre</label>
+                    <input
+                        id="name"
+                        type="text"
+                        placeholder="Nombre"
+                        onChange={handleChange}
+                        name="name"
+                        value={formData.name}
+                    />
+                </div>
+                <div className="login-form__row">
+                    <label htmlFor="surnames">Apellidos</label>
+                    <input
+                        id="surnames"
+                        type="text"
+                        placeholder="Apellidos"
+                        onChange={handleChange}
+                        name="surnames"
+                        value={formData.surnames}
+                    />
+                </div>
+                <div className="login-form__row">
+                    <label htmlFor="email">Email</label>
+                    <input
+                        id="email"
+                        type="email"
+                        placeholder="Email"
+                        onChange={handleChange}
+                        name="email"
+                        value={formData.email}
+                    />
+                </div>
+                <div className="login-form__row login-form__row--selection">
+                    <input
+                        type="checkbox"
+                        id="newsletter-check"
+                        onChange={handleChange}
+                        name="newsletter"
+                        checked={formData.newsletter}
+                    />
+                    <label htmlFor="newsletter-check">¿Quieres suscribirte al boletín enON?</label>
+                </div>
                 <button id="btn-submit">{ subId === '' ? 'Guardar' : 'Actualizar' }</button>
             </form>
-            <div className="users-list">
+            <ol className="users-list">
                 {
                     list.map(item => (
-                        <div className="users-list__item" key={item.id}>
+                        <li className="users-list__item" key={item.id}>
                             <ul>
                                 <li>Nombre completo: {item.name} {item.surnames}</li>
                                 <li>Email: {item.email}</li>
                                 <li>Newsletter: {item.newsletter ? 'Sí' : 'No'}</li>
                             </ul>
-                            <button onClick={ () => deleteUser(item.id) }>Eliminar usuario</button>
-                            <button onClick={ () => setSubId(item.id) }>Actualizar usuario</button>
-                        </div>
+                            <div className="login-form__row login-form__row--selection">
+                                <button onClick={ () => deleteUser(item.id) }>Eliminar usuario</button>
+                                <button onClick={ () => setSubId(item.id) }>Actualizar usuario</button>
+                            </div>
+                        </li>
                     ))
                 }
-            </div>
+            </ol>
         </>
     )
 }
