@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import PropTypes from 'prop-types'
 
 import appFirebase from '../credentials'
 import { getAuth, signOut } from 'firebase/auth'
@@ -154,3 +155,6 @@ export const Form = ({ correoUsuario }) => {
     )
 }
 
+Form.propTypes = {
+    correoUsuario: PropTypes.string.isRequired
+}
