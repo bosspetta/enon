@@ -51,3 +51,13 @@
         }
     }
 }
+
+.enon-normas {
+    border: 1px solid var(--clr-medium-grey);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    height: 250px;
+    overflow-y: auto;
+    margin-bottom: 2rem;
+}

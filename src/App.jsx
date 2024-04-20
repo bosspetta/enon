@@ -14,6 +14,7 @@ import SchedulesPrices from './pages/SchedulesPrices'
 import Normas from './pages/Normas'
 import External from './pages/External'
 import NormasForm from './pages/NormasForm'
+import UsersList from './pages/UsersList'
 
 export default function App() {
     return (
@@ -31,6 +32,7 @@ export default function App() {
                         <Route path='/horarios' element={<SchedulesPrices />} />
                         <Route path='/normas' element={<Normas />} />
                         <Route path='/form' element={<NormasForm />} />
+                        <Route path='/usuarios' element={<UsersList />} />
 
                         <Route path='*' element={<NoMatch status={404} />} />
                     </Route>

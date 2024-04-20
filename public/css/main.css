@@ -1646,6 +1646,16 @@ body.dark-mode .intro-links__link--destacado {
   margin-top: -4px;
 }
 
+.enon-normas {
+  border: 1px solid var(--clr-medium-grey);
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  height: 250px;
+  overflow-y: auto;
+  margin-bottom: 2rem;
+}
+
 .activities__image {
   display: block;
   margin: 1rem auto;

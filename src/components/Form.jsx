@@ -1,25 +1,21 @@
-import { useEffect, useState } from 'react'
-import PropTypes from 'prop-types'
+import { useState } from 'react'
 
 import appFirebase from '../credentials'
-import { getAuth, signOut } from 'firebase/auth'
-import { getFirestore, collection, addDoc, getDocs, getDoc, doc, deleteDoc, setDoc } from 'firebase/firestore'
+import { getFirestore, collection, addDoc } from 'firebase/firestore'
 
-const auth = getAuth(appFirebase)
 const db = getFirestore(appFirebase)
 
-export const Form = ({ correoUsuario }) => {
+export const Form = () => {
 
     const initialValue = {
         name: '',
         surnames: '',
         email: '',
-        newsletter: true
+        newsletter: true,
+        accept: false
     }
 
     const [formData, setFormData] = useState(initialValue)
-    const [list, setList] = useState([])
-    const [subId, setSubId] = useState('')
 
     const handleChange = (event) => {
         const { name, value, type, checked } = event.target
@@ -33,68 +29,34 @@ export const Form = ({ correoUsuario }) => {
 
     const handleSubmit = async (event) => {
         event.preventDefault()
+        console.log(formData)
 
-        if (subId === '') {
-            try {
-                await addDoc(collection(db, 'usuarios'), {
-                    ...formData
-                })
-            } catch (error) {
-                console.log(error)
-            }
-        } else {
-            await setDoc(doc(db, 'usuarios', subId), {
+        try {
+            await addDoc(collection(db, 'usuarios'), {
                 ...formData
             })
-        }
-        setFormData({...initialValue})
-        setSubId('')
-    }
-
-    useEffect(() => {
-        const getList = async () => {
-            try {
-                const querySnapshot = await getDocs(collection(db, 'usuarios'))
-                const docs = []
-                querySnapshot.forEach((doc) => {
-                    docs.push({...doc.data(), id:doc.id})
-                })
-                setList(docs)
-            } catch (error) {
-                console.log(error)
-            }
-        }
-        getList()
-    }, [list])
-
-    const deleteUser = async (id) => {
-        await deleteDoc(doc(db, 'usuarios', id))
-    }
-
-    const getOne = async (id) => {
-        try {
-            const docRef = doc(db, 'usuarios', id)
-            const docSnap = await getDoc(docRef)
-            setFormData(docSnap.data())
         } catch (error) {
             console.log(error)
         }
+        setFormData({...initialValue})
     }
-
-    useEffect(() => {
-        if (subId !== '') {
-            getOne(subId)
-        }
-    }, [subId])
 
     return (
         <>
             <h2 className="page-title">Aceptación de las normas</h2>
-            <p className="current-user"><small>{correoUsuario}</small></p>
-            <button onClick={
-                () => signOut(auth)
-            }>Cerrar sesión</button>
-            <form className="login-form" onSubmit={handleSubmit}>
+            <div className="enon-normas">
+                <div className="enon-normas__inner">
+
+                    <h3 className="page-title--subtitle">Where does it come from?</h3>
+
+                    <p><small>Serán considerados alumnos inscritos aquellos que abonen la mensualidad regularmente. Serán considerados alumnos eventuales, todos aquellos quienes tomen clases sueltas. Todos los alumnos (inscritos y eventuales) deberán leer el siguiente reglamento de inicio y políticas de enON Estudio de Yoga. Adicionalmente, deberán firmar el consentimiento que se les entregará al momento de efectuar la inscripción. Las personas que no cumplan con las siguientes normas y obligaciones, no tendrán derecho a quejas o reclamaciones si se les negara o se les prohibiera el uso del estudio de yoga.</small></p>
+
+                    <p><small>El alumno/a deberá comunicar claramente por palabra, vía WhatsApp o correo electrónico, su intención de darse de baja de las clases de Yoga. La baja deberá comunicarse antes del día 1 de cada mes. Si la baja se produce después del día 1, a mitad o finales de mes, por el motivo que sea, el alumno/a se compromete a pagar la mensualidad completa de ese mes. Aunque el alumno/a no haya asistido a ninguna clase ese mes, puesto que ha ocupado una plaza en la escuela, deberá abonar igualmente esa mensualidad.</small></p>
+
+                    <p><small>Todos los datos personales proporcionados serán tratados únicamente con fines comerciales y se almacenarán siguiendo la normativa de protección de datos. Tratamos toda la información personal como confidencial. En ninguna circunstancia proporcionaremos información personal a terceros no autorizados y en todo momento protegeremos sus datos contra cualquier acceso no autorizado. El alumno debe aceptar recibir el boletín de noticias y ofertas especiales de enON Estudio de Yoga.</small></p>
+                </div>
+            </div>
+            <form className="login-form login-form--accept" onSubmit={handleSubmit}>
                 <div className="login-form__row">
                     <label htmlFor="name">Nombre</label>
                     <input
@@ -104,6 +66,7 @@ export const Form = ({ correoUsuario }) => {
                         onChange={handleChange}
                         name="name"
                         value={formData.name}
+                        required
                     />
                 </div>
                 <div className="login-form__row">
@@ -126,7 +89,19 @@ export const Form = ({ correoUsuario }) => {
                         onChange={handleChange}
                         name="email"
                         value={formData.email}
+                        required
                     />
+                </div>
+                <div className="login-form__row login-form__row--selection">
+                    <input
+                        type="checkbox"
+                        id="accept-check"
+                        onChange={handleChange}
+                        name="accept"
+                        checked={formData.accept}
+                        required
+                    />
+                    <label htmlFor="accept-check">¿Acepta las normas sobre comportamiento y uso de las instalaciones que acaba de leer?</label>
                 </div>
                 <div className="login-form__row login-form__row--selection">
                     <input
@@ -138,29 +113,9 @@ export const Form = ({ correoUsuario }) => {
                     />
                     <label htmlFor="newsletter-check">¿Quieres suscribirte al boletín enON?</label>
                 </div>
-                <button id="btn-submit">{ subId === '' ? 'Guardar' : 'Actualizar' }</button>
+                <button id="btn-submit">Guardar</button>
             </form>
-            <ol className="users-list">
-                {
-                    list.map(item => (
-                        <li className="users-list__item" key={item.id}>
-                            <ul>
-                                <li>Nombre completo: {item.name} {item.surnames}</li>
-                                <li>Email: {item.email}</li>
-                                <li>Newsletter: {item.newsletter ? 'Sí' : 'No'}</li>
-                            </ul>
-                            <div className="login-form__row login-form__row--selection">
-                                <button onClick={ () => deleteUser(item.id) }>Eliminar usuario</button>
-                                <button onClick={ () => setSubId(item.id) }>Actualizar usuario</button>
-                            </div>
-                        </li>
-                    ))
-                }
-            </ol>
         </>
     )
 }
 
-Form.propTypes = {
-    correoUsuario: PropTypes.string.isRequired
-}
