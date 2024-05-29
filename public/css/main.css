@@ -960,6 +960,7 @@ body {
   font: 400 1.05rem/1.5 "Montserrat", Helvetica, Arial, sans-serif;
   background-color: var(--background);
   color: var(--foreground);
+  counter-reset: section;
 }
 body.menu-opened {
   overflow: hidden;
@@ -1226,6 +1227,35 @@ a {
 }
 .main-content .current-user {
   margin-bottom: 1.5rem;
+}
+
+.users-list {
+  list-style: none;
+}
+.users-list strong {
+  display: block;
+}
+.users-list > li {
+  background-color: var(--clr-real-white);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+}
+.users-list > li::before {
+  counter-increment: section;
+  content: counter(section);
+  font-weight: 700;
+  background-color: var(--clr-secondary);
+  margin: -15px 15px -15px -15px;
+  padding: 15px;
+}
+.users-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.users-list ul > li:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 @keyframes menuIn {
