@@ -51,7 +51,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
-                        to='/quiromasaje'
+                        to='/masaje'
                         onClick={hideMenu}>
                         {t( "main-menu.quiromasaje" )}
                     </NavLink>

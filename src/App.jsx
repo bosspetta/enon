@@ -24,7 +24,7 @@ export default function App() {
                         <Route path='/que-es-enon' element={<QueEsEnon />} />
                         <Route path='/yoga' element={<Yoga />} />
                         <Route path='/yoga/restaurativo' element={<YogaRestaurativo />} />
-                        <Route path='/quiromasaje' element={<Quiromasaje />} />
+                        <Route path='/masaje' element={<Quiromasaje />} />
                         <Route path='/mas-actividades' element={<External />} />
                         <Route path='/contacto' element={<Contacto />} />
                         <Route path='/horarios' element={<SchedulesPrices />} />

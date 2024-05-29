@@ -2,13 +2,13 @@
     "isa": "Isabel Martínez San Esteban",
     "header": {
         "open-menu": "Open main menu",
-        "subtitle": "Yoga and Chiromassage studio"
+        "subtitle": "Yoga, Massage and Chiromassage studio"
     },
     "main-menu": {
         "inicio": "Home",
         "que-es": "What is enON?",
         "restaurativo": "Restorative Yoga",
-        "quiromasaje": "Chiromassage",
+        "quiromasaje": "Massage and Chiromassage",
         "actividades": "More activities",
         "contacto": "Visit us / Contact us",
         "horarios": "Schedules and prices",
@@ -16,7 +16,7 @@
     },
     "home": {
         "welcome-title": "Welcome…",
-        "intro": "Thank you for your interest in enON. On this website you will find a lot of information about how and from where my Yoga classes are taught, or how the Chiromassage I do can benefit you. Take a look around the sections and pages to discover enON in depth, and if you are even more curious, come and visit me, I am in Calle San Luis 78, very close to Plaza del Pumarejo."
+        "intro": "Thank you for your interest in enON. On this website you will find a lot of information about how and from where my Yoga classes are taught, or how the Massage and Chiromassage I do can benefit you. Take a look around the sections and pages to discover enON in depth, and if you are even more curious, come and visit me, I am in Calle San Luis 78, very close to Plaza del Pumarejo."
     },
     "enon": {
         "title": "What is enON?",
@@ -56,7 +56,7 @@
         }
     },
     "quiro": {
-        "title": "Chiromassage",
+        "title": "Massage and Chiromassage",
         "p1": "Chiromassage is a set of manual therapeutic techniques, used on the muscular and adipose tissues and the skin, with the aim of relieving ailments and achieving a state of relaxation, freeing us from stress and balancing our organism. A technique which, when applied with sensitivity, achieves a balancing effect on the nervous system.",
         "p2": "Indications and Benefits among others:",
         "p3": "To facilitate the manual displacement of the manoeuvres, the massage requires the use of certain oils or creams, thus integrating another way of favouring a state of relaxation known in alternative medicine as aroma therapy. It is very pleasant and useful to use the aromatic properties of essential oils previously diluted in other carrier oils, for this I rely on vegetable cosmetics, working with the brand and philosophy of (Gandiva). Gandiva is the essence of plant-based cosmetics, the soul of plants and trees formulated with the principles of aroma therapy and phytotherapy.",

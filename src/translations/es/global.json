@@ -2,13 +2,13 @@
     "isa": "Isabel Martínez San Esteban",
     "header": {
         "open-menu": "Abrir menú de navegación",
-        "subtitle": "Estudio de Yoga y Quiromasaje"
+        "subtitle": "Estudio de Yoga, Masaje y Quiromasaje"
     },
     "main-menu": {
         "inicio": "Inicio",
         "que-es": "¿Qué es enON?",
         "restaurativo": "Yoga restaurativo",
-        "quiromasaje": "Quiromasaje",
+        "quiromasaje": "Masaje y Quiromasaje",
         "actividades": "Más actividades",
         "contacto": "Visítanos / Contacto",
         "horarios": "Horarios y precios",
@@ -16,7 +16,7 @@
     },
     "home": {
         "welcome-title": "Bienvenido…",
-        "intro": "Gracias por tu interés en enON. En esta página web encontrarás mucha información sobre cómo y desde dónde se imparten mis clases de Yoga, o cómo puede beneficiarte el Quiromasaje que realizo. Date una vuelta por las secciones y páginas para descubrir enON a fondo, y si aún tienes más curiosidad, ven a visitarme, estoy en la Calle San Luis 78, muy cerquita de la Plaza del Pumarejo."
+        "intro": "Gracias por tu interés en enON. En esta página web encontrarás mucha información sobre cómo y desde dónde se imparten mis clases de Yoga, o cómo puede beneficiarte el Masaje y Quiromasaje que realizo. Date una vuelta por las secciones y páginas para descubrir enON a fondo, y si aún tienes más curiosidad, ven a visitarme, estoy en la Calle San Luis 78, muy cerquita de la Plaza del Pumarejo."
     },
     "enon": {
         "title": "¿Qué es enON?",
@@ -56,8 +56,8 @@
         }
     },
     "quiro": {
-        "title": "Quiromasaje",
-        "p1": "El quiromasaje es un conjunto de técnicas terapéuticas manuales, empleadas sobre los tejidos musculares, adiposos y la piel, con el objetivo de aliviar dolencias y conseguir un estado de relajación, liberarnos del estrés y equilibrar nuestro organismo. Una técnica que, aplicada con sensibilidad permite lograr un efecto de equilibrio sobre el sistema nervioso.",
+        "title": "Masaje y Quiromasaje",
+        "p1": "El Quiromasaje es un conjunto de técnicas terapéuticas manuales, empleadas sobre los tejidos musculares, adiposos y la piel, con el objetivo de aliviar dolencias y conseguir un estado de relajación, liberarnos del estrés y equilibrar nuestro organismo. Una técnica que, aplicada con sensibilidad permite lograr un efecto de equilibrio sobre el sistema nervioso.",
         "p2": "Indicaciones y Beneficios entre otros:",
         "p3": "Para facilitar el desplazamiento manual de las maniobras, en el masaje se precisa el uso de determinados aceites o cremas, integrando así otra forma de favorecer un estado de relajación conocido en medicina alternativa como aroma terapia. Resulta muy agradable y útil utilizar las propiedades aromáticas de los aceites esenciales diluidos previamente en otros aceites vehiculares, para ello me apoyo en la cosmética vegetal, trabajando con la marca y filosofía de (Gandiva). Gandiva es la esencia de la cosmética vegetal, el alma de las plantas y los arboles formulada con principios de la aroma terapia y fitoterapia.",
         "p4": "Puedes obtener más información sobre los productos con los que trabajamos en el siguiente enlace, ",
