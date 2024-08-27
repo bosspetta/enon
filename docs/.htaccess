@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*) / [R=301,L]
+
+ErrorDocument 503 "Server broken"
+ErrorDocument 500 "Server broken"
+ErrorDocument 404 "File not found"
+ErrorDocument 403 "Permission denied"
+ErrorDocument 401 "Authentication required"
+
