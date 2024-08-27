@@ -8,6 +8,7 @@ export default function NoMatch() {
     document.body.classList.remove('schedules-page')
     document.body.classList.remove('rules-page')
     document.body.classList.remove('external-page')
+    document.body.classList.remove('mindfulness-page')
     document.body.classList.add('no-found-page')
 
     return (

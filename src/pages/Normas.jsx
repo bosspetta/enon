@@ -10,7 +10,9 @@ export default function Normas() {
     document.body.classList.remove('schedules-page')
     document.body.classList.remove('chiromassage-page')
     document.body.classList.remove('external-page')
+    document.body.classList.remove('mindfulness-page')
     document.body.classList.add('rules-page')
+
     return (
         <main className="page-content">
             <NormasTexto />

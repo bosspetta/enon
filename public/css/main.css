@@ -1038,6 +1038,10 @@ body.external-page::before {
   background: transparent url("../img/background-external.jpeg") bottom center no-repeat;
   background-size: cover;
 }
+body.mindfulness-page::before {
+  background: transparent url("../img/background-mindfulness.jpg") bottom center no-repeat;
+  background-size: cover;
+}
 
 button {
   cursor: pointer;
@@ -1546,6 +1550,10 @@ body.dark-mode .intro-links__link {
 body.dark-mode .intro-links__link--destacado {
   background-color: var(--clr-primary-dark);
   color: var(--clr-black);
+}
+.intro-links__link--alone {
+  display: block;
+  margin-block: 2rem;
 }
 
 .prices {

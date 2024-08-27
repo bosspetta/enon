@@ -6,6 +6,7 @@ import Layout from './layout'
 import Home from './pages/Home'
 import QueEsEnon from './pages/QueEsEnon'
 import Yoga from './pages/Yoga'
+import Mindfulness from './pages/Mindfulness'
 import YogaRestaurativo from './pages/YogaRestaurativo'
 import Quiromasaje from './pages/Quiromasaje'
 import Contacto from './pages/Contacto'
@@ -23,6 +24,7 @@ export default function App() {
                         <Route index element={<Home />} />
                         <Route path='/que-es-enon' element={<QueEsEnon />} />
                         <Route path='/yoga' element={<Yoga />} />
+                        <Route path='/mindfulness' element={<Mindfulness />} />
                         <Route path='/yoga/restaurativo' element={<YogaRestaurativo />} />
                         <Route path='/masaje' element={<Quiromasaje />} />
                         <Route path='/mas-actividades' element={<External />} />

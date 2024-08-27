@@ -96,6 +96,12 @@ body {
             background-size: cover;
         }
     }
+    &.mindfulness-page {
+        &::before {
+            background: transparent url('../img/background-mindfulness.jpg') bottom center no-repeat;
+            background-size: cover;
+        }
+    }
 }
 
 button {

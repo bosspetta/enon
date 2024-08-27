@@ -50,6 +50,14 @@ export default function MainMenu() {
                 </li>
                 <li className="main-menu__item">
                     <NavLink
+                        className={({ isActive }) => isActive ? 'main-menu__link selected' : 'main-menu__link'}
+                        to='/mindfulness'
+                        onClick={hideMenu}>
+                        Mindfulness
+                    </NavLink>
+                </li>
+                <li className="main-menu__item">
+                    <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
                         to='/masaje'
                         onClick={hideMenu}>

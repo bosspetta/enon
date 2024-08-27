@@ -40,5 +40,9 @@
                 color: var(--clr-black);
             }
         }
+        &--alone {
+            display: block;
+            margin-block: 2rem;
+        }
     }
 }

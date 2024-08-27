@@ -18,6 +18,7 @@ export default function External() {
     document.body.classList.remove('schedules-page')
     document.body.classList.remove('rules-page')
     document.body.classList.remove('contact-page')
+    document.body.classList.remove('mindfulness-page')
     document.body.classList.add('external-page')
 
     return (

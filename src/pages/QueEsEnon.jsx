@@ -13,6 +13,7 @@ export default function QueEsEnon() {
     document.body.classList.remove('schedules-page')
     document.body.classList.remove('rules-page')
     document.body.classList.remove('external-page')
+    document.body.classList.remove('mindfulness-page')
     document.body.classList.add('enon-page')
 
     const { t } = useTranslation('global')

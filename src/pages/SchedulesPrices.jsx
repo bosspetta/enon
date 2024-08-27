@@ -12,6 +12,7 @@ export default function SchedulesPrices() {
     document.body.classList.remove('yoga-restaurativo-page')
     document.body.classList.remove('rules-page')
     document.body.classList.remove('external-page')
+    document.body.classList.remove('mindfulness-page')
     document.body.classList.add('schedules-page')
 
     const { t } = useTranslation('global')
