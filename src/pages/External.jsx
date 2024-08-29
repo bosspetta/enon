@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
-import ctTaichi from '../assest/img/cartel-taichi.png'
-// import ctMeditation from '../assest/img/cartel-meditacion.jpg'
 import ctMeditationBudismo from '../assest/img/cartel-meditacion-budismo.jpeg'
 import ctRestaurativo from '../assest/img/cartel-restaurativo.jpg'
 
@@ -28,11 +26,6 @@ export default function External() {
                 <h3>{t('main-menu.restaurativo')}</h3>
                 <p className="activities__data"><img src={ctRestaurativo} alt="" className="activities__image" />
                 {t('external.p-restaurativo')}</p>
-            </section>
-            <section id="activities-taichi">
-                <h3>Tai Chi</h3>
-                <p className="activities__data"><img src={ctTaichi} alt="" className="activities__image" />
-                {t('external.p-taichi')}</p>
             </section>
             <section id="activities-meditation">
                 <h3>{t('schedules.meditacion')}</h3>

@@ -28,7 +28,7 @@ export default function SchedulesTable() {
                     <td headers="schedules-tableColHdr2 schedules-tableRowHdr2">Hatha Yoga</td>
                     <td headers="schedules-tableColHdr3 schedules-tableRowHdr2"></td>
                     <td headers="schedules-tableColHdr4 schedules-tableRowHdr2">Hatha Yoga</td>
-                    <td headers="schedules-tableColHdr5 schedules-tableRowHdr2">Tai Chi</td>
+                    <td headers="schedules-tableColHdr5 schedules-tableRowHdr2"></td>
                     <td headers="schedules-tableColHdr6 schedules-tableRowHdr2"></td>
                 </tr>
                 <tr>
