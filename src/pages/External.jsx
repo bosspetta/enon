@@ -27,23 +27,6 @@ export default function External() {
                 <p className="activities__data"><img src={ctRestaurativo} alt="" className="activities__image" />
                 {t('external.p-restaurativo')}</p>
             </section>
-            <section id="activities-meditation">
-                <h3>{t('schedules.meditacion')}</h3>
-                <p className="activities__data"><img src={ctMeditationBudismo} alt="" className="activities__image" />
-                {t('external.p-meditation')}</p>
-                <p className="activities__data__info">
-                    <strong>{t('external.p-meditation-3a')}</strong><br />
-                    <strong>19:00h</strong> - <em>{t('external.p-meditation-3b')}</em>
-                </p>
-                <p className="activities__data__info">
-                    <strong>{t('external.p-meditation-4a')}</strong><br />
-                    <strong>19-20:30h</strong> - <em>{t('external.p-meditation-4b')}</em>
-                </p>
-
-                <p className="activities__data activities__data--more-info">
-                    <Link to="https://centrobudista.online/?page_id=499" target="_blank" title="Ampliar información">{t('external.p-meditation-2')}</Link>
-                </p>
-            </section>
         </main>
     )
 }

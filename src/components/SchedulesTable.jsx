@@ -37,7 +37,7 @@ export default function SchedulesTable() {
                     <td headers="schedules-tableColHdr3 schedules-tableRowHdr3"></td>
                     <td headers="schedules-tableColHdr4 schedules-tableRowHdr3"></td>
                     <td headers="schedules-tableColHdr5 schedules-tableRowHdr3"></td>
-                    <td headers="schedules-tableColHdr6 schedules-tableRowHdr3">{t('schedules.meditacion')}</td>
+                    <td headers="schedules-tableColHdr6 schedules-tableRowHdr3"></td>
                 </tr>
                 <tr>
                     <th id="schedules-tableRowHdr4">19:30</th>
