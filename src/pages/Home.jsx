@@ -22,7 +22,7 @@ export default function Home() {
             <p>{t( "home.intro" )}</p>
             <ul className="intro-links">
                 <li className="intro-links__item"><Link className="intro-links__link" to='/que-es-enon'>{t( "main-menu.que-es" )}</Link></li>
-                <li className="intro-links__item"><Link className="intro-links__link" to='/yoga'>Yoga</Link></li>
+                <li className="intro-links__item"><Link className="intro-links__link" to='/yoga'>Yoga Classes</Link></li>
                 <li className="intro-links__item"><Link className="intro-links__link" to='/yoga/restaurativo'>{t( "yoga-restaurativo" )}</Link></li>
                 <li className="intro-links__item"><Link className="intro-links__link" to='/masaje'>{t( "main-menu.quiromasaje" )}</Link></li>
                 <li className="intro-links__item"><Link className="intro-links__link" to='/mindfulness'>{t("main-menu.mindfulness")}</Link></li>
