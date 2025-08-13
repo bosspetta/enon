@@ -1641,6 +1641,19 @@ body.dark-mode .activities__data--more-info a:hover, body.dark-mode .activities_
     margin-top: 1rem;
   }
 }
+.activities__data__text__item {
+  display: block;
+}
+.activities__data__text__item--title {
+  font-weight: 700;
+}
+.activities__data__text__item--title:not(:first-child) {
+  margin-top: 0.875rem;
+}
+.activities__data__text__item--close {
+  margin-top: 0.875rem;
+  font-style: italic;
+}
 
 .opening {
   display: flex;

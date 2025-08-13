@@ -44,5 +44,20 @@
             gap: 1rem;
             margin-top: 1rem;
         }
+        &__text {
+            &__item {
+                display: block;
+                &--title {
+                    font-weight: 700;
+                    &:not(:first-child) {
+                        margin-top: .875rem;
+                    }
+                }
+                &--close {
+                    margin-top: .875rem;
+                    font-style: italic;
+                }
+            }
+        }
     }
 }
