@@ -66,6 +66,14 @@ export default function MainMenu() {
                 </li>
                 <li className="main-menu__item">
                     <NavLink
+                        className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
+                        to='/bono-regalo'
+                        onClick={hideMenu}>
+                        {t( "main-menu.bono-regalo" )}
+                    </NavLink>
+                </li>
+                <li className="main-menu__item">
+                    <NavLink
                         className={({ isActive }) => isActive ? 'main-menu__link selected' : 'main-menu__link'}
                         to='/mas-actividades'
                         onClick={hideMenu}>

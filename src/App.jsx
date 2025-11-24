@@ -14,6 +14,7 @@ import NoMatch from './pages/NoMatch'
 import SchedulesPrices from './pages/SchedulesPrices'
 import Normas from './pages/Normas'
 import External from './pages/External'
+import BonoRegalo from './pages/BonoRegalo'
 
 export default function App() {
     return (
@@ -31,6 +32,7 @@ export default function App() {
                         <Route path='/contacto' element={<Contacto />} />
                         <Route path='/horarios' element={<SchedulesPrices />} />
                         <Route path='/normas' element={<Normas />} />
+                        <Route path='/bono-regalo' element={<BonoRegalo />} />
 
                         <Route path='*' element={<NoMatch status={404} />} />
                     </Route>

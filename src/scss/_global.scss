@@ -280,6 +280,14 @@ a {
     }
 }
 
+.precios {
+    li {
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--clr-secondary);
+        }
+    }
+}
+
 @keyframes menuIn {
     0% {
         left: -100%;

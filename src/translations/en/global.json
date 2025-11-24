@@ -13,7 +13,8 @@
         "contacto": "Visit us / Contact us",
         "horarios": "Schedules and prices",
         "politicas": "Rules",
-        "mindfulness": "Mindfulness"
+        "mindfulness": "Mindfulness",
+        "bono-regalo": "Gift voucher"
     },
     "home": {
         "welcome-title": "Welcome…",
@@ -238,5 +239,23 @@
         "p-02": "You can also download the dossier with detailed information about our 8-week Mindfulness programme by clicking on the following button.",
         "download": "Download dossier",
         "download-title": "Download the 8-week Mindfulness Programme dossier enON"
+    },
+    "br": {
+        "title": "Gift voucher",
+        "sub-title": "Give the gift of wellbeing",
+        "no-video": "Your browser does not support video playback.",
+        "p-1": "Give the gift of wellbeing, give the gift of calm, give the gift of unique moments with enormous benefits. At enON, we offer gift cards so you can choose from any of our services and give them to your loved ones.",
+        "p-2": "You can obtain it in physical or digital format by calling 640 029 302 or via WhatsApp (same number).",
+        "p-3": "The gift card will be valid for 6 months from the date of purchase.",
+        "title-ideas": "Here are some ideas for gifts you can buy through enON.",
+        "precios": "Prices",
+        "p-1-title": "Chiromassage 45 minutes",
+        "p-2-title": "60-minute relaxation massage",
+        "p-3-title": "90-minute relaxation massage",
+        "p-4-title": "Facial hygiene and massage",
+        "p-1-desc": "Localised massage, targeting deeper layers of muscle tissue to relieve contractures and tension.",
+        "p-2-desc": "Traditional relaxation massage to relieve stress, achieve deep rest and calm the nervous system.",
+        "p-3-desc": "Traditional relaxation massage to relieve stress, achieve deep rest and calm the nervous system.",
+        "p-4-desc": "Facial cleansing with plant-based products, natural cosmetics (Gandiba)."
     }
 }

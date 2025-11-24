@@ -30,6 +30,7 @@ export default function Home() {
                 <li className="intro-links__item"><Link className="intro-links__link" to='/horarios'>{t( "main-menu.horarios" )}</Link></li>
                 <li className="intro-links__item"><Link className="intro-links__link" to='/contacto'>{t( "main-menu.contacto" )}</Link></li>
                 <li className="intro-links__item"><Link className="intro-links__link" to='/normas'>{t( "main-menu.politicas" )}</Link></li>
+                <li className="intro-links__item"><Link className="intro-links__link" to='/bono-regalo'>{t( "main-menu.bono-regalo" )}</Link></li>
             </ul>
         </main>
     )

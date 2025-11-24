@@ -13,7 +13,8 @@
         "contacto": "Visítanos / Contacto",
         "horarios": "Horarios y precios",
         "politicas": "Normas",
-        "mindfulness": "Mindfulness"
+        "mindfulness": "Mindfulness",
+        "bono-regalo": "Tarjeta regalo"
     },
     "home": {
         "welcome-title": "Bienvenido…",
@@ -169,7 +170,7 @@
         "p-2": "Las personas que practican dentro de las instalaciones de enON Estudio de Yoga están de acuerdo con las siguientes condiciones.",
         "title-11": "PAGOS",
         "list-8": {
-            "li-1": "Las clases se abonarán durante la primera semana del mes (siete primeros días del mes). Todos los meses se abonará el mes completo, independientemente de si se viene a clase o no (por el motivo que sea), o del número de clases que tenga el mes. El Pago de la mensualidad puede hacerse en efectivo. Al realizar el pago en efectivo, el alumno/a habrá de firmar en la Hoja de Control de Pagos como método de verificación del abono de la mensualidad correspondiente.",
+            "li-1": "Las clases se abonarán durante la primera semana del mes (siete primeros días del mes). Todos los meses se abonará el mes completo, independientemente de si se viene a clase o no (por el motivo que sea), o del número de clases que tenga el mes. El Pago de la mensualidad puede hacerse en efectivo. Al realizar el pago en efectivo, el alumno/a habrá de firmar en la Hoja de Control de Pagos como método de verificación del aTarjeta de la mensualidad correspondiente.",
             "li-2": "Cada mes cuenta con 8 clases de yoga, 2 por semana.",
             "li-3": "Para medio mes cuenta con 4 clases 1 por semana.",
             "li-4": "La persona debe elegir día fijo para su práctica donde le será reservada su plaza.",
@@ -238,5 +239,23 @@
         "p-02": "También puedes descargar el dosier con información detallada sobre nuestro programa Mindfulness de 8 semanas, haciendo clic en el siguiente botón.",
         "download": "Descargar dosier",
         "download-title": "Descargar dosier del Programa Mindfulness de 8 semanas enON"
+    },
+    "br": {
+        "title": "Tarjeta regalo",
+        "sub-title": "Regala bienestar",
+        "no-video": "Su navegador no soporta la reproducción del vídeo.",
+        "p-1": "Regala bienestar, regala calma, regala momentos únicos con un enorme beneficio. En enON disponemos de tarjetas regalo para que puedas elegir entre cualquiera de nuestros servicios y poderlo obsequiar a quien tu estimes.",
+        "p-2": "Podrás obtenerlo en formato físico o digital, llamando al 640 029 302 o a través de WhatsApp (mismo número).",
+        "p-3": "La tarjeta regalo tendrá una validez de 6 meses desde que se adquiere su compra.",
+        "title-ideas": "Aquí tienes algunas ideas de qué regalar a través enON.",
+        "precios": "Precios",
+        "p-1-title": "Quiromasaje 45 minutos",
+        "p-2-title": "Masaje relajación 60 minutos",
+        "p-3-title": "Masaje relajación 90 minutos",
+        "p-4-title": "Higiene y masaje facial",
+        "p-1-desc": "Masaje localizado, dirigido a capas más profundas del tejido muscular para aliviar contracturas y tensiones.",
+        "p-2-desc": "Masaje tradicional de relajación, para aliviar el estrés, obtener un descanso profundo y calmar el sistema nervioso.",
+        "p-3-desc": "Masaje tradicional de relajación, para aliviar el estrés, obtener un descanso profundo y calmar el sistema nervioso.",
+        "p-4-desc": "Limpieza de cutis con productos vegetales, cosmética natural (Gandiba)."
     }
 }
