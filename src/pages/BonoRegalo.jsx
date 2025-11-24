@@ -24,7 +24,6 @@ export default function BonoRegalo() {
     return (
         <main className="page-content">
             <h2 className="page-title">{t( "br.title" )}</h2>
-            <h3 className="page-title page-title--subtitle">{t( "br.sub-title" )}</h3>
 
             <p>{t( "br.p-1" )}</p>
             <p>{t( "br.p-2" )}</p>
@@ -65,6 +64,11 @@ export default function BonoRegalo() {
                         <p><strong>{t( "br.p-4-title" )}</strong></p>
                         <p>{t( "br.p-4-desc" )}<br />
                         <strong>45 €</strong></p>
+                    </li>
+                    <li>
+                        <p><strong>{t( "br.p-5-title" )}</strong></p>
+                        <p>{t( "br.p-5-desc" )}<br />
+                        <strong>25 €</strong></p>
                     </li>
                 </ul>
             </div>
