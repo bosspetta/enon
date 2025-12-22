@@ -14,6 +14,7 @@ export default function Home() {
     document.body.classList.remove('rules-page')
     document.body.classList.remove('external-page')
     document.body.classList.remove('mindfulness-page')
+    document.body.classList.remove('bono-regalo')
     document.body.classList.add('home-page')
 
     return (

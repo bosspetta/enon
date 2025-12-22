@@ -13,6 +13,7 @@ export default function Yoga() {
     document.body.classList.remove('rules-page')
     document.body.classList.remove('external-page')
     document.body.classList.remove('yoga-page')
+    document.body.classList.remove('bono-regalo')
     document.body.classList.add('mindfulness-page')
 
     const { t } = useTranslation('global')

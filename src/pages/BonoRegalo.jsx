@@ -18,6 +18,7 @@ export default function BonoRegalo() {
     document.body.classList.remove('external-page')
     document.body.classList.remove('mindfulness-page')
     document.body.classList.add('enon-page')
+    document.body.classList.add('bono-regalo')
 
     const { t } = useTranslation('global')
 

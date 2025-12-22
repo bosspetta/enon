@@ -13,6 +13,7 @@ export default function Quiromasaje() {
     document.body.classList.remove('rules-page')
     document.body.classList.remove('external-page')
     document.body.classList.remove('mindfulness-page')
+    document.body.classList.remove('bono-regalo')
     document.body.classList.add('chiromassage-page')
 
     return (

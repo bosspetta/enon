@@ -3,6 +3,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom'
 import ReactGA from 'react-ga4'
 
 import ScrollToTop from './components/ScrollToTop'
+import ChristmasPopup from './components/ChristmasPopup'
 
 import Layout from './layout'
 import Home from './pages/Home'
@@ -46,6 +47,7 @@ export default function App() {
                     </Route>
                 </Routes>
             </ScrollToTop>
+            <ChristmasPopup />
         </HashRouter>
     )
 }

@@ -259,5 +259,13 @@
         "p-3-desc": "Masaje tradicional de relajación, para aliviar el estrés, obtener un descanso profundo y calmar el sistema nervioso.",
         "p-4-desc": "Limpieza de cutis con productos vegetales, cosmética natural (Gandiba).",
         "p-5-desc": "Relajación y alivio del estrés a través de una sesión de 2 horas de Yoga Restaurativo."
+    },
+    "tarjeta-popup": {
+        "title": "Tarjeta Regalo enON",
+        "p1": "Aprovecha esta oferta para regalar una tarjeta regalo de cualquiera de los servicios de enON.",
+        "p2": "Echa un vistazo a nuestras «Tarjeta Regalo» para ampliar información.",
+        "p3": "Este año… Regala bienestar, regala calma, regala momentos únicos con un enorme beneficio.",
+        "close": "Cerrar información",
+        "btn": "Tarjeta Regalo enON"
     }
 }

@@ -259,5 +259,13 @@
         "p-3-desc": "Traditional relaxation massage to relieve stress, achieve deep rest and calm the nervous system.",
         "p-4-desc": "Facial cleansing with plant-based products, natural cosmetics (Gandiba).",
         "p-5-desc": "Relaxation and stress relief through a 2-hour session of Restorative Yoga."
+    },
+    "tarjeta-popup": {
+        "title": "Gift Card enON",
+        "p1": "Take advantage of this offer to give a gift card for any of enON's services.",
+        "p2": "Please take a look at our ‘Gift Cards’ for further information.",
+        "p3": "This year… Give the gift of wellbeing, give the gift of calm, give the gift of unique moments with enormous benefits.",
+        "close": "Close information",
+        "btn": "enON Gift Card"
     }
 }
