@@ -1,74 +1,81 @@
 .gif-carg-popup {
-    position: fixed;
-    top: calc(100% - 57px);
-    left: 0;
-    width: 100%;
-    height: 100dvh;
-    z-index: 10;
-    background: var(--clr-white) url('/img/background-christmas-popup.jpg') center center;
-    background-size: 300px auto;
-    border-top: 1px solid var(--clr-light-grey);
-    box-shadow: 0 0 5px 2.5px rgba(0,0,0,.25);
-    font-size: .95rem;
-    transition: top .3s ease;
-    body.bono-regalo & {
+    &__opened {
+        .gif-carg-popup {
+            &__data {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100dvh;
+                background-color: rgba(102,119,100,.9);
+                z-index: 10;
+                &__inner {
+                    background-color: white;
+                    width: 90vw;
+                    max-width: 600px;
+                    padding: calc(45px * .5);
+                    border-radius: 10px;
+                    font-size: .95rem;
+                    position: relative;
+                    p {
+                        margin-bottom: .5rem;
+                    }
+                    .intro-links__link--alone {
+                        margin: 1rem 0 0;
+                    }
+                }
+            }
+        }
+    }
+    &__data {
         display: none;
     }
-    &__opened {
-        top: 0;
-        .gif-carg-popup__header button {
-            background: transparent url('/img/ico/ico-close.svg') calc(100% - 15px) center no-repeat;
-            background-size: 25px auto;
-        }
-    }
-    &__content {
-        max-width: 605px;
-        margin-inline: auto;
-    }
-    p {
-        &:not(:last-child) {
-            margin-bottom: .75rem;
-        }
-    }
-    &__inner {
-        padding: calc(60px * .5);
-        height: 100%;
-        background: linear-gradient(to bottom, rgb(255,255,255) 0%,rgba(white,.9) 54%,rgba(white,.8) 80%,rgba(white,0) 100%);
-    }
-    &__header {
+    &__btn {
         display: flex;
-        justify-content: space-between;
-        background: var(--clr-gold) url('/img/background-popup.svg') left top;
-        border-bottom: 1px solid var(--clr-dark-gold);
-        margin: calc(-60px * .5) calc(-60px * .5) calc(30px * .5);
-        padding: calc(30px * .5);
         align-items: center;
-        position: relative;
-        button {
+        gap: 0 calc(20px * .5);
+        background: none;
+        background-color: #667764;
+        border: none;
+        border-radius: 10px;
+        padding: 5px 15px;
+        color: white;
+        position: fixed;
+        right: calc(30px * .5);
+        bottom: calc(30px * .5);
+        font-weight: 700;
+        font-size: .75rem;
+        text-transform: uppercase;
+        letter-spacing: .025rem;
+        box-shadow: 0 0 2.5px 2.5px rgba(white,.5);
+        cursor: pointer;
+        animation: shake .5s;
+        animation-iteration-count: 2;
+        &--close {
+            width: 40px;
+            height: 40px;
             position: absolute;
-            top: 0;
-            left: 0;
             right: 0;
-            bottom: 0;
-            height: 100%;
-            z-index: 10;
+            top: -40px;
+            background: transparent url('/img/ico/ico-close-white.svg') center center no-repeat;
             border: none;
-            background: transparent url('/img/ico/ico-arrow.svg') calc(100% - 15px) center no-repeat;
-            background-size: 30px auto;
-            cursor: pointer;
+            background-size: 20px;
         }
-        .gif-carg-popup__content {
-            @media screen and (min-width: 605px) {
-                position: relative;
-                width: 605px;
-            }
+        &__ico {
+            height: 20px;
         }
     }
 }
 
-.page-title--subtitle {
-    .gif-carg-popup__header & {
-        color: var(--clr-black);
-        margin: 0;
-    }
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    12% { transform: rotate(5deg); }
+    25% { transform: rotate(0deg); }
+    50% { transform: rotate(-5deg); }
+    62% { transform: rotate(0deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
 }

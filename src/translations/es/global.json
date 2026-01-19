@@ -262,10 +262,11 @@
     },
     "tarjeta-popup": {
         "title": "Tarjeta Regalo enON",
-        "p1": "Aprovecha esta oferta para regalar una tarjeta regalo de cualquiera de los servicios de enON.",
+        "p1": "¿Sabías que puedes regalar una tarjeta regalo de cualquiera de los servicios de enON?.",
         "p2": "Echa un vistazo a nuestras «Tarjeta Regalo» para ampliar información.",
-        "p3": "Este año… Regala bienestar, regala calma, regala momentos únicos con un enorme beneficio.",
+        "p3": "Regala bienestar, regala calma, regala momentos únicos con un enorme beneficio.",
         "close": "Cerrar información",
-        "btn": "Tarjeta Regalo enON"
+        "btn": "Tarjeta Regalo enON",
+        "open": "Regala bienestar"
     }
 }
