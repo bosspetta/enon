@@ -1,0 +1,37 @@
+.web-map-menu ul.layouts {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.web-map-menu ul.layouts a {
+  color: var(--clr-grey-5);
+}
+
+.web-map-menu ul.layouts.level-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  margin-block: 2rem;
+  margin-bottom: 4rem;
+  gap: calc(45px * .5);
+  margin-inline: auto;
+  max-width: 1680px;
+}
+
+.web-map-menu ul.layouts.level-1 > li.lfr-nav-item {
+  border-bottom: 1px solid var(--clr-grey-1);
+}
+
+.web-map-menu ul.layouts.level-1 > li.lfr-nav-item > a.lfr-nav-item {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+  display: block;
+}
+
+.web-map-menu ul.layouts.level-1 > li.lfr-nav-item > ul {
+  display: flex;
+  gap: 0 calc(30px * .5);
+  flex-wrap: wrap;
+  margin-bottom: .5rem;
+}
