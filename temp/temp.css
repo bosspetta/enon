@@ -1,3 +1,22 @@
+.interesting-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+    gap: calc(45px * .5);
+    list-style-type: none;
+    padding: 0;
+}
+
+.interesting-links a {
+    color: var(--clr-primary);
+}
+
+.interesting-links__item {
+    border: 1px solid var(--clr-grey-3);
+    padding: calc(30px * .5);
+}
+
+/**/
+
 .web-map-menu ul.layouts {
   list-style-type: none;
   padding: 0;
