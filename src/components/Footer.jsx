@@ -32,7 +32,7 @@ export default function Footer() {
                         rel="noreferrer noopener"
                         aria-label="Buscar actividades y alojamientos en Kayak para Sevilla"
                     >
-                        <span className="adds__kayak__label">Descubre más cosas que hacer en Sevilla buscando en</span>
+                        <span className="adds__kayak__label">{t('kayak-link')}</span>
                         <img className="adds__kayak__logo" src={logoKayak} alt="Kayak" />
                     </a>
                 </p>
