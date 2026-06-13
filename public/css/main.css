@@ -1495,10 +1495,12 @@ footer p {
   color: var(--clr-primary);
 }
 footer p a {
-  text-transform: lowercase;
   text-decoration: none;
   color: var(--clr-primary);
   font-weight: 400;
+}
+footer p a:not(.adds__kayak__link) {
+  text-transform: lowercase;
 }
 footer .whatsapp {
   display: inline-block;
@@ -1523,6 +1525,16 @@ footer .whatsapp {
 .whatsapp {
   background: transparent url("../img/ico/ico-whatsapp.svg") left center no-repeat;
   padding-left: 25px;
+}
+
+.adds {
+  margin-block: 1rem;
+}
+.adds__kayak__logo {
+  height: 35px;
+  display: block;
+  margin-inline: auto;
+  margin-top: 0.25rem;
 }
 
 .intro-links {

@@ -9,10 +9,12 @@ footer {
         letter-spacing: .05rem;
         color: var(--clr-primary);
         a {
-            text-transform: lowercase;
             text-decoration: none;
             color: var(--clr-primary);
             font-weight: 400;
+            &:not(.adds__kayak__link) {
+                text-transform: lowercase;
+            }
         }
     }
     .whatsapp {
@@ -39,4 +41,16 @@ footer {
 .whatsapp {
     background: transparent url('../img/ico/ico-whatsapp.svg') left center no-repeat;
     padding-left: 25px;
+}
+
+.adds {
+    margin-block: 1rem;
+    &__kayak {
+        &__logo {
+            height: 35px;
+            display: block;
+            margin-inline: auto;
+            margin-top: .25rem;
+        }
+    }
 }
