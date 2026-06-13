@@ -26,10 +26,12 @@ footer {
         font-size: 0.875rem;
         color: var(--clr-white);
         line-height: 1.25;
-        text-transform: uppercase;
         border-radius: 10px;
         padding: 1rem 1rem 1rem 45px;
         margin-block: .875rem;
+        #root & {
+            text-transform: uppercase;
+        }
     }
 }
 
