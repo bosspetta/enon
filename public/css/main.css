@@ -994,6 +994,11 @@ body.menu-opened::after {
     content: none;
   }
 }
+@media screen and (min-width: 768px) {
+  body {
+    height: 100dvh;
+  }
+}
 body.dark-mode.menu-opened::after {
   background-color: var(--clr-primary);
   opacity: 0.9;

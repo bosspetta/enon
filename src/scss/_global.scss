@@ -24,6 +24,9 @@ body {
             }
         }
     }
+    @media screen and (min-width: 768px) {
+        height: 100dvh;
+    }
     &.dark-mode.menu-opened {
         &::after {
             background-color: var(--clr-primary);
