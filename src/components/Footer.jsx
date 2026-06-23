@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
-import logoKayak from '../assest/img/kayak-logo.svg'
+// import logoKayak from '../assest/img/kayak-logo.svg'
 
 export default function Footer() {
 
@@ -20,7 +20,7 @@ export default function Footer() {
             <p><Link to="/">www.enon.yoga</Link></p>
             <p><a href="mailto:hola@enon.yoga">hola@enon.yoga</a></p>
 
-            <hr />
+            {/* <hr />
 
             <div className="adds">
                 <p className="adds__kayak">
@@ -36,7 +36,7 @@ export default function Footer() {
                         <img className="adds__kayak__logo" src={logoKayak} alt="Kayak" />
                     </a>
                 </p>
-            </div>
+            </div> */}
         </footer>
     )
 }
