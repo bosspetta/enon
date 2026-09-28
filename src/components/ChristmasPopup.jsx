@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import { useTranslation } from 'react-i18next'
 
 import icoGift from '../assest/img/ico-gift.svg'
@@ -36,9 +36,9 @@ export default function ChristmasPopup() {
                         <div className="gif-carg-popup__data__inner">
                             <button type="button" onClick={() => closeChPopup()} className="gif-carg-popup__btn--close"><span className="sr-only">{t("tarjeta-popup.close")}</span></button>
                             <p>{ t( "tarjeta-popup.p1" ) }</p>
-                            <p><Link to="/bono-regalo" className="gif-carg-popup__link" onClick={() => closeChPopup()}>{ t( "tarjeta-popup.p2" ) }</Link></p>
+                            <p><Link to="/bono-regalo/" className="gif-carg-popup__link" onClick={() => closeChPopup()}>{ t( "tarjeta-popup.p2" ) }</Link></p>
                             <p>{ t( "tarjeta-popup.p3" ) }</p>
-                            <Link to="/bono-regalo" className="intro-links__link intro-links__link--alone" onClick={() => closeChPopup()}>{ t( "tarjeta-popup.btn" ) }</Link>
+                            <Link to="/bono-regalo/" className="intro-links__link intro-links__link--alone" onClick={() => closeChPopup()}>{ t( "tarjeta-popup.btn" ) }</Link>
                         </div>
                     </div>
                 </div>

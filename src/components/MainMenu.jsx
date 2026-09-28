@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router"
 import { useTranslation } from 'react-i18next'
 
 export default function MainMenu() {
@@ -25,7 +25,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
-                        to='/que-es-enon'
+                        to='/que-es-enon/'
                         onClick={hideMenu}>
                         {t( "main-menu.que-es" )}
                     </NavLink>
@@ -33,7 +33,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
-                        to='/yoga'
+                        to='/yoga/'
                         onClick={hideMenu}>
                         Yoga
                     </NavLink>
@@ -41,7 +41,7 @@ export default function MainMenu() {
                         <li className="main-menu__item">
                             <NavLink
                                 className={({ isActive }) => isActive ? 'main-menu__link selected' : 'main-menu__link'}
-                                to='/yoga/restaurativo'
+                                to='/yoga/restaurativo/'
                                 onClick={hideMenu}>
                                 {t( "main-menu.restaurativo" )}
                             </NavLink>
@@ -51,7 +51,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={({ isActive }) => isActive ? 'main-menu__link selected' : 'main-menu__link'}
-                        to='/mindfulness'
+                        to='/mindfulness/'
                         onClick={hideMenu}>
                         Mindfulness
                     </NavLink>
@@ -59,7 +59,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
-                        to='/masaje'
+                        to='/masaje/'
                         onClick={hideMenu}>
                         {t( "main-menu.quiromasaje" )}
                     </NavLink>
@@ -67,7 +67,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
-                        to='/bono-regalo'
+                        to='/bono-regalo/'
                         onClick={hideMenu}>
                         {t( "main-menu.bono-regalo" )}
                     </NavLink>
@@ -75,7 +75,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={({ isActive }) => isActive ? 'main-menu__link selected' : 'main-menu__link'}
-                        to='/mas-actividades'
+                        to='/mas-actividades/'
                         onClick={hideMenu}>
                         {t("main-menu.actividades")}
                     </NavLink>
@@ -83,7 +83,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
-                        to='/horarios'
+                        to='/horarios/'
                         onClick={hideMenu}>
                         {t( "main-menu.horarios" )}
                     </NavLink>
@@ -91,7 +91,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
-                        to='/contacto'
+                        to='/contacto/'
                         onClick={hideMenu}>
                         {t( "main-menu.contacto" )}
                     </NavLink>
@@ -99,7 +99,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={({ isActive }) => isActive ? 'main-menu__link selected' : 'main-menu__link'}
-                        to='/normas'
+                        to='/normas/'
                         onClick={hideMenu}>
                         {t("main-menu.politicas")}
                     </NavLink>

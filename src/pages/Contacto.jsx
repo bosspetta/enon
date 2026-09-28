@@ -1,20 +1,9 @@
 import { useTranslation } from 'react-i18next'
 
+export const handle = { bodyClass: 'contact-page' }
+
 export default function Contacto() {
     const { t } = useTranslation('global')
-
-    document.body.classList.remove('home-page')
-    document.body.classList.remove('no-found-page')
-    document.body.classList.remove('enon-page')
-    document.body.classList.remove('chiromassage-page')
-    document.body.classList.remove('yoga-page')
-    document.body.classList.remove('yoga-restaurativo-page')
-    document.body.classList.remove('schedules-page')
-    document.body.classList.remove('rules-page')
-    document.body.classList.remove('external-page')
-    document.body.classList.remove('mindfulness-page')
-    document.body.classList.remove('bono-regalo')
-    document.body.classList.add('contact-page')
 
     return (
         <main className="page-content">

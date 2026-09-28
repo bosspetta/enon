@@ -1,0 +1,1 @@
+import{w as a,p as t}from"./chunk-OB3PAWPO-BFDX8vs-.js";const s={bodyClass:"no-found-page"},e=a(function(){return t.jsx("main",{className:"page-content",children:t.jsx("h2",{className:"page-title",children:"No match!"})})});export{e as default,s as handle};

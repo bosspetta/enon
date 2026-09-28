@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 
 import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
@@ -40,8 +40,7 @@ export default function Header() {
 
     let selectedLanguage = i18next.language
 
-    let darkMode = localStorage.getItem('darkMode')
-
+    // El modo oscuro guardado se aplica al cargar desde src/root.jsx
     const enableDarkMode = () => {
         document.body.classList.add('dark-mode')
         localStorage.setItem('darkMode', "enabled")
@@ -52,12 +51,8 @@ export default function Header() {
         localStorage.setItem('darkMode', null)
     }
 
-    if (darkMode === 'enabled') {
-        enableDarkMode()
-    }
-
     const darkModeToggle = () => {
-        darkMode = localStorage.getItem('darkMode')
+        const darkMode = localStorage.getItem('darkMode')
         if (darkMode !== 'enabled') {
             enableDarkMode()
         } else {

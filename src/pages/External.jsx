@@ -1,25 +1,14 @@
-// import { Link } from 'react-router-dom'
+// import { Link } from 'react-router'
 import { useTranslation } from 'react-i18next'
 
 // import ctMeditationBudismo from '../assest/img/cartel-meditacion-budismo.jpeg'
 import ctRestaurativo from '../assest/img/cartel-restaurativo.jpg'
 import ctMeditacionMindfulness from '../assest/img/cartel-meditacion-mindfulness.jpg'
 
+export const handle = { bodyClass: 'external-page' }
+
 export default function External() {
     const { t } = useTranslation('global')
-
-    document.body.classList.remove('home-page')
-    document.body.classList.remove('no-found-page')
-    document.body.classList.remove('enon-page')
-    document.body.classList.remove('chiromassage-page')
-    document.body.classList.remove('yoga-page')
-    document.body.classList.remove('yoga-restaurativo-page')
-    document.body.classList.remove('schedules-page')
-    document.body.classList.remove('rules-page')
-    document.body.classList.remove('contact-page')
-    document.body.classList.remove('mindfulness-page')
-    document.body.classList.remove('bono-regalo')
-    document.body.classList.add('external-page')
 
     return (
         <main className="page-content">

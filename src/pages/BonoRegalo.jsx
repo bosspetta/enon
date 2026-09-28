@@ -6,20 +6,9 @@ import video from '../assest/video/bono-regalo-enon-min.mp4'
 import videoWebm from '../assest/video/bono-regalo-enon-min.mp4'
 import poster from '../assest/img/poster.png'
 
-export default function BonoRegalo() {
-    document.body.classList.remove('contact-page')
-    document.body.classList.remove('home-page')
-    document.body.classList.remove('no-found-page')
-    document.body.classList.remove('chiromassage-page')
-    document.body.classList.remove('yoga-page')
-    document.body.classList.remove('yoga-restaurativo-page')
-    document.body.classList.remove('schedules-page')
-    document.body.classList.remove('rules-page')
-    document.body.classList.remove('external-page')
-    document.body.classList.remove('mindfulness-page')
-    document.body.classList.add('enon-page')
-    document.body.classList.add('bono-regalo')
+export const handle = { bodyClass: 'enon-page bono-regalo' }
 
+export default function BonoRegalo() {
     const { t } = useTranslation('global')
 
     return (

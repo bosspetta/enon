@@ -1,19 +1,8 @@
 import { useTranslation } from 'react-i18next'
 
-export default function Yoga() {
-    document.body.classList.remove('contact-page')
-    document.body.classList.remove('home-page')
-    document.body.classList.remove('no-found-page')
-    document.body.classList.remove('enon-page')
-    document.body.classList.remove('chiromassage-page')
-    document.body.classList.remove('yoga-restaurativo-page')
-    document.body.classList.remove('schedules-page')
-    document.body.classList.remove('rules-page')
-    document.body.classList.remove('external-page')
-    document.body.classList.remove('mindfulness-page')
-    document.body.classList.remove('bono-regalo')
-    document.body.classList.add('yoga-page')
+export const handle = { bodyClass: 'yoga-page' }
 
+export default function Yoga() {
     const { t } = useTranslation('global')
     return (
         <main className="page-content">
