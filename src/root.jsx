@@ -86,6 +86,9 @@ export function Layout({ children }) {
             <head>
                 <meta charSet="UTF-8" />
                 <link rel="icon" type="image/svg+xml" href="/enon.svg" />
+                <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+                <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+                <meta name="theme-color" content="#667764" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
                 <title>{title}</title>
@@ -110,6 +113,10 @@ export function Layout({ children }) {
                 <StructuredData t={t} lang={lang} pageKey={pageKey} />
 
                 <script dangerouslySetInnerHTML={{ __html: hashRedirectScript }} />
+                {/* Fuente: se pide en paralelo con el CSS en lugar de desde un @import dentro de él */}
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" />
                 <link rel="stylesheet" href="/css/main.css" />
                 <Meta />
                 <Links />

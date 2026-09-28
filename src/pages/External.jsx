@@ -16,14 +16,14 @@ export default function External() {
             <section id="activities-restaurativo">
                 <h3>{t('main-menu.restaurativo')}</h3>
                 <p className="activities__data">
-                    <img src={ctRestaurativo} alt={t('gallery.poster-restaurativo')} className="activities__image" />
+                    <img loading="lazy" decoding="async" src={ctRestaurativo} alt={t('gallery.poster-restaurativo')} className="activities__image" />
                     {t('external.p-restaurativo')}
                 </p>
             </section>
             <section id="activities-mindfulness">
                 <h3>{t('external.p-mind-title')}</h3>
                 <p className="activities__data">
-                    <img src={ctMeditacionMindfulness} alt={t('gallery.poster-mindfulness')} className="activities__image" />
+                    <img loading="lazy" decoding="async" src={ctMeditacionMindfulness} alt={t('gallery.poster-mindfulness')} className="activities__image" />
                     <span className="activities__data__text">
                         <span className="activities activities__data__text__item activities__data__text__item--title">{t('external.p-mind-title-1')}</span>
                         <span className="activities activities__data__text__item activities__data__text__item--content">{t('external.p-mind-1')}</span>

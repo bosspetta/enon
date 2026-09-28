@@ -36,87 +36,87 @@ export default function Gallery() {
             >
                 <a href={enon1} title={t('gallery.yoga-room')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.yoga-room')}</span>
-                    <img alt={t('gallery.yoga-room')} src={enon1} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.yoga-room')} src={enon1} className="enon-gallery__img" />
                 </a>
 
                 <a href={enon2} title={t('gallery.yoga-room')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.yoga-room')}</span>
-                    <img alt={t('gallery.yoga-room')} src={enon2} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.yoga-room')} src={enon2} className="enon-gallery__img" />
                 </a>
 
                 <a href={enon3} title={t('gallery.yoga-room')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.yoga-room')}</span>
-                    <img alt={t('gallery.yoga-room')} src={enon3} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.yoga-room')} src={enon3} className="enon-gallery__img" />
                 </a>
 
                 <a href={enon4} title={t('gallery.changing-room')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.changing-room')}</span>
-                    <img alt={t('gallery.changing-room')} src={enon4} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.changing-room')} src={enon4} className="enon-gallery__img" />
                 </a>
 
                 <a href={enon5} title={t('gallery.changing-room')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.changing-room')}</span>
-                    <img alt={t('gallery.changing-room')} src={enon5} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.changing-room')} src={enon5} className="enon-gallery__img" />
                 </a>
 
                 <a href={enon6} title={t('gallery.changing-room')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.changing-room')}</span>
-                    <img alt={t('gallery.changing-room')} src={enon6} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.changing-room')} src={enon6} className="enon-gallery__img" />
                 </a>
 
                 <a href={enon7} title={t('gallery.changing-room')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.changing-room')}</span>
-                    <img alt={t('gallery.changing-room')} src={enon7} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.changing-room')} src={enon7} className="enon-gallery__img" />
                 </a>
 
                 <a href={enon8} title={t('gallery.entrance')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.entrance')}</span>
-                    <img alt={t('gallery.entrance')} src={enon8} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.entrance')} src={enon8} className="enon-gallery__img" />
                 </a>
 
                 <a href={enon9} title={t('gallery.entrance')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.entrance')}</span>
-                    <img alt={t('gallery.entrance')} src={enon9} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.entrance')} src={enon9} className="enon-gallery__img" />
                 </a>
 
                 <a href={enon10} title={t('gallery.entrance')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.entrance')}</span>
-                    <img alt={t('gallery.entrance')} src={enon10} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.entrance')} src={enon10} className="enon-gallery__img" />
                 </a>
 
                 <a href={enon11} title={t('gallery.yoga-room')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.yoga-room')}</span>
-                    <img alt={t('gallery.yoga-room')} src={enon11} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.yoga-room')} src={enon11} className="enon-gallery__img" />
                 </a>
 
                 <a href={enon12} title={t('gallery.yoga-room')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.yoga-room')}</span>
-                    <img alt={t('gallery.yoga-room')} src={enon12} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.yoga-room')} src={enon12} className="enon-gallery__img" />
                 </a>
 
                 <a href={enon13} title={t('gallery.singing-bowl')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.singing-bowl')}</span>
-                    <img alt={t('gallery.singing-bowl')} src={enon13} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.singing-bowl')} src={enon13} className="enon-gallery__img" />
                 </a>
 
                 <a href={enon14} title={t('gallery.spine')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.spine')}</span>
-                    <img alt={t('gallery.spine')} src={enon14} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.spine')} src={enon14} className="enon-gallery__img" />
                 </a>
 
                 <a href={enon15} title={t('gallery.massage-room')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.massage-room')}</span>
-                    <img alt={t('gallery.massage-room')} src={enon15} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.massage-room')} src={enon15} className="enon-gallery__img" />
                 </a>
 
                 <a href={enon16} title={t('gallery.oils')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.oils')}</span>
-                    <img alt={t('gallery.oils')} src={enon16} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.oils')} src={enon16} className="enon-gallery__img" />
                 </a>
 
                 <a href={enon17} title={t('gallery.exterior')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.exterior')}</span>
-                    <img alt={t('gallery.exterior')} src={enon17} className="enon-gallery__img" />
+                    <img loading="lazy" decoding="async" alt={t('gallery.exterior')} src={enon17} className="enon-gallery__img" />
                 </a>
             </LightGallery>
         </div>

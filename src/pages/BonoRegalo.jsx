@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next'
 import GiftsGallery from '../components/GiftsGallery'
 
 import video from '../assest/video/bono-regalo-enon-min.mp4'
-import videoWebm from '../assest/video/bono-regalo-enon-min.mp4'
-import poster from '../assest/img/poster.png'
+import videoWebm from '../assest/video/bono-regalo-enon-min.webm'
+import poster from '../assest/img/poster.webp'
 
 export const handle = { bodyClass: 'enon-page bono-regalo' }
 
@@ -21,9 +21,9 @@ export default function BonoRegalo() {
 
             <div className="video">
                 <div className="video__wrapper">
-                    <video controls poster={poster}>
-                        <source src={video} type="video/mp4" />
+                    <video controls preload="none" poster={poster}>
                         <source src={videoWebm} type="video/webm" />
+                        <source src={video} type="video/mp4" />
                         <p>{t( "br.no-video" )}</p>
                     </video>
                 </div>
