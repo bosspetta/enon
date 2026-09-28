@@ -11,3 +11,24 @@ ErrorDocument 503 "Server broken"
 ErrorDocument 500 "Server broken"
 ErrorDocument 403 "Permission denied"
 ErrorDocument 401 "Authentication required"
+
+# Compresión de textos (HTML, CSS, JS, JSON, SVG...)
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript text/javascript application/json application/xml image/svg+xml image/x-icon
+</IfModule>
+
+# Caché del navegador
+<IfModule mod_headers.c>
+    # assets/: el nombre lleva un código que cambia con cada build, se pueden guardar un año
+    <If "%{REQUEST_URI} =~ m#^/assets/#">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </If>
+    # Imágenes, estilos e iconos con nombre fijo: un día
+    <ElseIf "%{REQUEST_URI} =~ m#^/(img|css)/|\.(png|ico|svg)$#">
+        Header set Cache-Control "public, max-age=86400"
+    </ElseIf>
+    # Páginas HTML: se comprueba siempre si hay una versión nueva
+    <Else>
+        Header set Cache-Control "no-cache"
+    </Else>
+</IfModule>
