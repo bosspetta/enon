@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import LightGallery from 'lightgallery/react'
 import lgThumbnail from 'lightgallery/plugins/thumbnail'
 import lgZoom from 'lightgallery/plugins/zoom'
@@ -25,95 +26,97 @@ import enon16 from '../assest/img/enon/16.jpg'
 import enon17 from '../assest/img/enon/17.jpg'
 
 export default function Gallery() {
+    const { t } = useTranslation('global')
+
     return (
         <div className="enon-gallery">
             <LightGallery
                 speed={500}
                 plugins={[lgThumbnail, lgZoom]}
             >
-                <a href={enon1} title="Imagen de la sala de Yoga en enON" className="enon-gallery__item">
-                    <span className="sr-only">Imagen de la sala de Yoga en enON</span>
-                    <img alt="Imagen de la sala de Yoga en enON" src={enon1} className="enon-gallery__img" />
+                <a href={enon1} title={t('gallery.yoga-room')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.yoga-room')}</span>
+                    <img alt={t('gallery.yoga-room')} src={enon1} className="enon-gallery__img" />
                 </a>
 
-                <a href={enon2} title="Imagen de la sala de Yoga en enON" className="enon-gallery__item">
-                    <span className="sr-only">Imagen de la sala de Yoga en enON</span>
-                    <img alt="Imagen de la sala de Yoga en enON" src={enon2} className="enon-gallery__img" />
+                <a href={enon2} title={t('gallery.yoga-room')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.yoga-room')}</span>
+                    <img alt={t('gallery.yoga-room')} src={enon2} className="enon-gallery__img" />
                 </a>
 
-                <a href={enon3} title="Imagen de la sala de Yoga en enON" className="enon-gallery__item">
-                    <span className="sr-only">Imagen de la sala de Yoga en enON</span>
-                    <img alt="Imagen de la sala de Yoga en enON" src={enon3} className="enon-gallery__img" />
+                <a href={enon3} title={t('gallery.yoga-room')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.yoga-room')}</span>
+                    <img alt={t('gallery.yoga-room')} src={enon3} className="enon-gallery__img" />
                 </a>
 
-                <a href={enon4} title="Imagen de la zona de vestuarios en enON" className="enon-gallery__item">
-                    <span className="sr-only">Imagen de la zona de vestuarios en enON</span>
-                    <img alt="Imagen de la zona de vestuarios en enON" src={enon4} className="enon-gallery__img" />
+                <a href={enon4} title={t('gallery.changing-room')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.changing-room')}</span>
+                    <img alt={t('gallery.changing-room')} src={enon4} className="enon-gallery__img" />
                 </a>
 
-                <a href={enon5} title="Imagen de la zona de vestuarios en enON" className="enon-gallery__item">
-                    <span className="sr-only">Imagen de la zona de vestuarios en enON</span>
-                    <img alt="Imagen de la zona de vestuarios en enON" src={enon5} className="enon-gallery__img" />
+                <a href={enon5} title={t('gallery.changing-room')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.changing-room')}</span>
+                    <img alt={t('gallery.changing-room')} src={enon5} className="enon-gallery__img" />
                 </a>
 
-                <a href={enon6} title="Imagen de la zona de vestuarios en enON" className="enon-gallery__item">
-                    <span className="sr-only">Imagen de la zona de vestuarios en enON</span>
-                    <img alt="Imagen de la zona de vestuarios en enON" src={enon6} className="enon-gallery__img" />
+                <a href={enon6} title={t('gallery.changing-room')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.changing-room')}</span>
+                    <img alt={t('gallery.changing-room')} src={enon6} className="enon-gallery__img" />
                 </a>
 
-                <a href={enon7} title="Imagen de la zona de vestuarios en enON" className="enon-gallery__item">
-                    <span className="sr-only">Imagen de la zona de vestuarios en enON</span>
-                    <img alt="Imagen de la zona de vestuarios en enON" src={enon7} className="enon-gallery__img" />
+                <a href={enon7} title={t('gallery.changing-room')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.changing-room')}</span>
+                    <img alt={t('gallery.changing-room')} src={enon7} className="enon-gallery__img" />
                 </a>
 
-                <a href={enon8} title="Imagen de la zona de entrada en enON" className="enon-gallery__item">
-                    <span className="sr-only">Imagen de la zona de entrada en enON</span>
-                    <img alt="Imagen de la zona de entrada en enON" src={enon8} className="enon-gallery__img" />
+                <a href={enon8} title={t('gallery.entrance')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.entrance')}</span>
+                    <img alt={t('gallery.entrance')} src={enon8} className="enon-gallery__img" />
                 </a>
 
-                <a href={enon9} title="Imagen de la zona de entrada en enON" className="enon-gallery__item">
-                    <span className="sr-only">Imagen de la zona de entrada en enON</span>
-                    <img alt="Imagen de la zona de entrada en enON" src={enon9} className="enon-gallery__img" />
+                <a href={enon9} title={t('gallery.entrance')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.entrance')}</span>
+                    <img alt={t('gallery.entrance')} src={enon9} className="enon-gallery__img" />
                 </a>
 
-                <a href={enon10} title="Imagen de la zona de entrada en enON" className="enon-gallery__item">
-                    <span className="sr-only">Imagen de la zona de entrada en enON</span>
-                    <img alt="Imagen de la zona de entrada en enON" src={enon10} className="enon-gallery__img" />
+                <a href={enon10} title={t('gallery.entrance')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.entrance')}</span>
+                    <img alt={t('gallery.entrance')} src={enon10} className="enon-gallery__img" />
                 </a>
 
-                <a href={enon11} title="Imagen de la sala de Yoga en enON" className="enon-gallery__item">
-                    <span className="sr-only">Imagen de la sala de Yoga en enON</span>
-                    <img alt="Imagen de la sala de Yoga en enON" src={enon11} className="enon-gallery__img" />
+                <a href={enon11} title={t('gallery.yoga-room')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.yoga-room')}</span>
+                    <img alt={t('gallery.yoga-room')} src={enon11} className="enon-gallery__img" />
                 </a>
 
-                <a href={enon12} title="Imagen de la sala de Yoga en enON" className="enon-gallery__item">
-                    <span className="sr-only">Imagen de la sala de Yoga en enON</span>
-                    <img alt="Imagen de la sala de Yoga en enON" src={enon12} className="enon-gallery__img" />
+                <a href={enon12} title={t('gallery.yoga-room')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.yoga-room')}</span>
+                    <img alt={t('gallery.yoga-room')} src={enon12} className="enon-gallery__img" />
                 </a>
 
-                <a href={enon13} title="Mesita con cuenco Tibetano, crótalos e incienso en enON" className="enon-gallery__item">
-                    <span className="sr-only">Mesita con cuenco Tibetano, crótalos e incienso en enON</span>
-                    <img alt="Mesita con cuenco Tibetano, crótalos e incienso en enON" src={enon13} className="enon-gallery__img" />
+                <a href={enon13} title={t('gallery.singing-bowl')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.singing-bowl')}</span>
+                    <img alt={t('gallery.singing-bowl')} src={enon13} className="enon-gallery__img" />
                 </a>
 
-                <a href={enon14} title="Mesita con una reproducción de una espina dorsal, usada para estudio y explicaciones en enON" className="enon-gallery__item">
-                    <span className="sr-only">Mesita con una reproducción de una espina dorsal, usada para estudio y explicaciones en enON</span>
-                    <img alt="Mesita con una reproducción de una espina dorsal, usada para estudio y explicaciones en enON" src={enon14} className="enon-gallery__img" />
+                <a href={enon14} title={t('gallery.spine')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.spine')}</span>
+                    <img alt={t('gallery.spine')} src={enon14} className="enon-gallery__img" />
                 </a>
 
-                <a href={enon15} title="Imagen de la sala preparada para masaje en enON" className="enon-gallery__item">
-                    <span className="sr-only">Imagen de la sala preparada para masaje en enON</span>
-                    <img alt="Imagen de la sala preparada para masaje en enON" src={enon15} className="enon-gallery__img" />
+                <a href={enon15} title={t('gallery.massage-room')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.massage-room')}</span>
+                    <img alt={t('gallery.massage-room')} src={enon15} className="enon-gallery__img" />
                 </a>
 
-                <a href={enon16} title="Aceites esenciales para quiromasaje y squitos térmicos de semillas" className="enon-gallery__item">
-                    <span className="sr-only">Aceites esenciales para quiromasaje y squitos térmicos de semillas</span>
-                    <img alt="Aceites esenciales para quiromasaje y squitos térmicos de semillas" src={enon16} className="enon-gallery__img" />
+                <a href={enon16} title={t('gallery.oils')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.oils')}</span>
+                    <img alt={t('gallery.oils')} src={enon16} className="enon-gallery__img" />
                 </a>
 
-                <a href={enon17} title="Vista exterior de la sala de Yoga enON en la Calle San Luis 78" className="enon-gallery__item">
-                    <span className="sr-only">Vista exterior de la sala de Yoga enON en la Calle San Luis 78</span>
-                    <img alt="Vista exterior de la sala de Yoga enON en la Calle San Luis 78" src={enon17} className="enon-gallery__img" />
+                <a href={enon17} title={t('gallery.exterior')} className="enon-gallery__item">
+                    <span className="sr-only">{t('gallery.exterior')}</span>
+                    <img alt={t('gallery.exterior')} src={enon17} className="enon-gallery__img" />
                 </a>
             </LightGallery>
         </div>

@@ -8,8 +8,8 @@ export default function Yoga() {
     const { t } = useTranslation('global')
     return (
         <main className="page-content">
-            <h2 className="page-title">{t("mf.title")}</h2>
-            <h3 className="page-title--subtitle">{t("mf.sub-title")}</h3>
+            <h1 className="page-title">{t("mf.title")}</h1>
+            <h2 className="page-title--subtitle">{t("mf.sub-title")}</h2>
             <ul className="u-list">
                 <li>{t("mf.list-01")}
                     <ul className="u-list">
@@ -24,7 +24,7 @@ export default function Yoga() {
                 <li>{t("mf.list-08")}</li>
                 <li>{t("mf.list-09")}</li>
             </ul>
-            <p>{t("mf.p-01")} <a href="https://api.whatsapp.com/send/?phone=34640029302" target="_blank" rel="noreferrer" title="Acceder a WhatsApp para enviar un mensaje">640 029 302</a>.</p>
+            <p>{t("mf.p-01")} <a href="https://api.whatsapp.com/send/?phone=34640029302" target="_blank" rel="noreferrer" title={t('a11y.whatsapp')}>640 029 302</a>.</p>
             <p>{t("mf.p-02")}</p>
             <p><a href={dosier} target="_blank" rel="noreferrer" title={t("mf.download-title")} className="intro-links__link intro-links__link--alone">{t("mf.download")}</a></p>
         </main>

@@ -14,10 +14,12 @@
         "horarios": "Horarios y precios",
         "politicas": "Normas",
         "mindfulness": "Mindfulness",
-        "bono-regalo": "Tarjeta regalo"
+        "bono-regalo": "Tarjeta regalo",
+        "yoga-classes": "Clases de Yoga",
+        "yoga": "Yoga"
     },
     "home": {
-        "welcome-title": "Bienvenido…",
+        "welcome-title": "Bienvenido a enON, Yoga y Masaje en Sevilla",
         "intro": "Gracias por tu interés en enON. En esta página web encontrarás mucha información sobre cómo y desde dónde se imparten mis clases de Yoga, o cómo puede beneficiarte el Masaje y Quiromasaje que realizo. Date una vuelta por las secciones y páginas para descubrir enON a fondo, y si aún tienes más curiosidad, ven a visitarme, estoy en la Calle San Luis 78, muy cerquita de la Plaza del Pumarejo."
     },
     "enon": {
@@ -67,7 +69,8 @@
         "l2": "Mejora la circulación venosa y disminuye la tensión arterial",
         "l3": "Hace desaparecer la fatiga muscular y los dolores por contractura",
         "l4": "Ayuda en los procesos digestivos, drena la circulación linfática",
-        "l5": "Mejora la calidad del sueño y la función celular"
+        "l5": "Mejora la calidad del sueño y la función celular",
+        "gandiva": "cosmética vegetal"
     },
     "contacto": {
         "title": "Contáctanos o ven a visitarnos",
@@ -100,7 +103,7 @@
         "3class-price": "70€ / Mes",
         "taller-restaurativo": "Taller Yoga Restaurativo",
         "taller-restaurativo-price": "25€",
-        "mindfulnes": "Mindfulnes",
+        "mindfulnes": "Mindfulness",
         "mindfulnes-price": "45€",
         "clases": "Las clases duran de 1 hora y 15 minutos.",
         "clase-suelta": "Clase suelta",
@@ -269,5 +272,85 @@
         "close": "Cerrar información",
         "btn": "Tarjeta Regalo enON",
         "open": "Regala bienestar"
+    },
+    "seo": {
+        "home": {
+            "title": "Yoga y Masaje en Sevilla centro | enON",
+            "description": "Estudio de Hatha Yoga, Yoga Restaurativo, Mindfulness, quiromasaje y masaje relajante en el centro de Sevilla, junto a la Plaza del Pumarejo."
+        },
+        "enon": {
+            "title": "Quiénes somos: estudio de Yoga y Masaje en Sevilla | enON",
+            "description": "enON es un espacio de Yoga, meditación y masaje en el centro de Sevilla dirigido por Isabel Martínez San Esteban, practicante de Yoga desde muy temprana edad."
+        },
+        "yoga": {
+            "title": "Clases de Hatha Yoga en Sevilla | enON",
+            "description": "Clases de Hatha Yoga en el centro de Sevilla, adaptadas a cada alumno: postura, respiración y meditación. Clases de mañana y tarde, de lunes a jueves."
+        },
+        "yoga-restaurativo": {
+            "title": "Yoga Restaurativo en Sevilla | enON",
+            "description": "Talleres de Yoga Restaurativo en Sevilla: posturas pasivas para descansar, recuperar la respiración natural y aliviar el estrés. Consulta la próxima fecha."
+        },
+        "mindfulness": {
+            "title": "Mindfulness en Sevilla: programa de 8 semanas | enON",
+            "description": "Programa de entrenamiento en Mindfulness de 8 semanas en Sevilla para reducir el estrés y mejorar la atención. Descarga el dosier o consúltanos."
+        },
+        "masaje": {
+            "title": "Quiromasaje y masaje relajante en Sevilla | enON",
+            "description": "Quiromasaje, masaje de relajación de 60 y 90 minutos y masaje facial en el centro de Sevilla, con cosmética vegetal Gandiva. Con cita previa."
+        },
+        "actividades": {
+            "title": "Talleres y meditación en Sevilla | enON",
+            "description": "Talleres de Yoga Restaurativo y grupo de meditación Mindfulness todos los jueves en enON, en el centro de Sevilla."
+        },
+        "horarios": {
+            "title": "Horarios y precios de Yoga y Masaje | enON Sevilla",
+            "description": "Horarios de las clases de Hatha Yoga y precios de Yoga, Mindfulness y masajes en enON, Calle San Luis 78, Sevilla."
+        },
+        "contacto": {
+            "title": "Contacto y cómo llegar | enON Sevilla",
+            "description": "Contacta con enON por teléfono, WhatsApp o email, o visítanos en la Calle San Luis 78, junto a la Plaza del Pumarejo, en Sevilla."
+        },
+        "normas": {
+            "title": "Normas del centro | enON Sevilla",
+            "description": "Normas de funcionamiento de las clases de Yoga y de los servicios de masaje de enON, en Sevilla."
+        },
+        "bono-regalo": {
+            "title": "Tarjeta regalo de masaje y Yoga en Sevilla | enON",
+            "description": "Regala bienestar: tarjetas regalo de quiromasaje, masaje de relajación, masaje facial o taller de Yoga Restaurativo en Sevilla. Válidas 6 meses."
+        },
+        "404": {
+            "title": "Página no encontrada | enON"
+        }
+    },
+    "notfound": {
+        "title": "Página no encontrada",
+        "text": "La página que buscas no existe o ha cambiado de dirección.",
+        "link": "Volver al inicio"
+    },
+    "cta": {
+        "horarios": "Ver horarios y precios",
+        "cita": "Pide cita"
+    },
+    "a11y": {
+        "home-link": "Ir al inicio",
+        "call": "Llamar a enON",
+        "whatsapp": "Enviar un WhatsApp a enON",
+        "gandiva": "Web de Gandiva"
+    },
+    "gallery": {
+        "yoga-room": "Sala de Yoga de enON",
+        "changing-room": "Zona de vestuarios de enON",
+        "entrance": "Zona de entrada de enON",
+        "singing-bowl": "Mesita con cuenco tibetano, crótalos e incienso en enON",
+        "spine": "Reproducción de una columna vertebral usada para las explicaciones en enON",
+        "massage-room": "Sala preparada para masaje en enON",
+        "oils": "Aceites esenciales para quiromasaje y saquitos térmicos de semillas",
+        "exterior": "Fachada de enON en la Calle San Luis 78, Sevilla",
+        "gift-facial": "Cartel de cuidados faciales: limpieza de cutis natural con cosmética vegetal Gandiva",
+        "gift-relax": "Cartel de masajes de relajación, también disponibles como bono regalo",
+        "gift-quiro": "Cartel de quiromasaje, también disponible como bono regalo",
+        "gift-restaurativo": "Cartel del taller de Yoga Restaurativo",
+        "poster-restaurativo": "Cartel del taller de Yoga Restaurativo en enON",
+        "poster-mindfulness": "Cartel del grupo de meditación Mindfulness: todos los jueves a las 18:30"
     }
 }

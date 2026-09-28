@@ -1402,6 +1402,7 @@ body.dark-mode .hamburger.is-active .hamburger-inner::before {
   color: var(--clr-white);
   opacity: 0.5;
   font-weight: 700;
+  text-decoration: none;
   transition: opacity 0.3s ease-in-out;
 }
 body.dark-mode .language__btn {

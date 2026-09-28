@@ -10,10 +10,10 @@ export default function QueEsEnon() {
 
     return (
         <main className="page-content">
-            <h2 className="page-title">{t( "enon.title" )}</h2>
+            <h1 className="page-title">{t( "enon.title" )}</h1>
             <p>{t( "enon.desc-a" )}</p>
             <p>{t( "enon.desc-b" )}</p>
-            <h3 className="page-title--subtitle">{t( "enon.subtitle" )}</h3>
+            <h2 className="page-title--subtitle">{t( "enon.subtitle" )}</h2>
             <h4>{t( "isa" )}</h4>
             <p className="img-wrapper img-wrapper--flr"><img src={isa} alt="Isabel Martínez San Esteban, CEO enON" /></p>
             <p>{t( "enon.paragraph" )}</p>

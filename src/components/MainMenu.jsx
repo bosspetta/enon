@@ -1,9 +1,12 @@
 import { NavLink } from "react-router"
+import { usePagePath } from '../hooks'
 import { useTranslation } from 'react-i18next'
 
 export default function MainMenu() {
 
     const { t } = useTranslation('global')
+
+    const path = usePagePath()
 
     const hideMenu = () => {
         document.body.classList.remove('menu-opened')
@@ -17,7 +20,8 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
-                        to='/'
+                        to={path('home')}
+                        end
                         onClick={hideMenu}>
                         {t( "main-menu.inicio" )}
                     </NavLink>
@@ -25,7 +29,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
-                        to='/que-es-enon/'
+                        to={path('enon')}
                         onClick={hideMenu}>
                         {t( "main-menu.que-es" )}
                     </NavLink>
@@ -33,7 +37,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
-                        to='/yoga/'
+                        to={path('yoga')}
                         onClick={hideMenu}>
                         Yoga
                     </NavLink>
@@ -41,7 +45,7 @@ export default function MainMenu() {
                         <li className="main-menu__item">
                             <NavLink
                                 className={({ isActive }) => isActive ? 'main-menu__link selected' : 'main-menu__link'}
-                                to='/yoga/restaurativo/'
+                                to={path('yoga-restaurativo')}
                                 onClick={hideMenu}>
                                 {t( "main-menu.restaurativo" )}
                             </NavLink>
@@ -51,7 +55,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={({ isActive }) => isActive ? 'main-menu__link selected' : 'main-menu__link'}
-                        to='/mindfulness/'
+                        to={path('mindfulness')}
                         onClick={hideMenu}>
                         Mindfulness
                     </NavLink>
@@ -59,7 +63,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
-                        to='/masaje/'
+                        to={path('masaje')}
                         onClick={hideMenu}>
                         {t( "main-menu.quiromasaje" )}
                     </NavLink>
@@ -67,7 +71,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
-                        to='/bono-regalo/'
+                        to={path('bono-regalo')}
                         onClick={hideMenu}>
                         {t( "main-menu.bono-regalo" )}
                     </NavLink>
@@ -75,7 +79,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={({ isActive }) => isActive ? 'main-menu__link selected' : 'main-menu__link'}
-                        to='/mas-actividades/'
+                        to={path('actividades')}
                         onClick={hideMenu}>
                         {t("main-menu.actividades")}
                     </NavLink>
@@ -83,7 +87,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
-                        to='/horarios/'
+                        to={path('horarios')}
                         onClick={hideMenu}>
                         {t( "main-menu.horarios" )}
                     </NavLink>
@@ -91,7 +95,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
-                        to='/contacto/'
+                        to={path('contacto')}
                         onClick={hideMenu}>
                         {t( "main-menu.contacto" )}
                     </NavLink>
@@ -99,7 +103,7 @@ export default function MainMenu() {
                 <li className="main-menu__item">
                     <NavLink
                         className={({ isActive }) => isActive ? 'main-menu__link selected' : 'main-menu__link'}
-                        to='/normas/'
+                        to={path('normas')}
                         onClick={hideMenu}>
                         {t("main-menu.politicas")}
                     </NavLink>

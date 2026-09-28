@@ -1,8 +1,12 @@
 import { useEffect, useLayoutEffect } from 'react'
 import { Links, Meta, Outlet, Scripts, ScrollRestoration, useMatches } from 'react-router'
+import { I18nextProvider } from 'react-i18next'
 import PropTypes from 'prop-types'
 
-import i18next from './i18n'
+import { getI18n } from './i18n'
+import StructuredData from './components/StructuredData'
+import { useCurrentPageKey, useLanguage } from './hooks'
+import { DEFAULT_LANGUAGE, LANGUAGES, SITE_URL, pagePath } from './site'
 
 // Clases de <body> que usa el CSS para el fondo de cada página
 const PAGE_CLASSES = [
@@ -36,8 +40,41 @@ function bodyScript(classes) {
 
 const useIsomorphicLayoutEffect = typeof document === 'undefined' ? useEffect : useLayoutEffect
 
+const OG_LOCALES = {
+    es: 'es_ES',
+    en: 'en_GB',
+}
+
+// canonical + hreflang de la página actual en todos los idiomas
+function AlternateLinks({ pageKey, lang }) {
+    if (!pageKey) {
+        return <meta name="robots" content="noindex" />
+    }
+    return (
+        <>
+            <link rel="canonical" href={SITE_URL + pagePath(pageKey, lang)} />
+            {LANGUAGES.map(l => (
+                <link key={l} rel="alternate" hrefLang={l} href={SITE_URL + pagePath(pageKey, l)} />
+            ))}
+            <link rel="alternate" hrefLang="x-default" href={SITE_URL + pagePath(pageKey, DEFAULT_LANGUAGE)} />
+        </>
+    )
+}
+
+AlternateLinks.propTypes = {
+    pageKey: PropTypes.string,
+    lang: PropTypes.string.isRequired
+}
+
 export function Layout({ children }) {
     const pageClasses = usePageClasses()
+    const lang = useLanguage()
+    const pageKey = useCurrentPageKey()
+    const url = SITE_URL + (pageKey ? pagePath(pageKey, lang) : '/')
+    // Título y descripción de cada página: clave "seo" de las traducciones
+    const t = getI18n(lang).getFixedT(lang, 'global')
+    const title = t(`seo.${pageKey ?? '404'}.title`)
+    const description = pageKey ? t(`seo.${pageKey}.description`) : null
 
     useIsomorphicLayoutEffect(() => {
         document.body.classList.remove(...PAGE_CLASSES)
@@ -45,42 +82,43 @@ export function Layout({ children }) {
     }, [pageClasses.join(' ')])
 
     return (
-        <html lang="es-ES">
+        <html lang={lang}>
             <head>
                 <meta charSet="UTF-8" />
                 <link rel="icon" type="image/svg+xml" href="/enon.svg" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                <meta name="title" content="Masaje - Yoga - Sevilla | enON" />
-                <meta name="description" content="enON es un estudio de Masaje y Yoga situado en el centro de Sevilla. Espacializado en masaje de relajación, quiromasaje, Hatha Yoga o Yoga Restaurativo." />
-                <meta name="description" content="enON is a massage and yoga studio located in the centre of Seville. Specialised in relaxation massage, chiromassage, Hatha Yoga or Restorative Yoga." lang="en-US" />
-                <meta name="keywords" content="masaje, masaje relajante, relax, masaje relax, quiromasaje, chiromassage, relajante, relajación, massage, relax, relaxing massage, relaxation, sevilla, yoga, hatha yoga" />
-                <meta name="robots" content="index, follow" />
-                <meta name="language" content="Spanish" />
+                <title>{title}</title>
+                {description && <meta name="description" content={description} />}
+                <AlternateLinks pageKey={pageKey} lang={lang} />
 
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://enon.yoga/" />
-                <meta property="og:title" content="Masaje - Yoga - Sevilla | enON" />
-                <meta property="og:description" content="enON es un estudio de Masaje y Yoga situado en el centro de Sevilla. Espacializado en masaje de relajación, quiromasaje, Hatha Yoga o Yoga Restaurativo." />
-                <meta property="og:description" content="enON is a massage and yoga studio located in the centre of Seville. Specialised in relaxation massage, chiromassage, Hatha Yoga or Restorative Yoga." lang="en-US" />
+                <meta property="og:url" content={url} />
+                <meta property="og:title" content={title} />
+                {description && <meta property="og:description" content={description} />}
                 <meta property="og:image" content="https://enon.yoga/yoga-enon.png" />
+                <meta property="og:locale" content={OG_LOCALES[lang]} />
+                {LANGUAGES.filter(l => l !== lang).map(l => (
+                    <meta key={l} property="og:locale:alternate" content={OG_LOCALES[l]} />
+                ))}
 
-                <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="https://enon.yoga/" />
-                <meta property="twitter:title" content="Masaje - Yoga - Sevilla | enON" />
-                <meta property="twitter:description" content="enON es un estudio de Masaje y Yoga situado en el centro de Sevilla. Espacializado en masaje de relajación, quiromasaje, Hatha Yoga o Yoga Restaurativo." />
-                <meta property="twitter:description" content="enON is a massage and yoga studio located in the centre of Seville. Specialised in relaxation massage, chiromassage, Hatha Yoga or Restorative Yoga." lang="en-US" />
-                <meta property="twitter:image" content="https://enon.yoga/yoga-enon.png" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={title} />
+                {description && <meta name="twitter:description" content={description} />}
+                <meta name="twitter:image" content="https://enon.yoga/yoga-enon.png" />
+
+                <StructuredData t={t} lang={lang} pageKey={pageKey} />
 
                 <script dangerouslySetInnerHTML={{ __html: hashRedirectScript }} />
                 <link rel="stylesheet" href="/css/main.css" />
-                <title>Masaje - Yoga - Sevilla | enON</title>
                 <Meta />
                 <Links />
             </head>
             <body>
                 <script dangerouslySetInnerHTML={{ __html: bodyScript(pageClasses) }} />
-                <div id="root">{children}</div>
+                <I18nextProvider i18n={getI18n(lang)}>
+                    <div id="root">{children}</div>
+                </I18nextProvider>
                 <ScrollRestoration />
                 <Scripts />
             </body>
@@ -93,19 +131,5 @@ Layout.propTypes = {
 }
 
 export default function App() {
-    // Aplica el idioma guardado por el usuario una vez hidratada la página
-    useEffect(() => {
-        let savedLanguage = null
-        try {
-            savedLanguage = localStorage.getItem('language')
-        } catch (e) {
-            // localStorage no disponible
-        }
-        if (savedLanguage && savedLanguage !== i18next.language) {
-            document.documentElement.setAttribute('lang', savedLanguage)
-            i18next.changeLanguage(savedLanguage)
-        }
-    }, [])
-
     return <Outlet />
 }

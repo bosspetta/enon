@@ -6,11 +6,11 @@ export default function NormasTexto() {
 
     return (
         <>
-            <h3 className="page-title--subtitle">{t('rules.main-title')}</h3>
+            <h1 className="page-title--subtitle">{t('rules.main-title')}</h1>
 
             <p>{t('rules.p-1')}</p>
 
-            <h3 className="page-title--subtitle">{t('rules.title-2')}</h3>
+            <h2 className="page-title--subtitle">{t('rules.title-2')}</h2>
 
             <p><strong>{t('rules.title-3')}</strong></p>
 

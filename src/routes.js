@@ -1,18 +1,22 @@
 import { layout, index, route } from '@react-router/dev/routes'
 
+import { LANGUAGES, DEFAULT_LANGUAGE, PAGES, routeId } from './site.js'
+
+// Cada página existe una vez por idioma: /yoga/ y /en/yoga/
+const pageRoutes = LANGUAGES.flatMap(lang => {
+    const prefix = lang === DEFAULT_LANGUAGE ? '' : `${lang}/`
+    return [
+        ...PAGES.map(({ key, file, paths }) => {
+            const id = routeId(lang, key)
+            if (lang === DEFAULT_LANGUAGE && paths[lang] === '') {
+                return index(file, { id })
+            }
+            return route(`${prefix}${paths[lang]}`, file, { id })
+        }),
+        route(`${prefix}*`, 'pages/NoMatch.jsx', { id: routeId(lang, '404') }),
+    ]
+})
+
 export default [
-    layout('layout.jsx', [
-        index('pages/Home.jsx'),
-        route('que-es-enon', 'pages/QueEsEnon.jsx'),
-        route('yoga', 'pages/Yoga.jsx'),
-        route('yoga/restaurativo', 'pages/YogaRestaurativo.jsx'),
-        route('mindfulness', 'pages/Mindfulness.jsx'),
-        route('masaje', 'pages/Quiromasaje.jsx'),
-        route('mas-actividades', 'pages/External.jsx'),
-        route('contacto', 'pages/Contacto.jsx'),
-        route('horarios', 'pages/SchedulesPrices.jsx'),
-        route('normas', 'pages/Normas.jsx'),
-        route('bono-regalo', 'pages/BonoRegalo.jsx'),
-        route('*', 'pages/NoMatch.jsx'),
-    ]),
+    layout('layout.jsx', pageRoutes),
 ]

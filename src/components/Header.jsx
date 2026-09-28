@@ -1,11 +1,17 @@
 import { Link } from 'react-router'
 
 import { useTranslation } from 'react-i18next'
-import i18next from 'i18next'
+
+import { useCurrentPageKey, useLanguage, usePagePath } from '../hooks'
+import { pagePath } from '../site'
 
 export default function Header() {
 
-    const { t, i18n } = useTranslation('global')
+    const { t } = useTranslation('global')
+    const lang = useLanguage()
+    const path = usePagePath()
+    // En la 404 el selector lleva a la portada del otro idioma
+    const pageKey = useCurrentPageKey() ?? 'home'
 
     const openMenu = (e) => {
         e.preventDefault()
@@ -15,30 +21,6 @@ export default function Header() {
         mainMenu.classList.toggle('menu-opened')
         btnMenu.classList.toggle('is-active')
     }
-
-    const spanishLang = (e) => {
-        let spanishBtn = document.querySelector('.language__btn--es')
-        let englishBtn = document.querySelector('.language__btn--en')
-        spanishBtn.classList.remove('selected')
-        englishBtn.classList.remove('selected')
-        e.target.classList.add('selected')
-        document.documentElement.setAttribute('lang', 'es')
-        localStorage.setItem('language', 'es')
-        return i18n.changeLanguage('es')
-    }
-
-    const englishLang = (e) => {
-        let englishBtn = document.querySelector('.language__btn--en')
-        let spanishBtn = document.querySelector('.language__btn--es')
-        englishBtn.classList.remove('selected')
-        spanishBtn.classList.remove('selected')
-        e.target.classList.add('selected')
-        document.documentElement.setAttribute('lang', 'en')
-        localStorage.setItem('language', 'en')
-        return i18n.changeLanguage('en')
-    }
-
-    let selectedLanguage = i18next.language
 
     // El modo oscuro guardado se aplica al cargar desde src/root.jsx
     const enableDarkMode = () => {
@@ -82,12 +64,12 @@ export default function Header() {
                     </svg>
                 </button>
                 <div id="language" className="language">
-                    <button className={`language__btn language__btn--es ${ selectedLanguage === 'es' ? 'selected' : null }`} onClick={spanishLang} type="button">Español</button>
-                    <button className={`language__btn language__btn--en ${ selectedLanguage === 'en' ? 'selected' : null }`} onClick={englishLang} type="button">English</button>
+                    <Link className={`language__btn language__btn--es ${lang === 'es' ? 'selected' : ''}`} to={pagePath(pageKey, 'es')} hrefLang="es" lang="es">Español</Link>
+                    <Link className={`language__btn language__btn--en ${lang === 'en' ? 'selected' : ''}`} to={pagePath(pageKey, 'en')} hrefLang="en" lang="en">English</Link>
                 </div>
             </div>
-            <h1 className="site-title">
-                <Link to="/" className="site-title__home-link" title="Ir al inicio">
+            <div className="site-title">
+                <Link to={path('home')} className="site-title__home-link" title={t('a11y.home-link')}>
                     <span className="site-title__logo">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 628.7 196.4" width="100%">
                             <g id="Capa_1-2">
@@ -178,7 +160,7 @@ export default function Header() {
                         <span className="site-title__yoga-teacher"><strong>Isabel</strong> Martínez San Esteban</span>
                     </span>
                 </Link>
-            </h1>
+            </div>
         </header>
     )
 }

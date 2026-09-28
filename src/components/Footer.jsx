@@ -1,4 +1,5 @@
 import { Link } from 'react-router'
+import { usePagePath } from '../hooks'
 import { useTranslation } from 'react-i18next'
 
 // import logoKayak from '../assest/img/kayak-logo.svg'
@@ -6,6 +7,8 @@ import { useTranslation } from 'react-i18next'
 export default function Footer() {
 
     const { t } = useTranslation('global')
+
+    const path = usePagePath()
 
     return (
         <footer>
@@ -15,9 +18,9 @@ export default function Footer() {
             <hr />
 
             <p>Calle San Luis 78 - 41003 Sevilla (España)</p>
-            <p><a href="tel:+34640029302" title="Llamar a enON">+34 640 029 302</a></p>
-            <p><a href="https://api.whatsapp.com/send/?phone=34640029302" title="WhatsApp a enON" target="_blank" rel="noreferrer" className="whatsapp">{t('whatsapp-link')}</a></p>
-            <p><Link to="/">www.enon.yoga</Link></p>
+            <p><a href="tel:+34640029302" title={t('a11y.call')}>+34 640 029 302</a></p>
+            <p><a href="https://api.whatsapp.com/send/?phone=34640029302" title={t('a11y.whatsapp')} target="_blank" rel="noreferrer" className="whatsapp">{t('whatsapp-link')}</a></p>
+            <p><Link to={path('home')}>www.enon.yoga</Link></p>
             <p><a href="mailto:hola@enon.yoga">hola@enon.yoga</a></p>
 
             {/* <hr />

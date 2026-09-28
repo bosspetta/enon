@@ -13,7 +13,7 @@ export default function BonoRegalo() {
 
     return (
         <main className="page-content">
-            <h2 className="page-title">{t( "br.title" )}</h2>
+            <h1 className="page-title">{t( "br.title" )}</h1>
 
             <p>{t( "br.p-1" )}</p>
             <p>{t( "br.p-2" )}</p>
@@ -29,10 +29,10 @@ export default function BonoRegalo() {
                 </div>
             </div>
 
-            <h3 className="page-title page-title--subtitle">{t( "br.title-ideas" )}</h3>
+            <h2 className="page-title page-title--subtitle">{t( "br.title-ideas" )}</h2>
             <GiftsGallery />
 
-            <h3 className="page-title page-title--subtitle">{t( "br.precios" )}</h3>
+            <h2 className="page-title page-title--subtitle">{t( "br.precios" )}</h2>
             <div className="precios">
                 <ul>
                     <li>

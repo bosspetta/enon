@@ -14,10 +14,12 @@
         "horarios": "Schedules and prices",
         "politicas": "Rules",
         "mindfulness": "Mindfulness",
-        "bono-regalo": "Gift voucher"
+        "bono-regalo": "Gift voucher",
+        "yoga-classes": "Yoga Classes",
+        "yoga": "Yoga"
     },
     "home": {
-        "welcome-title": "Welcome…",
+        "welcome-title": "Welcome to enON, Yoga & Massage in Seville",
         "intro": "Thank you for your interest in enON. On this website you will find a lot of information about how and from where my Yoga classes are taught, or how the Massage and Chiromassage I do can benefit you. Take a look around the sections and pages to discover enON in depth, and if you are even more curious, come and visit me, I am in Calle San Luis 78, very close to Plaza del Pumarejo."
     },
     "enon": {
@@ -67,7 +69,8 @@
         "l2": "Improves venous circulation and lowers blood pressure",
         "l3": "Eliminates muscle fatigue and contracture pains",
         "l4": "Helps digestive processes, drains lymphatic circulation",
-        "l5": "Improves sleep quality and cell function"
+        "l5": "Improves sleep quality and cell function",
+        "gandiva": "plant-based cosmetics"
     },
     "contacto": {
         "title": "Contact us or come and visit us",
@@ -100,7 +103,7 @@
         "3class-price": "70€ / Month",
         "taller-restaurativo": "Taller Yoga Restaurativo",
         "taller-restaurativo-price": "25€",
-        "mindfulnes": "Mindfulnes",
+        "mindfulnes": "Mindfulness",
         "mindfulnes-price": "45€",
         "clases": "Classes last 1 hour and 15 minutes.",
         "clase-suelta": "Single class",
@@ -269,5 +272,85 @@
         "close": "Close information",
         "btn": "enON Gift Card",
         "open": "Give the gift of wellbeing"
+    },
+    "seo": {
+        "home": {
+            "title": "Yoga & Massage in Seville city centre | enON",
+            "description": "Hatha Yoga, Restorative Yoga, Mindfulness, chiromassage and relaxing massage studio in the centre of Seville, next to Plaza del Pumarejo."
+        },
+        "enon": {
+            "title": "About us: Yoga & Massage studio in Seville | enON",
+            "description": "enON is a yoga, meditation and massage space in the centre of Seville run by Isabel Martínez San Esteban, who has practised yoga since a very early age."
+        },
+        "yoga": {
+            "title": "Hatha Yoga classes in Seville | enON",
+            "description": "Hatha Yoga classes in the centre of Seville, adapted to each student: posture, breathing and meditation. Morning and evening classes, Monday to Thursday."
+        },
+        "yoga-restaurativo": {
+            "title": "Restorative Yoga in Seville | enON",
+            "description": "Restorative Yoga workshops in Seville: passive poses to rest, recover your natural breathing and relieve stress. Ask us about the next date."
+        },
+        "mindfulness": {
+            "title": "Mindfulness in Seville: 8-week programme | enON",
+            "description": "8-week Mindfulness training programme in Seville to reduce stress and improve attention. Download the brochure or get in touch."
+        },
+        "masaje": {
+            "title": "Chiromassage & relaxing massage in Seville | enON",
+            "description": "Chiromassage, 60 and 90-minute relaxation massage and facial massage in the centre of Seville, with Gandiva plant-based cosmetics. By appointment."
+        },
+        "actividades": {
+            "title": "Workshops & meditation in Seville | enON",
+            "description": "Restorative Yoga workshops and a Mindfulness meditation group every Thursday at enON, in the centre of Seville."
+        },
+        "horarios": {
+            "title": "Yoga & Massage schedule and prices | enON Seville",
+            "description": "Hatha Yoga class schedule and prices for Yoga, Mindfulness and massages at enON, Calle San Luis 78, Seville."
+        },
+        "contacto": {
+            "title": "Contact & how to find us | enON Seville",
+            "description": "Contact enON by phone, WhatsApp or email, or visit us at Calle San Luis 78, next to Plaza del Pumarejo, in Seville."
+        },
+        "normas": {
+            "title": "Studio rules | enON Seville",
+            "description": "House rules for the Yoga classes and massage services at enON, in Seville."
+        },
+        "bono-regalo": {
+            "title": "Massage & Yoga gift card in Seville | enON",
+            "description": "Give the gift of wellbeing: gift cards for chiromassage, relaxation massage, facial massage or a Restorative Yoga workshop in Seville. Valid for 6 months."
+        },
+        "404": {
+            "title": "Page not found | enON"
+        }
+    },
+    "notfound": {
+        "title": "Page not found",
+        "text": "The page you are looking for doesn't exist or has moved.",
+        "link": "Back to home"
+    },
+    "cta": {
+        "horarios": "See schedule and prices",
+        "cita": "Book an appointment"
+    },
+    "a11y": {
+        "home-link": "Go to home page",
+        "call": "Call enON",
+        "whatsapp": "Send enON a WhatsApp message",
+        "gandiva": "Gandiva website"
+    },
+    "gallery": {
+        "yoga-room": "Yoga room at enON",
+        "changing-room": "Changing area at enON",
+        "entrance": "Entrance area at enON",
+        "singing-bowl": "Side table with a Tibetan singing bowl, cymbals and incense at enON",
+        "spine": "Spine model used for explanations at enON",
+        "massage-room": "Room prepared for a massage at enON",
+        "oils": "Essential oils for chiromassage and heated seed bags",
+        "exterior": "enON's façade on Calle San Luis 78, Seville",
+        "gift-facial": "Facial care poster: natural skin cleansing with Gandiva plant-based cosmetics",
+        "gift-relax": "Relaxation massage poster, also available as a gift card",
+        "gift-quiro": "Chiromassage poster, also available as a gift card",
+        "gift-restaurativo": "Restorative Yoga workshop poster",
+        "poster-restaurativo": "Restorative Yoga workshop poster at enON",
+        "poster-mindfulness": "Mindfulness meditation group poster: every Thursday at 18:30"
     }
 }

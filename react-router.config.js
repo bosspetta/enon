@@ -1,23 +1,17 @@
+import { LANGUAGES, PAGES, pagePath } from './src/site.js'
+
 /** @type {import('@react-router/dev/config').Config} */
 export default {
     appDirectory: 'src',
     // Sin servidor: cada ruta se genera como HTML estático en el build
     ssr: false,
     prerender: [
-        '/',
-        '/que-es-enon',
-        '/yoga',
-        '/yoga/restaurativo',
-        '/mindfulness',
-        '/masaje',
-        '/mas-actividades',
-        '/horarios',
-        '/contacto',
-        '/normas',
-        '/bono-regalo',
+        ...LANGUAGES.flatMap(lang => PAGES.map(page => pagePath(page.key, lang))),
         // Se convierte en 404.html en scripts/postbuild.js
-        '/404',
-    ],
+        '/404/',
+    ]
+        // React Router espera las rutas sin barra final (se generan igualmente como carpeta/index.html)
+        .map(path => path === '/' ? path : path.replace(/\/$/, '')),
     routeDiscovery: { mode: 'initial' },
     // Comportamiento de React Router v8 activado para facilitar la actualización
     future: {

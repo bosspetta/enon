@@ -135,6 +135,7 @@
         color: var(--clr-white);
         opacity: .5;
         font-weight: 700;
+        text-decoration: none;
         transition: opacity .3s ease-in-out;
         body.dark-mode & {
             color: var(--clr-primary);

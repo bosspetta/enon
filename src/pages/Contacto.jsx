@@ -7,14 +7,14 @@ export default function Contacto() {
 
     return (
         <main className="page-content">
-            <h2 className="page-title">{t( "contacto.title" )}</h2>
-            <h3 className="page-title--subtitle">{t( "contacto.subtitle-1" )}</h3>
+            <h1 className="page-title">{t( "contacto.title" )}</h1>
+            <h2 className="page-title--subtitle">{t( "contacto.subtitle-1" )}</h2>
             <ul>
-                <li><strong>{t( "contacto.tlfLabel" )}</strong> <a href="tel:+34640029302" title="Llamar a enON">+34 640 029 302</a></li>
-                <li><strong>{t("contacto.whatsappLabel")}</strong> <a href="https://api.whatsapp.com/send/?phone=34640029302" title="WhatsApp a enON" target="_blank" rel="noreferrer" className="whatsapp">+34 640 029 302</a></li>
+                <li><strong>{t( "contacto.tlfLabel" )}</strong> <a href="tel:+34640029302" title={t('a11y.call')}>+34 640 029 302</a></li>
+                <li><strong>{t("contacto.whatsappLabel")}</strong> <a href="https://api.whatsapp.com/send/?phone=34640029302" title={t('a11y.whatsapp')} target="_blank" rel="noreferrer" className="whatsapp">+34 640 029 302</a></li>
                 <li><strong>Email:</strong> <a href="mailto:hola@enon.yoga">hola@enon.yoga</a></li>
             </ul>
-            <h3 className="page-title--subtitle">{t( "contacto.subtitle-2" )}</h3>
+            <h2 className="page-title--subtitle">{t( "contacto.subtitle-2" )}</h2>
             <p>{t( "contacto.p" )}</p>
         </main>
     )
