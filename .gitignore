@@ -27,3 +27,5 @@ package-lock.json
 # React Router
 /build
 .react-router
+
+notes.txt
