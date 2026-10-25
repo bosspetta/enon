@@ -121,7 +121,9 @@ export function Layout({ children }) {
                 <Meta />
                 <Links />
             </head>
-            <body>
+            {/* El script de abajo añade clases al body antes de que React cargue (fondo de la página y modo oscuro).
+                suppressHydrationWarning evita el aviso de React por esa diferencia, que es intencionada. */}
+            <body suppressHydrationWarning>
                 <script dangerouslySetInnerHTML={{ __html: bodyScript(pageClasses) }} />
                 <I18nextProvider i18n={getI18n(lang)}>
                     <div id="root">{children}</div>
