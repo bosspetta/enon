@@ -55,11 +55,6 @@ export default function BonoRegalo() {
                         <p>{t( "br.p-4-desc" )}<br />
                         <strong>45 €</strong></p>
                     </li>
-                    <li>
-                        <p><strong>{t( "br.p-5-title" )}</strong></p>
-                        <p>{t( "br.p-5-desc" )}<br />
-                        <strong>25 €</strong></p>
-                    </li>
                 </ul>
             </div>
         </main>

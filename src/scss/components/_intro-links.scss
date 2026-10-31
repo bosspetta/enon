@@ -15,6 +15,12 @@
             flex-basis: 50%;
             margin: 0;
         }
+        // Ocupa toda la fila en escritorio
+        &--full {
+            @media screen and (min-width: 48em) {
+                flex-basis: 100%;
+            }
+        }
     }
     &__link {
         width: 100%;
@@ -38,6 +44,22 @@
             body.dark-mode & {
                 background-color: var(--clr-primary-dark);
                 color: var(--clr-black);
+            }
+        }
+        // Botón llamativo (Tarjeta regalo): dorado en modo claro y oscuro
+        &--regalo {
+            background-color: var(--clr-gold);
+            color: var(--clr-dark);
+            box-shadow: 0 2px 8px rgb(202 180 81 / .45);
+            transition: background-color .2s ease, transform .2s ease;
+            &:hover,
+            &:focus-visible {
+                background-color: var(--clr-dark-gold);
+                transform: translateY(-2px);
+            }
+            body.dark-mode & {
+                background-color: var(--clr-gold);
+                color: var(--clr-dark);
             }
         }
         &--alone {

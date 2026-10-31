@@ -10,7 +10,6 @@ import 'lightgallery/css/lg-thumbnail.css'
 import gift1 from '../assest/img/gifts/01.webp'
 import gift2 from '../assest/img/gifts/02.webp'
 import gift3 from '../assest/img/gifts/03.webp'
-import gift4 from '../assest/img/gifts/04.webp'
 
 export default function GiftsGallery() {
     const { t } = useTranslation('global')
@@ -34,11 +33,6 @@ export default function GiftsGallery() {
                 <a href={gift3} title={t('gallery.gift-quiro')} className="enon-gallery__item">
                     <span className="sr-only">{t('gallery.gift-quiro')}</span>
                     <img loading="lazy" decoding="async" alt={t('gallery.gift-quiro')} src={gift3} className="enon-gallery__img" />
-                </a>
-
-                <a href={gift4} title={t('gallery.gift-restaurativo')} className="enon-gallery__item">
-                    <span className="sr-only">{t('gallery.gift-restaurativo')}</span>
-                    <img loading="lazy" decoding="async" alt={t('gallery.gift-restaurativo')} src={gift4} className="enon-gallery__img" />
                 </a>
             </LightGallery>
         </div>

@@ -46,6 +46,23 @@ body {
             opacity: .7;
         }
     }
+    // Páginas cuyo fondo ocupa solo la franja visible a la derecha del contenido (escritorio)
+    &.yoga-page,
+    &.yoga-privadas-page {
+        &::before {
+            @media screen and (min-width: 48em) {
+                left: auto;
+                right: 0;
+                width: 20%;
+            }
+            @media screen and (min-width: 62em) {
+                width: 30%;
+            }
+            @media screen and (min-width: 75em) {
+                width: calc(100% - 255px - 45%);
+            }
+        }
+    }
     &.home-page {
         &::before {
             background: transparent url('../img/background-home.jpg') bottom center no-repeat;
@@ -57,8 +74,16 @@ body {
         }
     }
     &.yoga-page {
+        // Foto vertical; el encuadre se centra en las piernas y las esterillas (60% en horizontal)
         &::before {
-            background: transparent url('../img/background-yoga.jpg') bottom center no-repeat;
+            background: transparent url('../img/background-yoga-piernas.webp') 60% center no-repeat;
+            background-size: cover;
+        }
+    }
+    &.yoga-privadas-page {
+        // Foto completa; el encuadre se centra en la profesora y la alumna (42% en horizontal)
+        &::before {
+            background: transparent url('../img/background-yoga-privadas.webp') 42% center no-repeat;
             background-size: cover;
         }
     }
@@ -251,6 +276,11 @@ a {
         margin-block-end: 1rem;
         font-size: 1.1rem;
     }
+}
+
+.yoga-privadas-page .page-content h3 {
+    font-size: 1rem;
+    margin-block-end: .25rem;
 }
 
 .contact-page ul strong {

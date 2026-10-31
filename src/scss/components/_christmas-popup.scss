@@ -38,11 +38,12 @@
         align-items: center;
         gap: 0 calc(20px * .5);
         background: none;
-        background-color: #667764;
+        // Dorado, como el botón "Tarjeta regalo" de la portada
+        background-color: var(--clr-gold);
         border: none;
         border-radius: 10px;
         padding: 5px 15px;
-        color: white;
+        color: var(--clr-dark);
         position: fixed;
         right: calc(30px * .5);
         bottom: calc(30px * .5);
@@ -50,10 +51,15 @@
         font-size: .75rem;
         text-transform: uppercase;
         letter-spacing: .025rem;
-        box-shadow: 0 0 2.5px 2.5px rgba(white,.5);
+        box-shadow: 0 0 2.5px 2.5px rgba(white,.5), 0 2px 8px rgb(202 180 81 / .45);
         cursor: pointer;
+        transition: background-color .2s ease;
         animation: shake .5s;
         animation-iteration-count: 2;
+        &:hover,
+        &:focus-visible {
+            background-color: var(--clr-dark-gold);
+        }
         &--close {
             width: 40px;
             height: 40px;
@@ -66,6 +72,9 @@
         }
         &__ico {
             height: 20px;
+            // El icono es verde claro: se oscurece para que contraste con el dorado
+            filter: brightness(0);
+            opacity: .8;
         }
     }
 }

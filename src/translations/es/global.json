@@ -8,6 +8,7 @@
         "inicio": "Inicio",
         "que-es": "¿Qué es enON?",
         "restaurativo": "Yoga restaurativo",
+        "privadas": "Clases privadas",
         "quiromasaje": "Masaje y Quiromasaje",
         "actividades": "Más actividades",
         "contacto": "Visítanos / Contacto",
@@ -51,6 +52,29 @@
             "p1": "El Yoga que desarrollo se basa en mis diferentes estudios y especialidades dentro de la diversidad (e inmensidad) del Yoga. Dichas especialidades me aportan una gran visión del cuerpo humano, de su fisiología y anatomía. También son «ingredientes» importantes del Yoga en enON, otros estudios sobre la psicología humanista, en los que apoyo mi desarrollo personal, creyendo en la recuperación de la capacidad que todos tenemos para vivir el presente, la espontaneidad y la responsabilidad. Concibo a la persona como una entidad completa formada por cuerpo, mente y alma, que puede alcanzar el bienestar trabajando por la integridad y el equilibrio de esas tres indisolubles partes.",
             "p2": "Confecciono mis clases adaptándolas a las necesidades de los alumnos que en cada momento conforman los grupos. Sin perder la práctica original que el Hatha Yoga me enseñó, pero sí adaptándome a unas necesidades más occidentales, al mismo tiempo que intento practicar desde un enfoque de suavidad, viveza y ternura hacia nosotros mismos, evitando propuestas ostentosas o lesivas, que nos alejen de la verdadera práctica.",
             "p3": "No practicamos por niveles, ni por años de antigüedad, ni por conocimientos adquiridos. El Yoga en enON entiende que la «práctica correcta», si está bien enseñada, serviría para todos los niveles. Del mismo modo, los conocimientos bien explicados, pueden ser captados desde diferentes niveles de comprensión. Pero no son más ciertos unos que otros, únicamente son más profundos. Muchas veces, el creer que ya entendemos algo nos lleva precisamente a no experimentarlo. Sinceramente creo que no importa tanto el nivel que creamos tener, creo que es más interesante la posibilidad de abrirnos a la comprensión y procesamiento de la experiencia, ahí no hay niveles, solo posibilidad de entrega y compromiso."
+        },
+        "privadas": {
+            "title": "Clases privadas",
+            "metodo-title": "Clases individuales con el método FisiomYoga",
+            "metodo-p": "Una disciplina que une el <strong>Yoga</strong> con la <strong>Fisioterapia</strong> y la <strong>Osteopatía</strong> para abordar con conocimiento y criterio las patologías del sistema musculoesquelético y nervioso.",
+            "dirigido-title": "¿A quién va dirigido?",
+            "dirigido-l1": "<strong>A cualquier persona</strong> que quiera tener una <em>atención personalizada</em> para aprovechar su práctica al cien por cien.",
+            "dirigido-l2": "Personas que requieran una <strong>práctica exclusiva</strong> para recuperarse de alguna lesión, dolencia o alteraciones del alineamiento corporal.",
+            "patologias-title": "Especialmente indicado en patologías como las siguientes:",
+            "patologias-l1": "Hernia discal, hiperlordosis lumbar o cervical, rectificación lumbar, torácica y cervical.",
+            "patologias-l2": "Artrosis, osteoporosis, ciáticas, tendinitis, epicondilitis, epitrocleitis, fibromialgia, fascitis plantar, lesiones deportivas.",
+            "metodologia-title": "Metodología",
+            "equipo-title": "Equipo multidisciplinar",
+            "equipo-p": "Me coordino con fisioterapeutas, osteópatas, podólogos, psicólogos y otros especialistas de la salud para dar la mejor respuesta posible a los procesos de salud del practicante.",
+            "holistica-title": "Disciplina holística",
+            "holistica-p": "Los resultados óptimos dependen de la habilidad de abordar el cuerpo en su globalidad. En este sentido, también los pensamientos, emociones, palabras y acciones juegan un papel clave en el bienestar de las personas.",
+            "dolor-title": "La regla del NO DOLOR",
+            "dolor-p": "Los ejercicios se adaptan a los diferentes niveles y capacidades, utilizando los apoyos y variaciones necesarios para conseguir los resultados que deseas.",
+            "psicopostural-title": "Reprogramación psicopostural",
+            "psicopostural-p": "Aprender a relacionarse con el cuerpo y utilizarlo de manera adecuada en el día a día acelera los procesos de salud.",
+            "tareas-title": "Tareas para casa",
+            "tareas-p": "La realización de ejercicios físicos, respiratorios, de relajación o de reflexión supone una excelente alternativa para poder vivir y disfrutar de los frutos de la práctica.",
+            "info": "Para más información, llama por teléfono o pide cita:"
         },
         "restaurativo": {
             "title": "Yoga restaurativo",
@@ -286,6 +310,10 @@
             "title": "Clases de Hatha Yoga en Sevilla | enON",
             "description": "Clases de Hatha Yoga en el centro de Sevilla, adaptadas a cada alumno: postura, respiración y meditación. Clases de mañana y tarde, de lunes a jueves."
         },
+        "yoga-privadas": {
+            "title": "Clases privadas de Yoga en Sevilla | enON",
+            "description": "Clases privadas de Yoga en Sevilla con el método FisiomYoga, que une Yoga, Fisioterapia y Osteopatía para recuperarte de lesiones y dolencias. Pide cita."
+        },
         "yoga-restaurativo": {
             "title": "Yoga Restaurativo en Sevilla | enON",
             "description": "Talleres de Yoga Restaurativo en Sevilla: posturas pasivas para descansar, recuperar la respiración natural y aliviar el estrés. Consulta la próxima fecha."
@@ -316,7 +344,7 @@
         },
         "bono-regalo": {
             "title": "Tarjeta regalo de masaje y Yoga en Sevilla | enON",
-            "description": "Regala bienestar: tarjetas regalo de quiromasaje, masaje de relajación, masaje facial o taller de Yoga Restaurativo en Sevilla. Válidas 6 meses."
+            "description": "Regala bienestar: tarjetas regalo de quiromasaje, masaje de relajación y masaje facial en Sevilla. Válidas 6 meses."
         },
         "404": {
             "title": "Página no encontrada | enON"

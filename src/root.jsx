@@ -13,6 +13,7 @@ const PAGE_CLASSES = [
     'home-page',
     'enon-page',
     'yoga-page',
+    'yoga-privadas-page',
     'yoga-restaurativo-page',
     'mindfulness-page',
     'chiromassage-page',

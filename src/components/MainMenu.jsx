@@ -45,20 +45,20 @@ export default function MainMenu() {
                         <li className="main-menu__item">
                             <NavLink
                                 className={({ isActive }) => isActive ? 'main-menu__link selected' : 'main-menu__link'}
+                                to={path('yoga-privadas')}
+                                onClick={hideMenu}>
+                                {t( "main-menu.privadas" )}
+                            </NavLink>
+                        </li>
+                        <li className="main-menu__item">
+                            <NavLink
+                                className={({ isActive }) => isActive ? 'main-menu__link selected' : 'main-menu__link'}
                                 to={path('yoga-restaurativo')}
                                 onClick={hideMenu}>
                                 {t( "main-menu.restaurativo" )}
                             </NavLink>
                         </li>
                     </ul>
-                </li>
-                <li className="main-menu__item">
-                    <NavLink
-                        className={({ isActive }) => isActive ? 'main-menu__link selected' : 'main-menu__link'}
-                        to={path('mindfulness')}
-                        onClick={hideMenu}>
-                        Mindfulness
-                    </NavLink>
                 </li>
                 <li className="main-menu__item">
                     <NavLink
@@ -76,6 +76,7 @@ export default function MainMenu() {
                         {t( "main-menu.bono-regalo" )}
                     </NavLink>
                 </li>
+                {/* "Más actividades" oculta (ver hidden en site.js)
                 <li className="main-menu__item">
                     <NavLink
                         className={({ isActive }) => isActive ? 'main-menu__link selected' : 'main-menu__link'}
@@ -84,6 +85,7 @@ export default function MainMenu() {
                         {t("main-menu.actividades")}
                     </NavLink>
                 </li>
+                */}
                 <li className="main-menu__item">
                     <NavLink
                         className={ ({isActive}) => isActive ? 'main-menu__link selected' : 'main-menu__link' }
@@ -98,14 +100,6 @@ export default function MainMenu() {
                         to={path('contacto')}
                         onClick={hideMenu}>
                         {t( "main-menu.contacto" )}
-                    </NavLink>
-                </li>
-                <li className="main-menu__item">
-                    <NavLink
-                        className={({ isActive }) => isActive ? 'main-menu__link selected' : 'main-menu__link'}
-                        to={path('normas')}
-                        onClick={hideMenu}>
-                        {t("main-menu.politicas")}
                     </NavLink>
                 </li>
             </ul>
